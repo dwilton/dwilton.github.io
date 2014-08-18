@@ -1,0 +1,355 @@
+/****************************************/
+/*             Foxtel Theme             */
+/****************************************/
+
+/* #region Import Common */
+
+@import "../../common.less";
+
+/* #endregion */
+
+/* #region Core Colors */
+
+@base-shade: @silver;
+@secondary-shade: hsl(hue(@base-shade), saturation(@base-shade), 100 - lightness(@base-shade));
+
+@highlight-color: @ft-orange;
+@highlight-text-color: @light;
+
+@selected-color: @ft-grey;
+@selected-text-color: @light;
+
+/* #endregion */
+
+/* #region Shades */
+
+@base-shade-darken-3: darken(@base-shade, 25%);
+@base-shade-darken-2: darken(@base-shade, 7%);
+@base-shade-darken-1: darken(@base-shade, 5%);
+@base-shade-lighten-1: lighten(@base-shade, 5%);
+@base-shade-lighten-2: lighten(@base-shade, 7%);
+@base-shade-lighten-3: lighten(@base-shade, 14%);
+@base-shade-lighten-4: lighten(@base-shade, 25%);
+
+@secondary-shade-darken-4: darken(@secondary-shade, 32%);
+@secondary-shade-darken-3: darken(@secondary-shade, 25%);
+@secondary-shade-darken-2: darken(@secondary-shade, 7%);
+@secondary-shade-darken-1: darken(@secondary-shade, 5%);
+@secondary-shade-lighten-1: lighten(@secondary-shade, 5%);
+@secondary-shade-lighten-2: lighten(@secondary-shade, 7%);
+@secondary-shade-lighten-3: lighten(@secondary-shade, 25%);
+@secondary-shade-lighten-4: lighten(@secondary-shade, 32%);
+
+/* #endregion */
+
+/* #region Text */
+
+@text-color: @charcoal;
+@text-color-disabled: @secondary-shade-lighten-3;
+@text-color-placeholder: @secondary-shade-lighten-4;
+@text-color-condition: @secondary-shade-lighten-4;
+
+@text-link-color: @secondary-shade;
+@text-link-color-hover: lighten(@text-link-color, 10%);
+@text-link-color-disabled: darken(@text-link-color, 50%);
+@text-link-border: 1px dotted fadeout(@text-link-color, 50%);
+@text-link-border-hover: 1px solid @text-link-color;
+
+/* #endregion */
+
+/* #region Invalid */
+
+@positive: @green;
+@negative : @red;
+
+/* #endregion */
+
+/* #region Loading */
+
+@loading-text-color: @base-shade-darken-3;
+@loading-image: @ui-loading-dark-on-light no-repeat 50% 50%;
+
+/* #endregion */
+
+/****************************************/
+/*               Controls               */
+/****************************************/
+
+/* #region Alert */
+
+@alert-text-color: @red;
+
+/* #endregion */
+
+/* #region Button */
+
+@button-background-color: lighten(@silver, 10%);
+@button-text-color: @grey;
+@button-background-color-active: @selected-color;
+@button-text-color-active: @selected-text-color;
+@button-background-color-disabled: @silver;
+@button-text-color-disabled: lighten(@button-text-color, 40%);
+@button-processing-image: @ui-loading-medium no-repeat 50% 50%;
+@button-highlight-color: @highlight-color;
+
+/* #endregion */
+
+/* #region Central Know How */
+
+@centralknowhow-image: @icon-ckh-color no-repeat;
+
+/* #endregion */
+
+/* #region Checkbox */
+
+@checkbox-checked-background-color-disabled: @secondary-shade-lighten-3;
+@checkbox-image: transparent @ui-checkbox no-repeat 50% 50%;
+@checkbox-image-disabled: transparent @ui-checkbox-disabled no-repeat 50% 50%;
+@checkbox-checked-image: transparent @ui-checkbox-checked no-repeat 50% 50%;
+@checkbox-checked-image-disabled: transparent @ui-checkbox-checked-disabled no-repeat 50% 50%;
+
+/* #endregion */
+
+/* #region Radio button */
+
+@radio-image: transparent @ui-radio no-repeat 50% 50%;
+@radio-image-disabled: transparent @ui-radio-disabled no-repeat 50% 50%;
+@radio-selected-image: transparent @ui-radio-selected no-repeat 50% 50%;
+@radio-selected-image-disabled: transparent @ui-radio-selected-disabled no-repeat 50% 50%;
+
+/* #endregion */
+
+/* #region Close Button */
+
+@closebutton-text-color: @light;
+@closebutton-background-color: @secondary-shade-lighten-3;
+@closebutton-background-color-hover: @secondary-shade-lighten-2;
+
+/* #endregion */
+
+/* #region Code Example */
+
+@code-example-heading-text-color: @light;
+@code-example-heading-background-color: @secondary-shade-lighten-2;
+@code-example-background-color: @white;
+
+/* #endregion */
+
+/* #region Data */
+
+@data-text-color: @text-color;
+@data-background-color: lighten(@dark, 90%);
+@data-locked-text-color: lighten(@text-color, 50%);
+
+/* #endregion */
+
+/* #region Delete Button */
+
+@deletebutton-background-color: @negative;
+@deletebutton-background-color-hover: lighten(@deletebutton-background-color, 10%);
+@deletebutton-text-color: lighten(@deletebutton-background-color, 70%);
+@deletebutton-text-color-hover: @light;
+
+/* #endregion */
+
+/* #region Desired Button */
+
+@desiredbutton-background-color: @positive;
+@desiredbutton-background-color-hover: lighten(@desiredbutton-background-color, 10%);
+@desiredbutton-text-color: lighten(@desiredbutton-background-color, 70%);
+@desiredbutton-text-color-hover: @light;
+
+/* #endregion */
+
+/* #region Dialog */
+
+@dialog-background-color: @base-shade;
+@dialog-mask-background-color: fadeout(@dark, 80%);
+
+/* #endregion */
+
+/* #region Fieldset */
+
+@fieldset-background-color: @base-shade-lighten-3;
+@legend-text-color: @label-text-color;
+@legend-background-color: @base-shade-lighten-2;
+@legend-label-text-color: @label-text-color;
+
+/* #endregion */
+
+/* #region Filter */
+
+@input-search-button-background-color-hover: @negative;
+@input-search-button-icon: @icon-search-dark;
+@input-search-icon: @icon-search-dark;
+@input-search-icon-focus: @icon-search-dark;
+
+/* #endregion */
+
+/* #region Grid */
+
+@grid-background-color: @base-shade-lighten-3;
+@grid-border-color: @base-shade-darken-1;
+@grid-border: 2px solid @grid-border-color;
+@grid-header-text-color: @light;
+@grid-header-background-color: @selected-color;
+@grid-header-sort-image-asc: @ui-datagrid-sort-ascending no-repeat;
+@grid-header-sort-image-desc: @ui-datagrid-sort-descending no-repeat;
+@grid-content-background-color: @white;
+@grid-text-color: @text-color;
+@grid-row-odd-color: darken(@white, 4%);
+@grid-row-even-color: @grid-content-background-color;
+@grid-error-text-color: @base-shade-darken-3;
+@grid-overlay-background-color: darken(@white, 4%);
+
+/* #endregion */
+
+/* #region Heading */
+
+@heading-h1-text-color: @charcoal;
+@heading-h2-text-color: @charcoal;
+@heading-h3-text-color: @light-grey;
+@heading-h4-text-color: @grey;
+@heading-h5-text-color: @grey;
+@heading-h6-text-color: @grey;
+
+/* #endregion */
+
+/* #region Horizontal Rule */
+
+@horizontalrule-color: @base-shade-lighten-2;
+
+/* #endregion */
+
+/* #region Input */
+
+@input-text-color: @text-color;
+@input-text-color-focus: @text-color;
+@input-text-color-disabled: @text-color-disabled;
+@input-text-color-readonly: @input-text-color;
+@input-text-color-placeholder: @text-color-placeholder;
+
+@input-background-color: @light;
+@input-background-color-disabled: @base-shade-lighten-2;
+@input-background-color-readonly: @input-background-color-disabled;
+@input-background-color-focus: @light;
+
+@input-border-color: @base-shade-darken-1;
+
+@input-spinner-down-image: @ui-numeric-spinner-down-medium;
+@input-spinner-down-image-active: @ui-numeric-spinner-down-light;
+@input-spinner-down-image-disabled: @ui-numeric-spinner-down-dark;
+@input-spinner-down-image-hover: @ui-numeric-spinner-down-light;
+@input-spinner-up-image: @ui-numeric-spinner-up-medium;
+@input-spinner-up-image-active: @ui-numeric-spinner-up-light;
+@input-spinner-up-image-disabled: @ui-numeric-spinner-up-dark;
+@input-spinner-up-image-hover: @ui-numeric-spinner-up-light;
+
+/* #endregion */
+
+/* #region Label */
+
+@label-text-color: @secondary-shade-lighten-2;
+
+/* #endregion */
+
+/* #region List */
+
+@list-background-color: @light;
+@list-text-color: @secondary-shade;
+
+/* #endregion */
+
+/* #region Or */
+
+@or-background-color: @base-shade-lighten-2;
+@or-text-color: @secondary-shade-lighten-3;
+
+/* #endregion */
+
+/* #region Navigation */
+
+@navigation-background-color: @base-shade-darken-1;
+@navigation-text-color: @secondary-shade-lighten-3;
+
+/* #endregion */
+
+/* #region Number */
+
+@number-text-color: @charcoal;
+@number-border-color: lighten(@charcoal, 30%);
+
+/* #endregion */
+
+/* #region Panel */
+
+@panel-background-color: @base-shade-lighten-3;
+
+/* #endregion */
+
+/* #region Response Message */
+
+@response-message-noresults-text-color: @secondary-shade-lighten-2;
+@response-message-noresults-image: @icon-response-alert-small-light no-repeat;
+@response-message-infonote-text-color: @secondary-shade-lighten-2;
+@response-message-infonote-image: @icon-response-information-small-light;
+@response-message-error-text-color: @text-color;
+@response-message-error-link-text-color: @text-link-color;
+@response-message-error-image: @icon-response-alert-small-red;
+
+/* #endregion */
+
+/* #region Secondary Button */
+
+@secondarybutton-text-color: @highlight-color;
+@secondarybutton-text-color-hover: @secondarybutton-text-color;
+@secondarybutton-text-color-disabled: @light-grey;
+@secondarybutton-border: @text-link-border;
+@secondarybutton-border-hover: @text-link-border-hover;
+
+/* #endregion */
+
+/* #region Select */
+
+@select-background-image: @ui-select-list-background no-repeat left -1px;
+@select-arrow-image: @ui-select-list-toggle-medium no-repeat right 50%;
+@select-arrow-image-active: @ui-select-list-toggle-light no-repeat right 50%;
+@select-arrow-image-disabled: @ui-select-list-toggle-dark no-repeat right 50%;
+@select-arrow-image-hover: @ui-select-list-toggle-light no-repeat right 50%;
+
+/* #endregion */
+
+/* #region Tabs */
+
+@tab-content-background-color: @white;
+@tab-background-color: transparent;
+@tab-border-color: @base-shade-lighten-2;
+@tab-text-color: @light-grey;
+@tab-text-color-hover: @charcoal;
+@tab-active-background-color: @tab-content-background-color;
+@tab-active-text-color: @charcoal;
+@tab-active-border-image: @ft-orange;
+
+/* #endregion */
+
+/* #region Window Shadow */
+
+@window-shadow: 0 0 50px 10px lighten(@dark, 60%);
+
+/* #endregion */
+
+/* #region TV Classification */
+
+@rating-color: @light;
+@rating-border-color: @light;
+@rating-p-background-color: @rating-p;
+@rating-c-background-color: @rating-c;
+@rating-g-background-color: @rating-g;
+@rating-pg-background-color: @rating-pg;
+@rating-m-background-color: @rating-m;
+@rating-ma-background-color: @rating-ma;
+@rating-av-background-color: @rating-av;
+@rating-r-background-color: @rating-r;
+@rating-nc-background-color: @rating-nc;
+
+/* #endregion */

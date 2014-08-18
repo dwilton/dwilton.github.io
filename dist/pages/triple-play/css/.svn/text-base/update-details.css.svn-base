@@ -1,0 +1,128 @@
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  height:100%;
+}
+
+body {
+  padding: 15px;
+  height: 100%;
+  font-family: 'Proxima Nova Regular', Arial, Helvetica;
+  font-size: 14px;
+  color: #555;
+  background: #ececec;
+}
+
+.ActionButtons button.Left {
+  float: left;
+}
+
+.updateDetails .TabContent {
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.updateDetails .separatorLine {
+  padding-right: 30px;
+  border-right: solid 1px #ddd;
+}
+
+ul.options li > div {
+  overflow: hidden;
+  padding: 15px;
+  background: #eee;
+}
+
+ul.options li li > div {
+  overflow: hidden;
+  padding: 15px 15px 15px 40px;
+  background: #f5f5f5;
+}
+
+ul.options li li li > div {
+  overflow: hidden;
+  padding: 15px 15px 15px 65px;
+  background: #fefefe;
+  border: solid 1px #ececec;
+}
+
+ul.options label {
+  display: inline-block;
+  padding: 0;
+  font: normal 18px "Proxima Nova SemiBold", Arial, Helvetica, Serif;
+  line-height: 24px;
+}
+
+ul.options li li li  label {
+  font: normal 16px/1.2 "Proxima Nova Regular", Arial, Helvetica, Serif;
+}
+
+ul.options li li li label span {
+  display: block;
+  font-size: 14px;
+  color: #999;
+}
+
+ul.options li li li .icon {
+  margin-top: 5px;
+}
+
+ul.options .selection {
+  float: right;
+  color: #ddd;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+ul.options .selection a {
+  display: inline-block;
+  padding:0 5px;
+  font-size: 14px;
+  vertical-align: bottom;
+}
+ul.options li li li .icon {
+  cursor: pointer;
+}
+
+ul.options .icon  {
+  float: left;
+  margin-right: 10px;
+  width:24px;
+  height: 24px;
+  background: url('../img/marketing_icons.png') no-repeat left;
+}
+ul.options .add {
+  background-position: left top;
+}
+
+ul.options .active {
+  background-position: left -33px;
+}
+
+ul.options .removed {
+  background-position: left -65px;
+}
+
+ul.options .added {
+  background-position: left -97px;
+}
+
+ul.notifications li {
+  padding:10px 0;
+}
+
+ul.notifications li label {
+  display: inline-block;
+  font: normal 16px "Proxima Nova SemiBold", Arial, Helvetica, Serif;
+  vertical-align: top;
+  margin-top: -2px;
+}
+ul.notifications li label span {
+ display: block;
+ font: normal 16px "Proxima Nova Regular", Arial, Helvetica, Serif; 
+ color: #999;
+}
+
+.lt-ie9 body.lightboxBody {
+  min-height: 0;
+}

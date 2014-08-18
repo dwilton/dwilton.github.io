@@ -1,0 +1,72 @@
+/* #region Code Example Control */
+
+.CodeExampleControl() {
+
+  .CodeExample {
+    display: block;
+    margin: 15px 0 25px;
+
+    a {
+      font-weight: bold;
+    }
+
+    .Details {
+      display: none;
+      margin-top: 10px;
+      padding: 0;
+
+      h3 {
+        margin: 0;
+        padding: 5px 10px;
+      }
+
+      .CodeMirror {
+        min-height: 50px;
+        height: auto;
+      }
+
+      .CodeMirror-scroll {
+        min-height: 50px;
+        height: auto;
+        overflow-y: hidden;
+        overflow-x: auto;
+      }
+
+      textarea {
+       margin: 0;
+       width: 100%;
+       height: 150px;
+       -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+      }
+
+    }
+
+  }
+
+}
+
+/* #endregion */
+
+/* #region Code Example Style */
+
+.CodeExampleStyle() {
+
+  .CodeExample .Details {
+    background-color: @code-example-background-color;
+    border: 1px solid @code-example-heading-background-color;
+
+    h3 {
+      color: @code-example-heading-text-color;
+      background: @code-example-heading-background-color;
+    }
+
+    span {
+      .UserSelect(text);
+    }
+  }
+
+}
+
+/* #endregion */

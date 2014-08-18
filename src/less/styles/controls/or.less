@@ -1,0 +1,74 @@
+.OrControl() {
+
+  .Or {
+    position: relative;
+    padding: 10px 0 0 0;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0;
+      width: 100%;
+      line-height: 0;
+    }
+
+    &:after {
+      content: "or";
+      display: inline-block;
+      position: absolute; 
+      top: -8px;
+      left: 0;
+      margin: 0 50%;
+      padding: 0 5px;
+      font-size: 16px;
+      line-height: 16px;
+      font-style: italic;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &.Vertical {
+      padding: 0 0 0 25px;
+      margin-left: 15px;
+      min-height: 100px;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 100%;
+      }
+
+      &:after {
+        top: 50%;
+        left: -12px;
+        margin: -13px 0 0;
+        padding: 5px;
+      }
+    }
+  }
+
+}
+
+.OrStyle() {
+
+  .Or {
+    background-color: inherit;
+
+    &:before {
+      border-top: 1px solid @or-background-color;
+    }
+
+    &:after {
+      color: @or-text-color;
+      background-color: inherit;
+    }
+
+    &.Vertical:before {
+      border-left: 1px solid @or-background-color;
+    }
+  }
+
+}

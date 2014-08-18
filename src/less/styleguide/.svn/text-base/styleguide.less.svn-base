@@ -1,0 +1,42 @@
+@import "prettify.less";
+@import "../styles/Common.less";
+
+body {
+  background: #ececec;
+}
+
+#Application {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 900px;
+  z-index: 1;
+}
+
+#Navigation {
+  float: left;
+  padding: 20px;
+  width: 220px;
+}
+
+#Content {
+  margin-left: 200px;
+  padding: 20px;
+  min-width: 900px;
+}
+
+.GridExample .Panel, 
+.NavigationExample .TabContainer {
+  height: 400px;
+}
+
+.GridExample .Grid {
+  height: 400px;
+}
+
+.Lozenge {
+  display: block;
+  margin: 0 2px 6px;
+}

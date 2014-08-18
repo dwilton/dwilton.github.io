@@ -1,0 +1,128 @@
+/* #region Secondary Button Control */
+
+.SecondaryButtonControl() {
+
+  button[type=reset],
+  button.Reset,
+  button.Revert,
+  button.Clear,
+  button.Secondary {
+    margin: 7px 8px;
+    padding: 3px 0;
+    min-height: 0;
+    font-weight: normal;
+    text-shadow: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    &:focus:enabled,
+    &:hover:enabled {
+      margin: 7px 8px;
+      padding: 3px 0;
+      text-shadow: none;
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+
+    &:active:enabled {
+      margin: 8px 8px 6px;
+      padding: 3px 0;
+      text-shadow: none;
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+
+    &:disabled {
+      margin: 7px 8px 8px;
+      padding: 3px 0;
+      text-shadow: none;
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+}
+
+/* #endregion */
+
+/* #region Secondary Button Style */
+
+.SecondaryButtonStyle() {
+
+  button[type=reset],
+  button.Reset,
+  button.Revert,
+  button.Clear,
+  button.Secondary {
+    color: @secondarybutton-text-color;
+    text-decoration: none;
+    text-shadow: none;
+    background: none;
+    box-shadow: none;
+
+    &:focus:enabled,
+    &:hover:enabled {
+      color: @secondarybutton-text-color-hover;
+      text-decoration: underline;
+      text-shadow: none;
+      background: none;
+      box-shadow: none;
+    }
+
+    &:active:enabled {
+      color: @secondarybutton-text-color;
+      text-decoration: none;
+      text-shadow: none;
+      background: none;
+      box-shadow: none;
+    }
+
+    &:disabled {
+      color: @secondarybutton-text-color-disabled;
+      text-decoration: none;
+      text-shadow: none;
+      background: none;
+      box-shadow: none;
+    }
+  }
+
+}
+
+/* #endregion */
+
+/* #region Secondary Button Control IE */
+
+.SecondaryButtonControlIE() {
+
+  button.Secondary {
+    padding-bottom: 4px;
+    background: none;
+
+    &.hover,
+    &:hover, 
+    &:focus {
+      color: @secondarybutton-text-color;
+      text-decoration: underline;
+    }
+
+    &:hover, 
+    &:focus,
+    &:active,
+    &[disabled] {
+      background:none;
+    }
+
+    &[disabled] {
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+/* #endregion */

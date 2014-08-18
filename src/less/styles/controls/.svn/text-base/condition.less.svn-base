@@ -1,0 +1,26 @@
+/* #region Condition Control */
+
+.ConditionControl() {
+
+  .Condition {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    line-height: normal;
+  }
+
+}
+
+/* #endregion */
+
+/* #region Condition Style */
+
+.ConditionStyle() {
+
+  .Condition {
+    color: @text-color-condition;
+  }
+
+}
+
+/* #endregion */

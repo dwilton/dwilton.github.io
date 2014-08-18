@@ -1,0 +1,114 @@
+/* #region Radio Button Control */
+
+.RadioButtonControl() {
+
+ input[type="radio"] {
+  display: inline-block;
+  padding: 0;
+  margin: 0 5px 0 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -webkit-background-clip: border-box;
+ }
+
+}
+
+/* #endregion */
+
+/* #region Radio Button Style */
+
+.RadioButtonStyle() {
+
+ input[type="radio"] {
+  background: @radio-image;
+
+  &:focus,
+  &:active {
+   outline: 0;
+   background: @radio-image;
+  }
+
+  &:disabled {
+   background: @radio-image-disabled;
+   box-shadow: none;
+    &:focus,
+    &:active {
+     background: @radio-image-disabled;
+    }
+  }
+
+  &:checked {
+   background: @radio-selected-image;
+  }
+
+   &:checked:disabled {
+    background: @radio-selected-image-disabled;
+   }
+ }
+
+}
+
+/* #endregion */
+
+/* #region Radio Button Control IE */
+
+.RadioButtonControlIE() {
+
+  .radio,
+  .radio * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .radio,
+  .radio input,
+  .radio span {
+    width: 19px;
+    height: 19px;
+  }
+
+  .radio {
+    position: relative;
+    display:inline-block;
+        margin:0 5px 0 0;
+
+    span {
+      display: inline-block;
+      text-align: center;
+      background: @radio-image;
+
+      &.checked {
+        background: @radio-selected-image;
+      }
+
+    }
+
+    &.disabled {
+
+      span {
+        background: @radio-image-disabled;
+
+        &.checked {
+          background: @radio-selected-image-disabled;
+        }
+
+      }
+
+    }
+
+    input {
+      opacity:0;
+      filter:alpha(opacity=0);
+      text-align: center;
+      display: inline-block;
+      background: none;
+    }
+
+  }
+
+}
+
+/* #endregion */

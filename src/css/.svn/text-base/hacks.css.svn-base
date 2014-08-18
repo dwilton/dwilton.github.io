@@ -1,0 +1,683 @@
+/****************************************/
+/*             Foxtel Theme             */
+/****************************************/
+/* #region Import Common */
+/**
+ * Basic Color Palette
+ */
+/* Shading */
+/* Foxtel Specific */
+/**
+ * TV Classifications
+ */
+/**
+ * Gradients
+ */
+/**
+ * Issues
+ */
+/* Issue Types e.g. Info, Warning, Error, Success */
+/**
+ * Tooltips
+ */
+/* Tooltip Types e.g. Info, Warning, Error */
+/**
+ * Controls Collection
+ */
+/* #region App Control  */
+/* #endregion */
+/* #region App Style  */
+/* #endregion *//* #region Action Button Control */
+/* #endregion */
+/* #region Action Button Control IE */
+/* #endregion */
+/* #region Button Control Hacks */
+/* #endregion *//* #region Alert Style */
+/* #endregion *//* #region Autocomplete Control */
+/* #endregion *//* #region Button Control */
+/* #endregion */
+/* #region Button Style */
+/* #endregion */
+/* #region Button Control IE */
+/* #endregion */
+/* #region Button Control Hacks */
+/* #endregion *//* #region Central Know How Control */
+/* #endregion */
+/* #region Condition Style */
+/* #endregion *//* #region Character Counter Control */
+/* #endregion */
+/* #region Character Counter Style */
+/* #endregion *//* #region Checkbox Control */
+/* #endregion */
+/* #region Checkbox Style */
+/* #endregion */
+/* #region Checkbox Control IE */
+/* #endregion *//* #region Close Button Control */
+/* #endregion */
+/* #region Close Button Style */
+/* #endregion *//* #region Code Example Control */
+/* #endregion */
+/* #region Code Example Style */
+/* #endregion *//* #region Condition Control */
+/* #endregion */
+/* #region Condition Style */
+/* #endregion *//* #region Data Control */
+/* #endregion */
+/* #region Data Style */
+/* #endregion *//* #region DatePicker Control */
+/* #endregion */
+/* #region Date Picker Style */
+/* #endregion *//* #region Delete Button Style */
+/* #endregion */
+/* #region Delete Button IE */
+/* #endregion */
+/* #region Delete Button Control Hacks */
+/* #endregion *//* #region Desired Button Style */
+/* #endregion */
+/* #region Desired Button IE */
+/* #endregion */
+/* #region Desired Button Control Hacks */
+/* #endregion *//* #region Dialog Control */
+/* #endregion Dialog Control */
+/* #region Dialog Style */
+/* #endregion */
+/* #region Dialog Control IE */
+/* #endregion *//* #region Fieldset Control */
+/* #endregion */
+/* #region Fieldset Style */
+/* #endregion */
+/* #region Fieldset Control IE */
+/* #endregion *//* #region Search Control */
+/* #endregion */
+/* #region Filter Style */
+/* #endregion */
+/* #region Grid Control IE */
+/* #endregion *//* #region Form Control */
+/* #endregion *//* #region Grid Control */
+/* #endregion */
+/* #region Grid Style */
+/* #endregion *//* #region Heading Control */
+/* #endregion */
+/* #region Heading Style */
+/* #endregion */
+/* #region Heading Control IE */
+/* #endregion */
+/* #region Heading Control Hack */
+/* #endregion *//* #region Horizontal Rule Control */
+/* #endregion */
+/* #region Horizontal Rule Style */
+/* #endregion *//* #region Hyperlink Control */
+/* #endregion */
+/* #region Hyperlink Style */
+/* #endregion *//* #region Input Control */
+/* #endregion */
+/* #region Input Style */
+/* #endregion */
+/* #region Input Control Hacks */
+/* #endregion *//* #region Create Issue */
+/* #endregion */
+/* #region Create Issue Type */
+/* #endregion */
+/* #region Issue Control */
+/* #endregion */
+/* #region Issue Style */
+/* #endregion */
+/* #region Issue Control IE */
+/* #endregion *//*#region Label Control */
+/*#endregion*/
+/*#region Label Style */
+/*#endregion*/
+/*#region Label Control Hacks */
+/*#endregion*//* #region List Control */
+/* #endregion */
+/* #region List Style */
+/* #endregion */
+/* #region List Control IE */
+/* #endregion *//* #region Loading Control */
+/* #endregion */
+/* #region Loading Style */
+/* #endregion *//* #region Lozenge Control */
+/* #endregion */
+/* #region Lozenge Style */
+/* #endregion *//* #region Message Box Control */
+/* #endregion */
+/* #region Message Box Style */
+/* #endregion */
+/* #region Message Window Control */
+/* #endregion */
+/* #region Message Window Style */
+/* #endregion *//* #region Navigation Control */
+/* #endregion */
+/* #region Navigation Style */
+/* #endregion */
+/* #region Navigation Control IE */
+/* #endregion *//* #region Number Control */
+/* #endregion */
+/* #region Number Style */
+/* #endregion */
+/* #region Number Control IE */
+/* #endregion */
+/* #region Pagination Control */
+/* #endregion *//* #region Panel Control */
+/* #endregion */
+/* #region Panel Style */
+/* #endregion *//* #region Rating Control  */
+/* #endregion */
+/* #region Rating Style */
+/* #endregion *//* #region Radio Button Control */
+/* #endregion */
+/* #region Radio Button Style */
+/* #endregion */
+/* #region Radio Button Control IE */
+/* #endregion *//* #region Response Message Control */
+/* #endregion */
+/* #region Response Message Style */
+/* #endregion */
+/* #region Response Message Control Hack */
+/* #endregion *//* #region Secondary Button Control */
+/* #endregion */
+/* #region Secondary Button Style */
+/* #endregion */
+/* #region Secondary Button Control IE */
+/* #endregion *//* #region Segmented Button Control */
+/* #endregion */
+/* #region Segmented Button Style */
+/* #endregion */
+/* #region Segmented Button Control IE */
+/* #endregion */
+/* #region Segmented Button Control Hack */
+/* #endregion *//* #region Select Control */
+/*#endregion*/
+/* #region Select Style */
+/*#endregion*/
+/* #region Select Control IE */
+/* #endregion *//* #region Subscription Control */
+/* #endregion */
+/* #region Subscription Style */
+/* #endregion *//* #region Tabs Control */
+/* #endregion */
+/* #region Tabs Style */
+/* #endregion */
+/* #region Tabs IE */
+/* #endregion */
+/* #region Tabs Hacks */
+/* #endregion *//* #region Create Tooltip  */
+/* #endregion */
+/* #region Create Tooltip Style  */
+/* #endregion */
+/* #region Tooltip Control */
+/* #endregion */
+/* #region Tooltip Control IE */
+/* #endregion *//* #region Validation Control */
+/* #endregion */
+/* #region Validation Style */
+/* #endregion */
+/* #region Validation Control IE */
+/* #endregion */
+/* #region Validation Control Hack */
+/* #endregion *//**
+ * Fonts
+ */
+/* Standard Fonts Fonts */
+/* 'Proxima Nova Light' Web Font */
+/* 'Proxima Nova Regular' Web Font */
+/* 'Proxima Nova SemiBold' Web Font */
+/* 'Proxima Nova Bold' Web Font */
+/* New TV Package */
+/*
+@icon-tier-tv-entertainment: ;
+@icon-tier-tv-sports: ;
+@icon-tier-tv-movies: ;
+@icon-tier-tv-drama: ;
+@icon-tier-tv-entertainment-plus: ;
+@icon-tier-tv-docos: ;
+@icon-tier-tv-kids: ;
+@icon-tier-tv-hd: ;
+@icon-tier-tv-platinum: ;
+*/
+/* Old Tiers */
+/* Equipment */
+/* Search */
+/* Payment Methods */
+/* Indent */
+/* Indicators */
+/* CKH */
+/* Toggle Button */
+/* Options */
+/* Response Alert */
+/* Tooltip */
+/* Combobox */
+/* Checkbox */
+/* Radio button */
+/* Datagrid Details */
+/* Datagrid Sort */
+/* Steps */
+/* Directional Arrows */
+/* Loading */
+/* Numeric Spinner */
+/* Scrollbars */
+/* Select List */
+/* #region Steps */
+/* #region Tooltab */
+/* Tabs */
+/** 
+ * Mixins
+ *
+ * Should be used of very generic style functions (Not managing vendor prefixes)
+ * I think Photoshop style filters: Stroke, Embosss, InnerShadow, PillowEmboss, etc...
+ * 
+ */
+/* #region Stroke Emboss */
+/* #endregion */
+/* #region Stroke */
+/* #endregion */
+/* #region Emboss */
+/* #endregion */
+/* #region Inner-shadow */
+/* #endregion */
+/* #region Emboss Inner-shadow */
+/* #endregion */
+/* #region Pillow Emboss */
+/* #endregion */
+/* #region Pillow Inner-shadow */
+/* #endregion */
+/* #region Text Shadow *//* #endregion */
+/* #region Box-sizing */
+/* #endregion */
+/* #region User-select */
+/* #endregion */
+/* #region Color Gradient */
+/* #endregion */
+/* #region Striped Shading */
+/* #endregion */
+/* #region Striped Gloss Shading */
+/* #endregion */
+/* #region Ellipsis */
+/* #endregion */
+/* #region Grid */
+/* #endregion */
+/* #region Base64 */
+/* #endregion *//* #endregion */
+/* #region Core Colors */
+/* #endregion */
+/* #region Shades */
+/* #endregion */
+/* #region Text */
+/* #endregion */
+/* #region Invalid */
+/* #endregion */
+/* #region Loading */
+/* #endregion */
+/****************************************/
+/*               Controls               */
+/****************************************/
+/* #region Alert */
+/* #endregion */
+/* #region Button */
+/* #endregion */
+/* #region Central Know How */
+/* #endregion */
+/* #region Checkbox */
+/* #endregion */
+/* #region Radio button */
+/* #endregion */
+/* #region Close Button */
+/* #endregion */
+/* #region Code Example */
+/* #endregion */
+/* #region Data */
+/* #endregion */
+/* #region Delete Button */
+/* #endregion */
+/* #region Desired Button */
+/* #endregion */
+/* #region Dialog */
+/* #endregion */
+/* #region Fieldset */
+/* #endregion */
+/* #region Filter */
+/* #endregion */
+/* #region Grid */
+/* #endregion */
+/* #region Heading */
+/* #endregion */
+/* #region Horizontal Rule */
+/* #endregion */
+/* #region Input */
+/* #endregion */
+/* #region Label */
+/* #endregion */
+/* #region List */
+/* #endregion */
+/* #region Or */
+/* #endregion */
+/* #region Navigation */
+/* #endregion */
+/* #region Number */
+/* #endregion */
+/* #region Panel */
+/* #endregion */
+/* #region Response Message */
+/* #endregion */
+/* #region Secondary Button */
+/* #endregion */
+/* #region Select */
+/* #endregion */
+/* #region Tabs */
+/* #endregion */
+/* #region Window Shadow */
+/* #endregion */
+/* #region TV Classification */
+/* #endregion */input[type="image"] {
+  padding: 0;
+  background: none;
+  border: none;
+}
+span.placeholder {
+  position: absolute;
+  padding: 2px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #787878;
+  cursor: text;
+  z-index: 1;
+}
+span.placeholder-hide-except-screenreader {
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+span.placeholder-hide {
+  display: none;
+}
+label.visuallyhidden-with-placeholder {
+  height: auto !important;
+  position: absolute !important;
+  left: -999em;
+  overflow: visible !important;
+}
+/* FIXME: this doesn't belong in the style guide, 
+     it should sit in the application or become generic 
+     search component */
+.accountSearch input,
+.accountSearch select {
+  border-radius: 0;
+}
+button span {
+  color: #555555;
+}
+button.Processing .ProcessIndicator .ProcessText {
+  color: #bbbbbb;
+}
+button#copyButton:hover span,
+button#copyButton:focus span,
+button#copyButton:active span {
+  color: #ffffff;
+}
+button:hover span,
+button:focus span {
+  color: #ffffff;
+}
+button.DesiredAction span {
+  color: #ffffff;
+}
+button.Delete span {
+  color: #ffffff;
+}
+.headingOne {
+  margin: 0 0 10px;
+  padding: 0;
+  font: bold 26px/32px Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+.headingTwo,
+.headingThree,
+.headingFour,
+.headingFive,
+.headingSix {
+  margin: 0 0 10px;
+  padding: 0;
+  font: bold 18px/24px Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+.headingFour,
+.headingFive,
+.headingSix {
+  font-weight: normal;
+}
+.accountSearch label {
+  color: #383838;
+}
+.DataErrorBox {
+  font-size: 12px;
+  text-align: left;
+}
+fieldset.Border .SegmentedButtons legend,
+fieldset.Border .Filters .SegmentedButtons legend {
+  position: absolute;
+  left: -9999em;
+}
+/* FIXME: No idea what this is? I'm guessing its used to overide some rubbish CSS from CORE */
+ul.tabs {
+  padding: 5px 12px 0 10px;
+}
+ul.tabs li {
+  display: inline-block;
+  float: none;
+  padding: 6px 10px;
+  margin: 0 5px 0 0;
+  border: 2px solid transparent;
+  border-bottom: none;
+}
+.pageSubContent .TabContent {
+  padding: 15px;
+  overflow: hidden;
+}
+.pageSubContent .TabContainer {
+  padding: 15px;
+}
+.pageSubContent .TabContent,
+.pageSubContent .Tabs li.Active {
+  background-color: #f6f6f6;
+  /* FIXME: Shouldn't have hardcoded colors */
+
+}
+.lightboxContainer .TabContent,
+.lightboxContainer .Tabs li.Active {
+  background-color: #ebebeb;
+  /* FIXME: Shouldn't have hardcoded colors */
+
+}
+.error-container {
+  position: relative;
+}
+.error-container.focused span.error {
+  display: inline-block;
+}
+.error-container input,
+.error-container select,
+.error-container textarea {
+  float: none !important;
+  border-color: #db0000 !important;
+}
+.error-container input:focus + span.error,
+.error-container select:focus + span.error,
+.error-container textarea:focus + span.error {
+  display: inline-block;
+}
+.error-container #cc-icon,
+.error-container .cc-icon {
+  display: none;
+}
+span.error {
+  display: block;
+  position: absolute;
+  top: 0;
+  min-width: 150px;
+  max-width: 270px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3px;
+  z-index: 10001;
+  pointer-events: none;
+  background-clip: padding-box;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  /* Top */
+
+  /* Right */
+
+  /* Bottom */
+
+  /* Left */
+
+  border-color: #e33a3a;
+  display: none;
+  top: auto;
+  left: auto;
+  float: none;
+  margin: -5px 0 0 0;
+  max-width: 800px;
+  /* bleh */
+
+  white-space: nowrap;
+}
+span.error .Content {
+  display: block;
+  position: relative;
+  padding: 10px 12px;
+  font-weight: bold;
+  line-height: normal;
+  z-index: 3;
+}
+span.error .Icon {
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  bottom: 10px;
+  left: 10px;
+  width: 35px;
+  max-height: 35px;
+  z-index: 4;
+}
+span.error .Icon span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -11px;
+  width: 26px;
+  height: 26px;
+}
+span.error .Arrow,
+span.error .Arrow span {
+  position: absolute;
+  border-style: solid;
+  border-width: 11px;
+  height: 0;
+  width: 0;
+  z-index: 1;
+}
+span.error.top {
+  margin-top: -32px;
+}
+span.error.top .Arrow {
+  top: auto;
+  left: 50%;
+  margin-left: -10px;
+}
+span.error.top .Arrow span {
+  top: -14px;
+  left: 50%;
+  margin-left: -11px;
+}
+span.error.right {
+  margin-left: 12px;
+}
+span.error.right .Arrow {
+  top: 50%;
+  left: -22px;
+  margin-top: -10px;
+}
+span.error.right .Arrow span {
+  top: -11px;
+  left: -8px;
+}
+span.error.bottom {
+  margin-top: 12px;
+}
+span.error.bottom .Arrow {
+  top: -22px;
+  left: 50%;
+  margin-left: -10px;
+}
+span.error.bottom .Arrow span {
+  top: -8px;
+  left: 50%;
+  margin-left: -11px;
+}
+span.error.left {
+  margin-left: -12px;
+}
+span.error.left .Arrow {
+  top: 50%;
+  right: -22px;
+  margin-top: -10px;
+}
+span.error.left .Arrow span {
+  top: -11px;
+  left: -14px;
+}
+span.error .Content {
+  color: #000000;
+  background: #fff5f5;
+}
+span.error .Icon span {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAMAAACknt2MAAAA3lBMVEUAAADdRkXSQkHVQ0LZRUPaRUTcRkTcRkXdRkXdRkXOQT/VQ0LXREPaRUTbRUTcRkXdRkXdRkXFPTvdRkXKPz7OQT/SQkHXREPZRUPdRkXcRkXbRUTdRkXFPTvSQkHVQ0LZRUPdRkXdRkX////cRkXPQUDZRUTbRUTuo6LYREPTQkHTQ0LVQ0KsTEu0Tk7ZcG+6Ojm/PDzccXHFPTvfZ2bgcnHjaWjjqqnkoJ/owcHplpWjMzLura3v2dnyxMT10ND58vLQQkHFPjzXkI/KPz7MQD/MS0r68vL98/PaRUQUyI+ZAAAAInRSTlMAECAgICAwMEBQcHBwgICAgI+fn7+/v7+/z8/P3+/v7+/vD5s+CQAAALhJREFUeF51zOUSwjAQhdEt7u7ObqHF3d3h/V8IEhpahnD+ZDPfzAWLOKIXpLyIWFBkRaniS1SWosh5fouHBemkUkDU6T5lk5I5ItLZpGTuRrRExOx3yrK0IBqyN2ItYZWZEx344TaLS+V6tFG5nJnyGlejmfYWEiX4MHQH4nIC56jUDa26kAEu3TCMd+uGEGDF3xa2RBNxl+0AtlJTONH++vmkAJK1j35ndTF/PjhbHK2fBBRHf8SekDs0gmidnrMAAAAASUVORK5CYII=") no-repeat 0 0;
+}
+span.error .Arrow span {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+span.error.top .Arrow {
+  border-color: #e33a3a transparent transparent transparent;
+}
+span.error.top .Arrow span {
+  border-color: #fff5f5 transparent transparent transparent;
+}
+span.error.right .Arrow {
+  border-color: transparent #e33a3a transparent transparent;
+}
+span.error.right .Arrow span {
+  border-color: transparent #fff5f5 transparent transparent;
+}
+span.error.bottom .Arrow {
+  border-color: transparent transparent #e33a3a transparent;
+}
+span.error.bottom .Arrow span {
+  border-color: transparent transparent #ffffff transparent;
+}
+span.error.left .Arrow {
+  border-color: transparent transparent transparent #e33a3a;
+}
+span.error.left .Arrow span {
+  border-color: transparent transparent transparent #fff5f5;
+}
+span.error.left {
+  left: -100%;
+  min-width: 100%;
+  margin-left: -22px;
+}
+span.error.right {
+  margin-left: 12px;
+}
+span.error .Content {
+  font-weight: normal;
+  font-size: 12px;
+}

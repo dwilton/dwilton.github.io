@@ -1,0 +1,104 @@
+<div class="Panel">
+
+  <h2>Breadcrumbs</h2>
+  <ul class="Breadcrumbs" data-codeblock="true">
+    <li><a href="#">Level 1</a></li>
+    <li><a href="#">Level 2</a></li>
+    <li><a href="#">Level 3</a></li>
+    <li><a href="#">Level 4</a></li>
+  </ul>
+
+  <hr />
+
+  <h2>Or</h2>
+  <div class="Or" data-codeblock="true"></div>
+
+  <div class="Or Vertical" data-codeblock="true"></div>
+
+  <hr />
+
+  <h2>Alert</h2>
+  <span class="Alert" data-codeblock="true">Alert</span>
+
+  <hr />
+
+  <h2>Central Know How</h2>
+  <a href="#" class="CKH" data-codeblock="true">Central Know How</a>
+
+  <hr />
+
+  <h2>Horizontal Rule</h2>
+  <hr data-codeblock="true" />
+
+  <hr />
+
+  <h2>Loading</h2>
+  <div class="Loading" data-codeblock="true"><span></span>Loading</div>
+
+  <hr />
+
+  <h2>Data Error</h2>
+  <div class="DataError" data-codeblock="true">Error</div>
+
+  <hr />
+
+  <h2>Data Error Box</h2>
+  <div class="DataErrorBox" data-codeblock="true">
+    <strong>This customer has open orders</strong>
+  </div>
+
+  <hr />
+
+  <h2>Data Error Box variation</h2>
+  <div class="DataErrorBox IconBackground" data-codeblock="true">
+    <ul>
+      <li>An error</li>
+      <li>Another error</li>
+      <li>One more error</li>
+    </ul>
+  </div>
+
+  <hr />
+
+  <h2>Info Note</h2>
+  <div class="InfoNote" data-codeblock="true">Information</div>
+
+  <hr />
+
+  <h2>Info Note Box</h2>
+  <div class="InfoNoteBox" data-codeblock="true" >
+    <strong>Information</strong>
+  </div>
+
+  <hr />
+
+  <h2>Info Note Box variation</h2>
+    <div class="InfoNoteBox IconBackground" data-codeblock="true">
+    <ul>
+      <li>Information</li>
+      <li>More information</li>
+      <li>Even more information</li>
+    </ul>
+  </div>
+
+  <hr />
+
+  <h2>Number Badge</h2>
+  <span class="Number" data-codeblock="true">12</span>
+
+  <hr />
+
+  <h2>TV Classifications</h2>
+  <div data-codeblock="true">
+    <span class="Rating C">C</span>
+    <span class="Rating P">P</span>
+    <span class="Rating G">G</span>
+    <span class="Rating PG">PG</span>
+    <span class="Rating M">M</span>
+    <span class="Rating MA">MA</span>
+    <span class="Rating AV">AV</span>
+    <span class="Rating R">R</span>
+    <span class="Rating NC">NC</span>
+  </div>
+
+</div>

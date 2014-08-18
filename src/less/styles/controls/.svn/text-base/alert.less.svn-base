@@ -1,0 +1,11 @@
+/* #region Alert Style */
+
+.AlertStyle() {
+
+  .Alert, .alert {
+    color: @alert-text-color;
+  }
+
+}
+
+/* #endregion */

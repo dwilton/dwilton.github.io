@@ -1,0 +1,46 @@
+/* #region Select Control */
+
+.SelectControl() {
+
+  select {
+    -webkit-appearance: none;
+    padding: 4px 5px;
+    border-radius: 0;
+
+    option {
+      padding: 10px;
+    }
+
+  }
+
+}
+
+/*#endregion*/
+
+/* #region Select Style */
+
+.SelectStyle() {
+
+  select {
+    &.HasPlaceholder.placeholderActive {
+      color: @text-color-condition;
+    }
+  }
+
+}
+
+/*#endregion*/
+
+/* #region Select Control IE */
+
+.SelectControlIE() {
+
+  select {
+    &.HasPlaceholder.placeholderActive option:first-child {
+      color: @text-color-condition;
+    }
+  }
+
+}
+
+/* #endregion */

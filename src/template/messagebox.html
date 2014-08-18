@@ -1,0 +1,103 @@
+<blockquote>
+  
+  <h2>Defines styles for info, success, warning and error pop-up messages.</h2>
+
+  <h3>Usage</h3>
+
+  <ul class="Bulleted">
+    <li>To use message box excute the <code>$.messageBox()</code> jQuery plugin.</li>
+    <li>The plugin accepts the following paramaters:
+      <ul class="Bulleted">
+        <li><code>type</code> determines the style of the message box <code>info</code>, <code>success</code>, <code>warning</code> or <code>error</code></li>
+        <li><code>title</code> title bar value</li>
+        <li><code>content</code> content value</li>
+        <li><code>isCloseButton</code> display close button <code>true</code> or <code>false</code></li>
+        <li><code>buttons</code> array, each value contains a name and optional callback <code>{ name: 'button name', callback: function () { // operation here }}</code>
+      </ul>
+    </li>
+  </ul>
+
+</blockquote>
+
+<div class="Panel">
+
+  <button id="OpenInfoMessageBoxExample" type="button" data-codeblock="true" data-codeblock-js="OpenInfoMessageBoxExampleJS">Open Info Message Box</button>
+
+  <script id="OpenInfoMessageBoxExampleJS" type="text/x-javascript-template">
+    $('#OpenInfoMessageBoxExample').click(function () {
+      $.messageBox({
+        type: 'info',
+        title: 'info',
+        isCloseButton: true,
+        content: 'Example information description.'
+      });
+    });
+  </script>
+
+  <hr />
+
+  <button id="OpenSuccessMessageBoxExample" type="button" data-codeblock="true" data-codeblock-js="OpenSuccessMessageBoxExampleJS">Open Success Message Box</button>
+
+  <script id="OpenSuccessMessageBoxExampleJS" type="text/x-javascript-template">
+    $('#OpenSuccessMessageBoxExample').click(function () {
+      $.messageBox({
+        type: 'success',
+        title: 'Success',
+        isCloseButton: true,
+        content: 'Example success description.'
+      });
+    });
+  </script>
+
+  <hr />
+
+  <button id="OpenWarningMessageBoxExample" type="button" data-codeblock="true" data-codeblock-js="OpenSuccessMessageBoxExampleJS">Open Warning Message Box</button>
+
+  <script id="OpenWarningMessageBoxExampleJS" type="text/x-javascript-template">
+    $('#OpenWarningMessageBoxExample').click(function () {
+      $.messageBox({
+        type: 'warning',
+        title: 'Warning',
+        isCloseButton: true,
+        content: 'Example warning description.'
+      });
+    });
+  </script>
+
+  <hr />
+
+  <button id="OpenErrorMessageBoxExample" type="button" data-codeblock="true" data-codeblock-js="OpenErrorMessageBoxExampleJS">Open Error Message Box</button>
+
+  <script id="OpenErrorMessageBoxExampleJS" type="text/x-javascript-template">
+    $('#OpenErrorMessageBoxExample').click(function () {
+      $.messageBox({
+        type: 'error',
+        title: 'Error',
+        isCloseButton: true,
+        content: 'Example error description.'
+      });
+    });
+  </script>
+
+  <hr />
+
+  <button id="OpenInfoMessageBoxCustomCloseExample" type="button" data-codeblock="true" data-codeblock-js="OpenInfoMessageBoxCustomCloseExampleJS">Open Message Box With Custom Close Button</button>
+
+  <script id="OpenInfoMessageBoxCustomCloseExampleJS" type="text/x-javascript-template">
+    $('#OpenInfoMessageBoxCustomCloseExample').click(function () {
+      $.messageBox({
+        type: 'info',
+        title: 'Info',
+        content: 'Example content.',
+        buttons: [{
+          name: 'Action',
+          callback: function () {
+            // do whatever you want in here when closing the window
+            console.log('closed');
+          }
+        }]
+      });
+    });
+  </script>
+
+</div>

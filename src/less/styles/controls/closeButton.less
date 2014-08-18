@@ -1,0 +1,72 @@
+/* #region Close Button Control */
+
+.CloseButtonControl() {
+
+  a.CloseButton {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 18px;
+    height: 18px;
+    font: bold 16px/18px Arial;
+    text-indent: -9999em;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    text-decoration: none;
+    vertical-align: middle;
+
+    &:link,
+    &:visited,
+    &:focus,
+    &:hover,
+    &:active {
+      border: none;
+      text-decoration: none;
+    }
+
+    &:after {
+      content: 'x';
+      position: absolute;
+      top: -1px;
+      left: 4px;
+      font-weight: bold;
+      text-indent: -999;
+      overflow: hidden;
+    }
+
+  }
+
+}
+
+/* #endregion */
+
+/* #region Close Button Style */
+
+.CloseButtonStyle() {
+
+  a.CloseButton {
+    background-color: @closebutton-background-color;
+    background-image: @icon-indicator-cross-light;
+    background-position: 1px 1px;
+    .Emboss(@closebutton-background-color, 30, 'bottom');
+
+    &:hover,
+    &:active {
+      color: @closebutton-text-color;
+      background-color: @closebutton-background-color-hover;
+      border: 0;
+    }
+
+    &:after {
+      color: @closebutton-text-color;
+      .TextShadow(@closebutton-background-color);
+    }
+
+  }
+
+}
+
+/* #endregion */

@@ -1,0 +1,54 @@
+/* #region Delete Button Style */
+
+.DeleteButtonStyle() {
+
+  button {
+
+    &.Delete,
+    &.alert {
+      color: @deletebutton-text-color;
+      background: @deletebutton-background-color;
+      border-color: darken(@deletebutton-background-color, 20%);
+      .TextShadow(@deletebutton-background-color);
+
+      &:enabled:focus,
+      &:enabled:active,
+      &:enabled:hover {
+        color: @deletebutton-text-color-hover;
+        background: @deletebutton-background-color-hover;
+      }
+    }
+  }
+  
+}
+
+/* #endregion */
+
+/* #region Delete Button IE */
+
+.DeleteButtonControlIE() {
+
+  button.Delete.Hover {
+    color: @deletebutton-text-color-hover;
+    background-color: @deletebutton-background-color-hover;
+    border-color: darken(@deletebutton-background-color-hover, 20%);
+  }
+
+}
+
+/* #endregion */
+
+/* #region Delete Button Control Hacks */
+
+.DeleteButtonControlHack() {
+
+  button.Delete {
+
+    span {
+      color: @deletebutton-text-color;
+    }
+  }
+
+}
+
+/* #endregion */

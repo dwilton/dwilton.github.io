@@ -1,0 +1,71 @@
+/* #region Rating Control  */
+
+.RatingControl() {
+
+  .Rating {
+    display: inline-block;
+    margin: 2px 5px;
+    padding: 3px 5px;
+    font-family: @font-family;
+    font-size: 11px;
+    letter-spacing: normal;
+    line-height: 11px;
+    font-weight: bold;
+    text-shadow: none;
+    border-radius: 5px;
+  }
+
+}
+
+/* #endregion */
+
+/* #region Rating Style */
+
+.RatingStyle() {
+
+  .Rating {
+    color: @rating-color;
+    border: 2px solid @rating-border-color;
+
+    &.P {
+      .ColorGradient(top, @rating-p-background-color, 5%);
+    }
+
+    &.C {
+      .ColorGradient(top, @rating-c-background-color, 5%);
+    }
+
+    &.G {
+      .ColorGradient(top, @rating-g-background-color, 5%);
+    }
+
+    &.PG {
+      color: @dark;
+      .ColorGradient(top, @rating-pg-background-color, 5%);
+    }
+
+    &.M {
+      .ColorGradient(top, @rating-m-background-color, 5%);
+    }
+
+    &.MA {
+      .ColorGradient(top, @rating-ma-background-color, 5%);
+    }
+
+    &.AV {
+      .ColorGradient(top, @rating-av-background-color, 5%);
+    }
+
+    &.R {
+      .ColorGradient(top, @rating-r-background-color, 5%);
+    }
+
+    &.NC {
+      color: @dark;
+      .ColorGradient(top, @rating-nc-background-color, 5%);
+    }
+  }
+
+}
+
+/* #endregion */

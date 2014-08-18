@@ -1,0 +1,80 @@
+/* #region Form Control */
+
+.FormControl() {
+
+  /* Display label above */
+  .FormStack {
+    background-color: inherit;
+
+    > div {
+      margin-bottom: 10px;
+
+      label {
+        display: block;
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  /* Display labels to the right, used for checkboxes 
+   * and radio buttons e.g. Agree to conditions etc... */
+  .FormSelection {
+    background-color: inherit;
+
+    > div {
+
+      label {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      input[type="radio"], 
+      input[type="checkbox"] {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  /* Display labels to the left */
+  .FormInline {
+    background-color: inherit;
+
+    > div {
+      margin-bottom: 10px;
+
+      label {
+        display: inline-block;
+        margin-bottom: 3px;
+        width: 120px;
+      }
+    }
+  }
+
+  /* FIXEME: Don't know what this is and who is using it */
+  .Row {
+    position: relative;
+
+    &.FullWidth > div {
+      display: block;
+    }
+
+    > div {
+      display: table-cell;
+      position: relative;
+      padding: 0 7px 7px;
+
+      &:first-child {
+        padding: 0 7px 7px 0;
+      }
+
+      > label {
+        display: block;
+        padding: 3px 0 0 3px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+}
+
+/* #endregion */

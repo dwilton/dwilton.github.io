@@ -1,0 +1,31 @@
+<h2>Default Tabs</h2>  
+
+<div class="TabContainer" data-codeblock="true">
+  <div class="TabGroup">
+    <ul class="Tabs">
+      <li class="Active"><a href="#TabOne">Tab 1</a></li>
+      <li><a href="#TabTwo">Tab 2</a></li>
+      <li><a href="#TabThree">Tab 3</a></li>
+    </ul>
+    <div id="TabOne" class="TabContent"><p>Tab 1 Content</p></div>
+    <div id="TabTwo" class="TabContent"><p>Tab 2 Content</p></div>
+    <div id="TabThree" class="TabContent"><p>Tab 3 Content</p></div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Vertical Tabs</h2>
+
+<div class="TabContainer" data-codeblock="true">
+  <div class="TabGroup TabsVertical">
+    <ul class="Tabs">
+      <li class="Active"><a href="#TabOneVert">Tab 1</a></li>
+      <li><a href="#TabTwoVert">Tab 2</a></li>
+      <li><a href="#TabThreeVert">Tab 3</a></li>
+    </ul>
+    <div id="TabOneVert" class="TabContent"><p>Tab 1 Content</p></div>
+    <div id="TabTwoVert" class="TabContent"><p>Tab 2 Content</p></div>
+    <div id="TabThreeVert" class="TabContent"><p>Tab 3 Content</p></div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+/* #region Checkbox Control */
+
+.CheckboxControl() {
+
+  input[type="checkbox"] {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -webkit-background-clip: padding-box;
+  }
+
+}
+
+/* #endregion */
+
+/* #region Checkbox Style */
+
+.CheckboxStyle() {
+
+  input[type="checkbox"] {
+    background: @checkbox-image;
+
+    &:focus,
+    &:active {
+      outline: 0;
+      background: @checkbox-image;
+    }
+
+    &:disabled {
+      background: @checkbox-image-disabled;
+      box-shadow: none;
+
+      &:focus,
+      &:active {
+       background: @checkbox-image-disabled;
+      }
+    }
+
+    &:checked {
+      background: @checkbox-checked-image;
+    }
+
+    &:checked:disabled {
+      background: @checkbox-checked-image-disabled;
+    }
+  }
+
+}
+
+/* #endregion */
+
+/* #region Checkbox Control IE */
+
+.CheckboxControlIE() {
+
+  .checker,
+  .checker * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .checker,
+  .checker input,
+  .checker span {
+    width: 20px;
+    height: 20px;
+  }
+
+  .checker {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px 0 0;
+
+    span {
+      display: inline-block;
+      text-align: center;
+      background: @checkbox-image;
+
+      &.checked {
+        background: @checkbox-checked-image;
+      }
+    }
+
+    &.disabled {
+
+      span {
+        background: @checkbox-image-disabled;
+
+        &.checked {
+          background: @checkbox-checked-image-disabled;
+        }
+
+      }
+
+    }
+
+    input {
+      display: inline-block;
+      background: none;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+
+  }
+
+}
+
+/* #endregion */

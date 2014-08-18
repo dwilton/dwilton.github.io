@@ -1,0 +1,244 @@
+/** 
+ * Mixins
+ *
+ * Should be used of very generic style functions (Not managing vendor prefixes)
+ * I think Photoshop style filters: Stroke, Embosss, InnerShadow, PillowEmboss, etc...
+ * 
+ */
+
+/* #region Stroke Emboss */
+
+.StrokeEmboss(@background-color, @intensity: 100, @direction: 'top') when (@direction = 'top') {
+  @level: 100 - @intensity;
+  border-top-color: lighten(@background-color, 10 - @level);
+  border-bottom-color: darken(@background-color, 10 - @level);
+}
+
+.StrokeEmboss(@background-color, @intensity: 100, @direction: 'top') when (@direction = 'bottom') {
+  @level: 100 - @intensity;
+  border-top-color: darken(@background-color, 10 - @level);
+  border-bottom-color: lighten(@background-color, 10 - @level);
+}
+
+.StrokeEmboss(@background-color, @intensity: 100, @direction: 'top') when (@direction = 'left') {
+  @level: 100 - @intensity;
+  border-left-color: darken(@background-color, 10 - @level);
+  border-right-color: lighten(@background-color, 10 - @level);
+}
+
+.StrokeEmboss(@background-color, @intensity: 100, @direction: 'top') when (@direction = 'right') {
+  @level: 100 - @intensity;
+  border-left-color: lighten(@background-color, 10 - @level);
+  border-right-color: darken(@background-color, 10 - @level);
+}
+
+/* #endregion */
+
+/* #region Stroke */
+
+.Stroke(@edges: 'all', @size: 1px) when (@edges = 'all') {
+  border-width: @size;
+  border-style: solid;
+}
+
+.Stroke(@edges: 'all', @size: 1px) when (@edges = 'horizontal') {
+  border-width: 0;
+  border-top-width: @size;
+  border-bottom-width: @size;
+  border-style: solid;
+}
+
+.Stroke(@edges: 'all', @size: 1px) when (@edges = 'vertical') {
+  border-width: 0;
+  border-left-width: @size;
+  border-right-width: @size;
+  border-style: solid;
+}
+
+/* #endregion */
+
+/* #region Emboss */
+
+.Emboss(@background-color, @intensity: 100, @direction: 'top') when (@direction = 'top'){
+  @level: 100 - @intensity;
+  @light-shade: fade(@light, round(lightness(@background-color) - @level, 1));
+  @dark-shade: fadeout(@dark, round(lightness(@background-color) + @level, 1));
+  box-shadow: inset 0 -1px 0 @dark-shade, inset 0 1px 0 @light-shade;
+}
+
+.Emboss(@background-color, @intensity: 100, @direction: 'top') when (@direction = 'bottom'){
+  @level: 100 - @intensity;
+  @light-shade: fade(@light, round(lightness(@background-color) - @level, 1));
+  @dark-shade: fadeout(@dark, round(lightness(@background-color) + @level, 1));
+  box-shadow: inset 0 -1px 0 @light-shade, inset 0 1px 0 @dark-shade;
+}
+
+/* #endregion */
+
+/* #region Inner-shadow */
+
+.InnerShadow(@background-color, @intensity: 100) {
+  @level: 100 - @intensity;
+  @light-shade: fade(@light, round(lightness(@background-color) + @level, 1));
+  @dark-shade: fadeout(@dark,  round(lightness(@background-color) - @level, 1));
+  box-shadow: inset 0 0 8px 1px @dark-shade, inset 1px 1px 1px @light-shade;
+}
+
+/* #endregion */
+
+/* #region Emboss Inner-shadow */
+
+.EmbossInnerShadow(@background-color, @base-shade, @intensity: 100) {
+  @level: 100 - @intensity;
+  @light-shade: fade(@light, round(lightness(@background-color) + @level, 1));
+  @dark-shade: fadeout(@dark,  round(lightness(@background-color) + @level, 1));
+  @base-dark-shade: fadeout(@dark,  round(lightness(@base-shade) - @level, 1));
+  box-shadow: inset 0 -1px 0 @dark-shade, inset 0 1px 0 @light-shade, 0 0 10px 1px @base-dark-shade;
+}
+
+/* #endregion */
+
+/* #region Pillow Emboss */
+
+.PillowEmboss(@background-color, @base-shade, @intensity: 100, @direction: 'top') {
+  @level: 100 - @intensity;
+  @light-shade: fade(@light, round(lightness(@background-color) + @level, 1));
+  @dark-shade: fadeout(@dark,  round(lightness(@background-color) - @level, 1));
+  @base-light-shade: fade(@light,  round(lightness(@base-shade) + @level, 1));
+  @base-dark-shade: fadeout(@dark,  round(lightness(@base-shade) - @level, 1));
+  box-shadow: inset 0 -1px 0 @dark-shade, inset 0 1px 0 @light-shade, 0 0 0 3px @base-dark-shade, 0 1px 0 3px @base-light-shade;
+}
+
+/* #endregion */
+
+/* #region Pillow Inner-shadow */
+
+.PillowInnerShadow(@background-color, @base-shade, @intensity: 100, @direction: 'top') {
+  @level: 100 - @intensity;
+  @light-shade: fade(@light, round(lightness(@background-color) + @level, 1));
+  @dark-shade: fadeout(@dark,  round(lightness(@background-color) - @level, 1));
+  @base-light-shade: fade(@light,  round(lightness(@base-shade) + @level, 1));
+  @base-dark-shade: fadeout(@dark,  round(lightness(@base-shade) - @level, 1));
+  box-shadow: inset 0 0 8px 1px @dark-shade, inset 1px 1px 1px @light-shade, 0 0 0 3px @base-dark-shade, 0 1px 0 3px @base-light-shade;
+}
+
+/* #endregion */
+
+/* #region Text Shadow */     
+
+.TextShadow(@background-color, @intensity: 100) when (lightness(@background-color) >= 50%) {
+  @level: 0.2 * @intensity;
+  text-shadow: 0 1px lighten(@background-color, @level);
+}
+
+.TextShadow(@background-color, @intensity: 100) when (lightness(@background-color) < 50%) {
+  @level: 0.2 * @intensity;
+  text-shadow: 0 -1px darken(@background-color, @level);
+}
+
+/* #endregion */
+
+/* #region Box-sizing */
+
+.BoxSizing(@sizing: border-box) {
+  -ms-box-sizing: @sizing;
+  -moz-box-sizing: @sizing;
+  -webkit-box-sizing: @sizing;
+  box-sizing: @sizing;
+}
+
+/* #endregion */
+
+/* #region User-select */
+
+.UserSelect(@select: none) {
+  -webkit-user-select: @select;
+  -moz-user-select: @select;
+  -ms-user-select: @select;
+  user-select: @select;
+}
+
+/* #endregion */
+
+/* #region Color Gradient */
+
+.ColorGradient(@direction: top, @color: #555555, @spread: 10%) {
+  background-color: @color;
+  background-image: -webkit-linear-gradient( @direction, lighten(@color, @spread) 0, darken(@color, @spread) 100% );
+  background-image: linear-gradient( @direction, lighten(@color, @spread) 0, darken(@color, @spread) 100% );
+}
+
+/* #endregion */
+
+.ColorBorderGradient(@background-color: #fff) {
+  background: linear-gradient(to right,  @background-color 0%, overlay(@background-color, #fff501) 100%);
+  background-color: @background-color;
+}
+
+
+/* #region Striped Shading */
+
+.Striped(@color: #555555, @spread: 3%) {
+  background-color: @color;
+  background-image: -webkit-linear-gradient( 135deg, lighten(@color, @spread) 25%, @color 25%, @color 50%, lighten(@color, @spread) 50%, lighten(@color, @spread) 75%, @color 75%, @color 100% );
+  background-image: linear-gradient( 135deg, lighten(@color, @spread) 25%, @color 25%, @color 50%, lighten(@color, @spread) 50%, lighten(@color, @spread) 75%, @color 75%, @color 100% );
+}
+
+/* #endregion */
+
+/* #region Striped Gloss Shading */
+
+.StripedGloss(@color: #555555, @spread: 3%) {
+  background-color: @color;
+  background-image: -webkit-linear-gradient( top, rgba(255, 255, 255, 0.3) 0%, darken(rgba(255, 255, 255, 0.3), 10%) 49%, darken(rgba(255, 255, 255, 0.3), 30%) 51%, darken(rgba(255, 255, 255, 0.3), 20%) 100% ), -webkit-linear-gradient( 135deg, lighten(@color, @spread) 25%, @color 25%, @color 50%, lighten(@color, @spread) 50%, lighten(@color, @spread) 75%, @color 75%, @color 100% );
+  background-image: linear-gradient( top, rgba(255, 255, 255, 0.3) 0%, darken(rgba(255, 255, 255, 0.3), 10%) 49%, darken(rgba(255, 255, 255, 0.3), 30%) 51%, darken(rgba(255, 255, 255, 0.3), 20%) 100% ), linear-gradient( 135deg, lighten(@color, @spread) 25%, @color 25%, @color 50%, lighten(@color, @spread) 50%, lighten(@color, @spread) 75%, @color 75%, @color 100% );
+}
+
+/* #endregion */
+
+/* #region Ellipsis */
+
+.Ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* #endregion */
+
+/* #region Grid */
+
+.GridRow(@background-color) {
+  background: @background-color;
+  border-left-color: lighten(@background-color, 10%);
+  border-right-color: darken(@background-color, 10%);
+}
+
+.GridRowBorders(@background-color) {
+  border-left-color: lighten(@background-color, 10%);
+  border-right-color: darken(@background-color, 10%);
+}
+
+.GridRowGradient(@direction: top, @background-color: #555555, @spread: 10%) {
+  border-left-color: lighten(@background-color, 10%);
+  border-right-color: darken(@background-color, 10%);
+  background-color: @background-color;
+  background-image: -webkit-linear-gradient( @direction, lighten(@background-color, @spread) 0, darken(@background-color, @spread) 100% );
+  background-image: linear-gradient( @direction, lighten(@background-color, @spread) 0, darken(@background-color, @spread) 100% );
+}
+
+.GridHeaderGradient(@direction: right, @background-color, @spread: 7%, @distance: 60px) {
+  background-color: @background-color;
+  background-image: -webkit-linear-gradient( @direction, lighten(@background-color, @spread) 0, darken(@background-color, @spread / 2) @distance );
+}
+
+/* #endregion */
+
+/* #region Base64 */
+
+.Base64Gradient(@base64: '', @direction: top, @background-color: #555555, @spread: 10%) {
+  background: @base64, -webkit-linear-gradient( @direction, lighten(@background-color, @spread) 0, darken(@background-color, @spread) 100% ), @background-color;
+  background: @base64, linear-gradient( @direction, lighten(@background-color, @spread) 0, darken(@background-color, @spread) 100% ), @background-color;
+}
+
+/* #endregion */

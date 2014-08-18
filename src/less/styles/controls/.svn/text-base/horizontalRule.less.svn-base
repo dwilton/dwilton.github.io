@@ -1,0 +1,25 @@
+/* #region Horizontal Rule Control */
+
+.HorizontalRuleControl() {
+
+  hr {
+    margin: 20px 0;
+    height: 1px;
+    border: 0;
+  }
+ 
+}
+
+/* #endregion */
+
+/* #region Horizontal Rule Style */
+
+.HorizontalRuleStyle() {
+
+  hr {
+    background-color: @horizontalrule-color;
+  }
+
+}
+
+/* #endregion */

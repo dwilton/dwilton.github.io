@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Change Options</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="../../css/foxtel.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/foxtelHacks.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/select2.css" />
+  <link rel="stylesheet" type="text/css" href="css/tripleplay.css" />
+  <link rel="stylesheet" type="text/css" href="css/change-options.css">
+  <link rel="stylesheet" type="text/css" href="css/royalslider.css" /> <!-- Use only with pages that has slider -->
+  <link rel="stylesheet" type="text/css" href="css/opentip.css" />
+  <link rel="stylesheet" type="text/css" href="css/tabination.css" />
+  <script type="text/javascript" src="../../scripts/vendor/jquery/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../../scripts/foxtel.min.js"></script>
+  <script type="text/javascript" src="js/select2.js"></script>
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="../../css/foxtelIE.min.css" />
+    <script type="text/javascript" src="../../scripts/vendor/plugins/jquery-migrate-1.1.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/IEOverrides.css" />
+  <![endif]-->
+</head>
+<body>
+  
+  <!-- Global Side Navigation Begin -->
+  <div id='sideNav'>
+    <a href='#' id='sideNav_search'>Account Search</a>
+    
+    <!-- Example of disabled navigation item -->
+    <!-- <span id='sideNav_summary' class='disabled'>Account Summary</span> -->
+
+    <a href='#' id='sideNav_summary'>Account Summary</a>
+    <a href='#' id='sideNav_sales'>Sales</a>
+    <a href='#' id='sideNav_hierarchy'>Hierarchy</a>
+    <a href='#' id='sideNav_logout'>Logout <span>witlond</span></a>
+  </div>
+  <!-- Global Side Navigation End -->
+
+  <!-- Triple Play Wrapper -->
+  <div id='triplePlay'>
+    <!-- Customer Profile -->
+    <div id='accountProfile'>     
+      <div id='accountProfileTop'>
+        <div class='row padded'>          
+         <div class='five columns font'>
+            <ul class='block-grid two-up'>
+              <li>
+                <div class='AccountholderName'><span>Mr Kanye West</span></div>
+              </li>
+              <li>
+                <ul class='block-grid two-up'>
+                  <li>
+                    <h5 class='accountNo'><label>Account No</label> <span>04920522</span></h5>
+                  </li>
+                  <li>
+                    <h5 class='DOB'><label>DOB</label> <span>08 Jun 1977</span></h5>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+         </div>
+         <div class='six columns offset-by-one NarrowPadding'>
+           <ul id='accountInfo' class='block-grid seven-up'>
+              
+              
+              <!-- ID Passed Case
+              <li>
+                <h4>Passed</h4>
+                <label>ID</label> <span class='icon iconPassed'></span>
+              </li>
+              -->
+              <!-- IF Required Case
+              <li>
+                <h4 class='red'>If Required</h4>
+                <label>Name + 1 ID</label>
+              </li>
+              -->
+              <!-- Failed Case -->
+              
+              
+              <li>
+                <h4 class='red'>Failed</h4>
+                <label>Name + 2 ID</label>
+              </li>
+              <li>
+                <h4>Active</h4>
+                <label>Status</label>
+              </li>
+              
+                            
+              <!-- Example of Telstra Customer -->
+              <!--
+              <li>
+                <span class='icon iconTelstra'></span>
+                <label>Residential</label>
+              </li>
+              -->
+            
+            
+              <li>
+                <span class='icon iconFoxtel'></span>
+                <label>Residential</label>
+              </li>
+              <li>
+                <h4>Active</h4>
+                <label>My Account</label>
+              </li>
+              
+              
+              <!-- Example of inactive Go -->
+              <!-- 
+              <li class='inActive'>
+                <span class='icon iconGo'></span>
+                <label>Inactive</label>
+              </li>
+              -->
+            
+            
+              <li>
+                <span class='icon iconGo'></span>
+                <label>Activated</label>
+              </li>
+            
+              <li>
+                <h4>1Y 4M</h4>
+                <label>Tenure</label>
+              </li>
+              
+              
+              <!-- No Contract Case 
+              <li>
+                <h4 class='accountInfo_noContract'></h4>
+                <label>No Contract</label>
+              </li>
+              <!-- No Contract Case -->
+              
+              
+              <li>
+                <h4 class='accountInfo_contract'><span>3</span></h4>
+                <label>Contract</label>
+              </li>
+            </ul>
+         </div>
+        </div>
+      </div>      
+    <!-- Customer Profile Secondary -->
+      <div id='accountProfileSecondary'>
+        <div class='row'>
+          <div class='five columns padded'>
+            <ul class='block-grid two-up'>
+              <li>
+                <h5>
+                  <label>Service Address</label>
+                  <span class='semiBold'>8 / 3108 The Boulevard
+                    <br />
+                    Carrara QLD 4211
+                  </span>
+                </h5>
+                <h5>
+                  <label>Phone</label>
+                  <span class='semiBold fitText16'>
+                    <abbr>0409 655 818 / 0755 941 326</abbr>
+                  </span>
+                </h5>
+              </li>
+              <li class='authorizedUsers'>
+                <h5 class='fitText16'>
+                  <label>Authorised Users</label>
+                  <span class='semiBold'>Ms Kim Kardashian<span class='userDOB'>21 Oct 1980</span></span>
+                  <span class='semiBold'>Ms Khloe Kardashian<span class='userDOB'>21 Oct 1980</span></span>
+                </h5>
+                <h5 class='accountHolderEmail'>
+                  <label>Email</label>
+                  <span class='semiBold fitText16'>
+                    <abbr>kanye.west@foxtel.com.au</abbr>
+                  </span>
+                </h5>
+              </li>
+            </ul>
+            <div class='buttons'>
+              <ul class='block-grid two-up'>
+                <li><button id='updateDetails'>UPDATE DETAILS</button></li>
+                <li>
+                  
+                  <!-- data for the tooltip can be passed through either data-ot, or with the href target when data-ot-ajax is set to true, 
+                    this only works with anchor elements, with non anchor elements you can pass the URL in data-ot-ajax parameter -->
+                  <a href='#' class='openTip semiBold' data-ot='73 Alison Rd <Br /> Boonooroo Park QLD 4211' data-ot-group='UserDetails'>Billing Address</a>
+                  <a href='#' class='openTip semiBold' data-ot="<span>What is your mother's maiden name?</span> Clifford" data-ot-group='UserDetails'>Security Question</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class='three columns offset-by-one padded'>
+            <!-- Telstra Customer Start -->
+            <!-- 
+              <div class='TelstaCustomer'>
+              Billing information isn’t available for Telstra Customers
+            </div>
+            -->
+            <!-- Telstra Customer End -->              
+            <div id='billingInfo'>
+            <ul class='block-grid three-up'>
+              <li>
+                  <h5>
+                    <label>Bill Date</label>
+                    <span class='semiBold'>
+                      1st
+                    </span>
+                  </h5>
+                  <h5>
+                    <label class='noWrap'>Payment Method</label>
+                    
+  
+                    <!-- Example of Credit Card -->
+                    <!--
+                    <span class='semiBold fitText16 creditCard'>
+                      Credit Card
+                    </span>
+                    -->
+  
+  
+                    <span class='semiBold fitText16 easyPay'>
+                      Easy-pay
+                    </span>
+                  </h5>
+              </li>
+              <li>
+                  <h5 class='fitText16'>
+                    <label>Due Date</label>
+                    <span class='semiBold'>
+                      13 Sep 2014
+                    </span>
+                  </h5>
+              </li>
+              <li>
+                  <h5 class='rightAlign'>
+                    <label>Total</label>
+                    <span class='totals'>
+                      $180.00
+                    </span>
+                  </h5>
+                  <h5 class='rightAlign'>
+                    <label>Overdue</label>
+                    <span class='totals red'>
+                      $180.00
+                    </span>
+                  </h5>
+              </li>
+            </ul>
+            <ul class='block-grid three-up'>
+              <li><button id='Button1' class='noWrap'>VIEW BILLING</button></li>
+              <li class='rightAlign offset-by-four'><button id='Button2'>PAY BILL</button></li>
+            </ul>
+          </div>
+          </div>          
+          <!-- Softphone Begin -->
+          <div class='three columns padded'>
+            
+            <!-- Inbound Example -->
+            <div class='softPhone'>
+              <address>0409 655 818</address>
+              <h5>
+                <label>Customer Intent</label>
+                <span>Technical Support</span>
+              </h5>
+            </div>
+            <!-- Inbound Example End -->
+  
+  
+            <!-- Outbound Example -->
+            <!--
+            <div class='softPhone outBound'>
+              <address>0409 655 818 / 0755 941 144</address>
+              <h6>
+                Dialer List Name <span class='right'>20 Sep 2014</span>
+              </h6>
+              <p>
+                Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum 
+              </p>
+            </div>
+            -->
+            <!-- Outbound Example End -->
+  
+            <div class='rightAlign'>
+              <button>ADD NOTE / TASK</button>
+              <button>VIEW NOTES</button>
+            </div>
+  
+          </div>
+          <!-- Softphone End -->          
+        </div>
+      </div>
+    </div>
+  
+    <!-- Page Content Area -->
+    <div id='contentArea' class='row'>
+      <div id='ContentWrapper'>
+        <!-- Centre Column - Account Subscriptions Begin -->
+        <div class='nine half columns'>
+          <div id='ChangeOptions' class='TriplePlayContent'> 
+            <div class='twelve columns NarrowPadding'>
+              <div class='heading'>
+                <h4>Change Options</h4>
+                <!-- BREAD CRUMB -->
+                <div class='Breadcrumb'>
+                  <ul>
+                    <li>
+                      <span>Account Summary</span>
+                    </li>  
+                    <li>
+                      <span>Account Options</span>
+                    </li>  
+                    <li class='CurrentCrumb'>
+                      <span>Change Options</span>
+                    </li>  
+                  </ul>
+                </div>
+                <!-- END BREAD CRUMB --> 
+              </div>
+              <div class='ChangeOptions'>
+                <div class='TabContainer'>
+                  <!-- START links beside tabs -->
+                  <ul class='ToolsContainer'>
+                    <li><a href='#'>Bundles</a></li>
+                    
+                    <li><a href='#'>Service Qualification</a></li>
+                  </ul>
+                  <!-- END links beside tabs -->
+                  <div class='TabGroup'>
+                      <button class='Back TabButton'>&lt;</button>
+                      <!-- START Tabs Section -->
+                      <div id='ChangeOptionTabsContainer' class='TabPagination'>
+                        
+                        <ul id='ChangeOptionTabs' class='Tabs'>
+                          <li class='Active'><a href='#PacksTab'>Packs</a></li>
+                          <li><a href='#SpecialtyTab'>Specialty</a></li>
+                          <li><a href='#EquipmentTab'>Equipment</a></li>
+                          <li><a href='#PhoneTab'>Phone</a></li>
+                          <li><a href='#BroadbandTab'>Broadband</a></li>
+                          <li><a href='#ExtrasTab'>Extras</a></li>
+                          <li><a href='#OffersTab'>Offers</a></li>
+                          <li><a href='#OffersTab2'>Offers7</a></li>
+                          <li><a href='#OffersTab3'>Offers8</a></li>
+                          <li><a href='#OffersTab4'>Offers9</a></li>
+                          <li><a href='#OffersTab5'>Offers10</a></li>
+                          <li><a href='#OffersTab12'>Offers11</a></li>
+                          <li><a href='#OffersTab13'>Offers12</a></li>
+                          <li><a href='#OffersTab14'>Offers13</a></li>
+                          <li><a href='#OffersTab15'>Offers14</a></li>
+                          <li><a href='#OffersTab22'>Offers15</a></li>
+                          <li><a href='#OffersTab23'>Offers16</a></li>
+                          <li><a href='#OffersTab24'>Offers17</a></li>
+                          <li><a href='#OffersTab25'>Offers18</a></li>
+                          <li><a href='#OffersTab22'>Offers19</a></li>
+                          <li><a href='#OffersTab23'>Offers20</a></li>
+                          <li><a href='#OffersTab24'>Offers21</a></li>
+                          <li><a href='#OffersTab25'>Offers22</a></li>
+                          <li><a href='#OffersTab26'>Offers23</a></li>
+                          <li><a href='#OffersTab25'>Offers24</a></li>
+                          <li><a href='#OffersTab26'>Offers25</a></li>
+                          <li><a href='#PacksTab'>Offers26</a></li>
+                          <li><a href='#SpecialtyTab'>Offers27</a></li>
+                          <li><a href='#EquipmentTab'>Offers28</a></li>
+                          <li><a href='#PhoneTab'>Offers29</a></li>
+                          <li><a href='#BroadbandTab'>Offers30</a></li>
+                          <li><a href='#ExtrasTab'>Offers31</a></li>
+                          <li><a href='#OffersTab'>Offers32</a></li>
+                          <li><a href='#OffersTab2'>Offers33</a></li>
+                          <li><a href='#OffersTab3'>Offers34</a></li>
+                          <li><a href='#OffersTab4'>Offers35</a></li>
+                          <li><a href='#OffersTab5'>Offers36</a></li>
+                          <li><a href='#OffersTab12'>Offers37</a></li>
+                          <li><a href='#OffersTab13'>Offers38</a></li>
+                          <li><a href='#OffersTab14'>Offers39</a></li>
+                          <li><a href='#OffersTab15'>Offers40</a></li>
+                          <li><a href='#OffersTab22'>Offers41</a></li>
+                          <li><a href='#OffersTab23'>Offers42</a></li>
+                          <li><a href='#OffersTab24'>Offers43</a></li>
+                          <li><a href='#OffersTab25'>Offers44</a></li>
+                          <li><a href='#OffersTab22'>Offers45</a></li>
+                          <li><a href='#OffersTab23'>Offers46</a></li>
+                          <li><a href='#OffersTab24'>Offers47</a></li>
+                          <li><a href='#OffersTab25'>Offers48</a></li>
+                          <li><a href='#OffersTab26'>Offers48</a></li>
+                          <li><a href='#OffersTab25'>Offers49</a></li>
+                          <li><a href='#OffersTab26'>Offers50</a></li>
+                        </ul>
+                        
+                      </div>
+                      <button class='Forward TabButton'>&gt;</button>
+                    
+                    <!-- END Tabs Section -->
+                    
+                    <!-- START Tab's Content Section -->
+                    
+                    <!-- START Packs Content Section -->
+                    <div id='PacksTab' class='TabContent Active '>
+                      <!-- START Pack Filter Section -->
+                      <div class='TabInfoBar HorizontalLabel'>
+                        
+                        <!-- START Service Selection -->
+                        <div class='six columns'>
+                          <label for='ServiceSelection'>TV</label>
+                          <select id='ServiceSelection' class='ServiceSelect Stealth SelectDropDown smallInput'>
+                            <!-- EMPTY option needed for place holder text -->
+                            <option></option>
+                            <option>Keep Service</option>
+                            <option>Remove Service</option>
+                          </select>
+                        </div>
+                        <!-- END Service Selection -->
+                        
+                        <!-- START Contract Selection -->
+                        <div class='six columns rightAlign'>
+                          <label for='ContractSelection'>TV Contract</label>
+                          <select id='ContractSelection' class='ContractSelection Stealth SelectDropDown'>
+                            <!-- EMPTY option needed for place holder text -->
+                            <option selected='selected'>Ends 10 Jun 2014 (Current)</option>
+                            <optgroup label='New Contracts'>
+                              <option>6 Months</option>
+                              <option>12 Months</option>
+                              <option>24 Months</option>
+                            </optgroup>
+                            <option>Remove Contract</option>
+                          </select>
+                        </div>
+                        <!-- END Contract Selection -->
+                        <div id="clear" style="clear:both;"></div>
+                      </div>
+                      <!-- END Pack Filter Section -->
+                      
+                      <!-- START Pack Selection Section -->
+                      <div class='MultiSelector' id='tiersContainer'>
+                        <!-- START Option Selection -->
+                        <div>                          
+                          <select id='OptionSelection' class='OptionSelect FullWidth SelectDropDown'>
+                            <option selected='selected'>Platinum</option>
+                            <option>Platinum HD</option>
+                            <option>Seniors Card Package</option>
+                            <option>Reduced Service Package</option>
+                            <option>Foxtel Play</option>
+                          </select>
+                        </div>
+                        <!-- END Option Selection -->
+                        <div class='SelectorsContainer'>
+                          <!-- START Pack Choices -->
+                          <div class='SelectorPanel Choices'>
+                            <ul>
+                              <li class=''>
+                                <span class='tier tierOrange'></span>
+                                  Premium Movies &amp; Drama
+                              </li>
+                              <li class=''>
+                                <span class='tier tierGreen'></span>
+                                  Sports
+                                <span id='' class='Selector addTiers'>Add</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier tierCyan'></span>
+                                  GE 1 Documentary &amp; Adventure
+                                <span id='' class='Selector addTiers'>Add</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier tierPink'></span>
+                                  GE 1 Kids &amp; Music
+                                <span id='' class='Selector addTiers'>Add</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier tierBlack'></span>
+                                GE 1 Drama &amp; Lifestyle
+                                <span id='' class='Selector addTiers'>Add</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier tierOther'></span>
+                                GE 1 Drama &amp; Lifestyle
+                                <span id='' class='Selector addTiers'>Add</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier Iq'></span>
+                                GE 1 Drama &amp; Lifestyle
+                                <span id='' class='Selector'>Remove</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier IqHD'></span>
+                                GE 1 Drama &amp; Lifestyle
+                                <span id='' class='Selector'>Remove</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier Iq3'></span>
+                                GE 1 Drama &amp; Lifestyle
+                                <span id='' class='Selector'>Remove</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier MyStar'></span>
+                                GE 1 Drama &amp; Lifestyle
+                                <span id='' class='Selector'>Remove</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier MyStarHD'></span>
+                                GE 1 Drama &amp; Lifestyle
+                                <span id='' class='Selector'>Remove</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier StandardNDS'></span>
+                                GE 1 Drama &amp; Lifestyle
+                                <span id='' class='Selector'>Remove</span>
+                              </li>
+                              <li class=''>
+                                <span class='tier StandardIRDETO'></span>
+                                GE 1 Drama &amp; Lifestyle
+                                <span id='' class='Selector'>Remove</span>
+                              </li>
+                              <li class="Placeholder">
+                                <div>Sports</div>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- END Pack Choices -->
+                          <!-- START Packs Selected -->
+                          <div class='SelectorPanel Selected'>
+                            <ul>
+                              <!--
+                                Follows the same convention as the first tier apart from following
+                                - No 'Added' classes on li elements
+                                - 'Add' text is changed to 'Remove' for the selector
+                                - When not added, the li has the class 'Placeholder' containing a div
+                              --> 
+                                <li class=''>
+                                    <span class='tier orangeDoesntHave'></span>
+                                    Premium Movies &amp; Drama
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier GreenDoesntHave'></span>
+                                    Sports    
+                                    <span id='' class='Selector'>Remove</span>                              
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier CyanDoesntHave'></span>
+                                    GE 1 Documentary &amp; Adventure
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier PinkDoesntHave'></span>
+                                    GE 1 Kids &amp; Music
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier BlackDoesntHave'></span>
+                                    GE 1 Drama &amp; Lifestyle
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier OtherDoesntHave'></span>
+                                    GE 1 Drama &amp; Lifestyle
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier Iq'></span>
+                                    GE 1 Drama &amp; Lifestyle
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier IqHD'></span>
+                                    GE 1 Drama &amp; Lifestyle
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier Iq3'></span>
+                                    GE 1 Drama &amp; Lifestyle
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier MyStar'></span>
+                                    GE 1 Drama &amp; Lifestyle
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier MyStarHD'></span>
+                                    GE 1 Drama &amp; Lifestyle
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier StandardNDS'></span>
+                                    GE 1 Drama &amp; Lifestyle
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  <li class=''>
+                                    <span class='tier StandardIRDETO'></span>
+                                    GE 1 Drama &amp; Lifestyle
+                                    <span id='' class='Selector'>Remove</span>
+                                  </li>
+                                  <li class="Placeholder">
+                                    <div>Sports</div>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <!-- END Packs Selected -->
+                        </div>
+                      </div>
+                      <!-- END Pack Selection Section -->
+                    </div>
+                    <!-- END Packs Content Section -->
+                    
+                    <!-- START Specialty Channels Content Section -->
+                    <div id='SpecialtyTab' class='TabContent'>
+                      <p>Specialty Channels Content</p>
+                    </div>
+                    <!-- END Specialty Channels Content Section -->
+                    
+                    <!-- START Equipment Content Section -->
+                    <div id='EquipmentTab' class='TabContent'>
+                      <p>Equipment Content</p>
+                    </div>
+                    <!-- END Equipment Content Section -->
+                    
+                    <!-- START Phone Content Section -->
+                    <div id='PhoneTab' class='TabContent'>
+                      <!-- START Phone Filter Section -->
+                      <div class='TabInfoBar HorizontalLabel'>
+                        
+                        <!-- START Phone Service Selection -->
+                        <div class='six columns'>
+                          <label for='PhoneServiceSelection'>Phone</label>
+                          <select id='PhoneServiceSelection' class='ServiceSelect Stealth SelectDropDown'>
+                            <!-- EMPTY option needed for place holder text -->
+                            <option></option>
+                            <option>Keep Service</option>
+                            <option>Remove Service</option>
+                          </select>
+                        </div>
+                        
+                        <!-- END Phone Service Selection -->
+                        
+                        <!-- START Phone Contract Selection -->
+                        <div class='six columns rightAlign'>
+                          <label for='PhoneContractSelection'>Phone Contract</label>
+                          <select id='PhoneContractSelection' class='ContractSelection Stealth SelectDropDown smallInput'>
+                            <!-- EMPTY option needed for place holder text -->
+                            <option selected='selected'>Ends 10 Jun 2014 (Current)</option>
+                            <optgroup label='New Contracts'>
+                              <option>6 Months</option>
+                              <option>12 Months</option>
+                              <option>24 Months</option>
+                            </optgroup>
+                            <option>Remove Contract</option>
+                          </select>
+                        </div>
+                        <!-- END Phone Contract Selection -->
+                        <div id="clear" style="clear:both;"></div>
+                      </div>
+                      <!-- END Phone Filter Section -->
+                      
+                    
+                      <div class='MultiSelector'>
+                        <div class='SelectorsContainer'>
+                          <!-- START Phone Choices -->
+                          <div class='six columns DetailsSection'>
+                            <h5>Phone Order Details</h5>
+                            <!-- Connected Service --> 
+                            
+                            <!-- Adding Service -->
+                            <div class='six columns RightPadding DetailsSubSection'>
+                              <h6>Type</h6>                          
+                              <select class='SelectDropDown'>
+                                <option selected='selected'>Bacon ipsum dolor sit</option>
+                                <option>amet sirloin laboris HD</option>
+                                <option>doner bacon</option>
+                                <option>pariatur tenderloin cupidatat</option>
+                                <option>pig leberkas kielbasa t-bone</option>
+                              </select>
+                            </div>
+                            <div class='ClearFix'></div>
+                            <div class='DetailsSubSection'>
+                              <h6>Notes</h6> 
+                              <textarea> </textarea>
+                            </div>
+                          </div>
+                          <!-- END Phone Choices -->
+                          <!-- START Phone Selected -->
+                          <div class='six columns LeftPadding DetailsSection LeftBorder'>
+                            <h5>Phone Number</h5>
+                            <!-- Connected Service -->  
+                            <h6>8675309</h6>
+                            <!-- Adding Service -->
+                            
+                            <div class='HorizontalLabel'>
+                              <input id='NewNumberRadio' type='radio' name='radios' class='ToggleNewNumberContent'>
+                              <label>Enter New Number</label>
+                            </div>
+                            <div class='six columns NoPadding HiddenInputSpacing NewNumberInputs'>
+                              <label for='NewNumerSelect' class='SelectLabel'>Provider</label>                          
+                              <select id='NewNumberSelect' class='SelectDropDown'>
+                                <option selected='selected'>Bacon ipsum dolor sit</option>
+                                <option>amet sirloin laboris HD</option>
+                                <option>doner bacon</option>
+                                <option>pariatur tenderloin cupidatat</option>
+                                <option>pig leberkas kielbasa t-bone</option>
+                              </select>
+                              
+                              <label for='PhoneNumberInput'>Phone Number</label>  
+                              <input id='PhoneNumberInput' class='FixedInputWidth' type='text' size='10' data-val='true' pattern='[0-9]' data-val-msg='Phone number is required.'>
+  
+                              <label for='AcctNumberInput'>Account Number</label>
+                              <input id='AcctNumberInput' class='FixedInputWidth' type='text' size='10' data-val='true' pattern='[0-9]' data-val-msg='Account number is required.'>  
+                            </div>
+                            <div class='ClearFix'></div>
+                            <div class='HorizontalLabel'>
+                              <input type='radio' name='radios' class='ToggleNewNumberContent'>
+                              <label>Generate a new number</label>
+                            </div>
+                          </div>
+                          
+                          
+                          <!-- END Phone Selected -->
+                        </div>
+  
+  
+                        <div class='SelectorsContainer'>
+                          <!-- START Phone Choices -->
+                          <div class='SelectorPanel Choices'>
+                            <ul>
+                                <li class=''>
+                                  <span class='tier tierOrange'></span>
+                                  Premium Movies &amp; Drama
+                                </li>
+                                <li class=''>
+                                  <span class='tier tierGreen'></span>
+                                  Sports    
+                                  <span id='' class='Selector addTiers'>Add</span>
+                                </li>
+                                <li class=''>
+                                  <span class='tier tierCyan'></span>
+                                  GE 1 Documentary &amp; Adventure
+                                  <span id='' class='Selector addTiers'>Add</span>
+                                </li>
+                                <li class=''>
+                                  <span class='tier tierPink'></span>
+                                  GE 1 Kids &amp; Music    
+                                  <span id='' class='Selector addTiers'>Add</span>
+                                </li>
+                                <li class=''>
+                                  <span class='tier'></span>
+                                  GE 1 Drama &amp; Lifestyle
+                                  <span id='' class='Selector addTiers' >Add</span>
+                                </li>
+                              </ul>
+                          </div>
+                          <!-- END Phone Choices -->
+                          <!-- START Phone Selected -->
+                          <div class='SelectorPanel Selected'>
+                            <ul>
+                            <!--
+                              Follows the same convention as the first tier apart from following
+                              - No 'Added' classes on li elements
+                              - 'Add' text is changed to 'Remove' for the selector
+                              - When not added, the li has the class 'Placeholder' containing a div
+                            --> 
+                              <li>
+                                  <span class='tier tierOrange'></span>
+                                  Premium Movies &amp; Drama
+                                  <span class='Selector'>Remove</span>
+                                </li>
+                                <li>
+                                  <span class='tier tierGreen'></span>
+                                    Sports    
+                                  <span class='Selector'>Remove</span>                              
+                                </li>
+                                <li>
+                                  <span class='tier tierCyan'></span>
+                                    GE 1 Documentary &amp; Adventure
+                                  <span class='Selector'>Remove</span>
+                                </li>
+                                <li>
+                                  <span class='tier tierPink'></span>
+                                    GE 1 Kids &amp; Music
+                                  <span class='Selector'>Remove</span>
+                                </li>
+                                <li>
+                                  <span class='tier'></span>
+                                  GE 1 Drama &amp; Lifestyle
+                                  <span class='Selector'>Remove</span>
+                                </li>
+                            </ul>
+                          </div>
+  
+                          <!-- END Phone Selected -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END Phone Content Section -->
+                    
+                    <!-- START Broadband Content Section -->
+                    <div id='BroadbandTab' class='TabContent'>
+                       <div class='TabInfoBar HorizontalLabel'>
+                        
+                        <!-- START Broadband Service Selection -->
+                        <div class='six columns'>
+                          <label for='BroadbandServiceSelection'>Broadband</label>
+                          <select id='BroadbandServiceSelection' class='ServiceSelect Stealth SelectDropDown'>
+                            <!-- EMPTY option needed for place holder text -->
+                            <option></option>
+                            <option>Keep Service</option>
+                            <option>Remove Service</option>
+                          </select>
+                        </div>
+                        <!-- END Broadband Service Selection -->
+                        
+                        <!-- START Contract Selection -->
+                        <div class='six columns rightAlign'>
+                          <label for='BroadbandContractSelection'>Broadband Contract</label>
+                          <select id='BroadbandContractSelection' class='ContractSelection Stealth SelectDropDown'>
+                            <!-- EMPTY option needed for place holder text -->
+                            <option selected='selected'>Ends 10 Jun 2014 (Current)</option>
+                            <optgroup label='New Contracts'>
+                              <option>6 Months</option>
+                              <option>12 Months</option>
+                              <option>24 Months</option>
+                            </optgroup>
+                            <option>Remove Contract</option>
+                          </select>
+                        </div>
+                        <!-- END Broadband Contract Selection -->
+                        <div id="clear" style="clear:both;"></div>
+                      </div>
+                      <!-- END Broadband Filter Section -->
+                      <div class='MultiSelector'>
+                        <div class='SelectorsContainer'>
+                          <!-- START Broadband Choices -->
+                          <div class='six columns DetailsSection'>
+                            <h5>BroadBand Order Details</h5>
+                           
+                            <!-- Adding Service -->
+                            <div class="HorizontalInputs">
+                              <div class='six columns RightPadding DetailsSubSection'>
+                                <h6>Type</h6>                          
+                                <select class='SelectDropDown'>
+                                  <option selected='selected'>Bacon ipsum dolor sit</option>
+                                  <option>amet sirloin laboris HD</option>
+                                  <option>doner bacon</option>
+                                  <option>pariatur tenderloin cupidatat</option>
+                                  <option>pig leberkas kielbasa t-bone</option>
+                                </select>
+                              </div>
+                              <div class='six columns LeftPadding DetailsSubSection'>
+                                <h6>ADSL Speed</h6>                          
+                                <select class='SelectDropDown'>
+                                  <option selected='selected'>Slowest</option>
+                                  <option>EVEN slower</option>
+                                  <option>Slower</option>
+                                  <option>Slow</option>
+                                  <option>Snail Lightening</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="ClearFix"></div>
+                             <!-- Connected Service -->
+                            <div class="DetailsSubSection ">
+                              <h6>Notes</h6>  
+                              <textarea> </textarea>
+                            </div>
+                          </div>
+                          <!-- END Broadband Choices -->
+                          <!-- START Broadband Selected -->
+                          <div class='six columns DetailsSection LeftBorder'>
+                            <h4>Phone Number</h4>
+                            <!-- Connected Service -->  
+                            <h6>8675309</h6>
+                            <!-- Adding Service -->
+                            
+                            <div class='HorizontalLabel'>
+                              <input type='radio' name='BroadbandPhoneRadios' class='ToggleAlternateProviderNumberContent'>
+                              <label>Use Foxtel Phone Details</label>
+                            </div>
+                            
+                            <div class='HorizontalLabel'>
+                              <input id='HasAlternateProviderNumber' type='radio' name='BroadbandPhoneRadios' class='ToggleAlternateProviderNumberContent'>
+                              <label>Phone Line From Different Provider</label>
+                            </div>
+                            <div class='six columns NoPadding HiddenInputSpacing AlternateProviderNumberInputs'>                              
+                              <label for='AlternateProviderNumberInput'>Phone Number</label>  
+                              <input id='AlternateProviderNumberInput' class='FixedInputWidth' type='text' size='10' data-val='true' pattern='[0-9]' data-val-msg='Broadband number is required.'> 
+                            </div>
+                            <div class="ClearFix"></div>
+                            
+                            <h6>Modem</h6>
+                            
+                            <div class='HorizontalLabel'>
+                              <input id="NeedModem" type='radio' name='BroadbandModemRadios' class='BroadbandHardware'>
+                              <label>Require Modem</label>
+                            </div>
+                            <div class="six columns NoPadding HiddenInputSpacing FixSelectSpacing ModemSelect">
+                              <select class='SelectDropDown'>
+                                <option selected='selected'>Slowest</option>
+                                <option>EVEN slower</option>
+                                <option>Slower</option>
+                                <option>Slow</option>
+                                <option>Snail Lightening</option>
+                              </select>
+                            </div>
+                            <div class="ClearFix"></div>
+                            <div class='HorizontalLabel'>
+                              <input type='radio' name='BroadbandModemRadios' class='BroadbandHardware'>
+                              <label>BYO Equipment</label>
+                            </div>
+
+                            <div class='HorizontalLabel'>
+                              <input type='radio' name='BroadbandModemRadios' class='BroadbandHardware'>
+                              <label>No Modem Required</label>
+                            </div>
+                            
+                          </div>
+                          
+                          
+                          <!-- END Broadband Selected -->
+                        </div>
+  
+  
+                        <div class='SelectorsContainer'>
+                          <!-- START Broadband Choices -->
+                          <div class='SelectorPanel Choices'>
+                            <ul>
+                                <li class=''>
+                                  <span class='tier tierOrange'></span>
+                                  Premium Movies &amp; Drama
+                                </li>
+                                <li class=''>
+                                  <span class='tier tierGreen'></span>
+                                  Sports 
+                                  <select class='SelectDropDown'>
+                                    <option selected='selected'>Slowest</option>
+                                    <option>EVEN slower</option>
+                                    <option>Slower</option>
+                                    <option>Slow</option>
+                                    <option>Snail Lightening</option>
+                                  </select>   
+                                  <span id='' class='Selector addTiers'>Add</span>
+                                </li>
+                                <li class=''>
+                                  <span class='tier tierCyan'></span>
+                                  GE 1 Documentary &amp; Adventure
+                                  <span id='' class='Selector addTiers'>Add</span>
+                                </li>
+                                <li class=''>
+                                  <span class='tier tierPink'></span>
+                                  GE 1 Kids &amp; Music    
+                                  <span id='' class='Selector addTiers'>Add</span>
+                                </li>
+                                <li class=''>
+                                  <span class='tier'></span>
+                                  GE 1 Drama &amp; Lifestyle
+                                  <span id='' class='Selector addTiers' >Add</span>
+                                </li>
+                              </ul>
+                          </div>
+                          <!-- END Broadband Choices -->
+                          <!-- START Broadband Selected -->
+                          <div class='SelectorPanel Selected'>
+                            <ul>
+                            <!--
+                              Follows the same convention as the first tier apart from following
+                              - No 'Added' classes on li elements
+                              - 'Add' text is changed to 'Remove' for the selector
+                              - When not added, the li has the class 'Placeholder' containing a div
+                            --> 
+                              <li>
+                                  <span class='tier tierOrange'></span>
+                                  Premium Movies &amp; Drama
+                                  <span class='Selector'>Remove</span>
+                                </li>
+                                <li>
+                                  <span class='tier tierGreen'></span>
+                                    Sports    
+                                  <span class='Selector'>Remove</span>                              
+                                </li>
+                                <li>
+                                  <span class='tier tierCyan'></span>
+                                    GE 1 Documentary &amp; Adventure
+                                  <span class='Selector'>Remove</span>
+                                </li>
+                                <li>
+                                  <span class='tier tierPink'></span>
+                                    GE 1 Kids &amp; Music
+                                  <span class='Selector'>Remove</span>
+                                </li>
+                                <li>
+                                  <span class='tier'></span>
+                                  GE 1 Drama &amp; Lifestyle
+                                  <span class='Selector'>Remove</span>
+                                </li>
+                            </ul>
+                          </div>
+  
+                          <!-- END Broadband Selected -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END Broadband Content Section -->
+                    
+                    <!-- START Extras Content Section -->
+                    <div id='ExtrasTab' class='TabContent'>
+                      <p>Extras Content</p>
+                    </div>
+                    <!-- END Extras Content Section -->
+                    
+                    <!-- START Offers Content Section -->
+                    <div id='OffersTab' class='TabContent'>
+                      <p>Offers Content</p>
+                    </div>
+                    <!-- END Offers Content Section -->
+                    
+                    <!-- END Tab's Content Section -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- Centre Column - Account Subscriptions End -->
+    
+        <!-- Right Column - BASKET Begin -->
+        <div class='three columns rightBar alertsNotes'>
+          <div class='Basket' id='change_options_basket'>
+          
+          <div class='basketFragment'>
+           
+            <div id='basketInner' class='BasketContent'>
+              <div class='monthlyCharges'>
+                <h4>Monthly Charges</h4>
+                <h6>Seniors Card Package</h6>
+                <table class="monthlyChargeGroup">
+                  <tbody>
+                    <tr>
+                      <td>Seniors </td>
+                      <td>39.00</td>
+                    </tr>
+                    
+                    <tr class='removedOffer'>
+                      <td>Reduced Service</td>
+                      <td>$ 0.00</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>Movie Basic Family</td>
+                      <td>$ 15.00</td>
+                    </tr>
+                    
+                    <tr class='removedOffer'>
+                      <td>Reduced Service</td>
+                      <td>$ 10.00</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+                <table class="monthlyChargeGroup">
+                  <tbody>
+                   
+                    <tr>
+                      <td>Seniors </td>
+                      <td>39.00</td>
+                    </tr>
+                    
+                    <tr class='removedOffer'>
+                      <td>Reduced Service</td>
+                      <td>$ 0.00</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>Movie Basic Family</td>
+                      <td>$ 15.00</td>
+                    </tr>
+                    
+                    <tr class='removedOffer'>
+                      <td>Reduced Service</td>
+                      <td>$ 10.00</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+          
+              </div>
+              
+            <!--  ONE OFF CHARGES. NB This section is replaces with nrcSnippet.jsp for the review screen -->
+            <div class='monthlyTotalsSection' id='nrcContainer'>
+              <table>
+                <tbody>
+                  <tr class="BasketTotal">
+                    <td>Monthly Total</td>
+                    <td>$160.00</td>
+                  </tr>
+                  <tr>
+                    <td>Discount Total</td>
+                    <td>$ 10.00</td>
+                  </tr>
+                  <tr>
+                    <td>Offer Total</td>
+                    <td>$ 0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Current Monthly Total</td>
+                    <td>$ 110.00</td>
+                  </tr>
+                  <tr>
+                    <td>Difference</td>
+                    <td class='additionalCost'>$ 50.00</td>
+                  </tr>
+                   
+                </tbody>
+              </table>    
+            </div>
+            </div>
+          </div>
+          
+          
+          </div>  
+          <div class='ActionButtons'>
+            <button type='submit' id='changeOptionsSubmitBtn' class='DesiredAction'>
+            <span class='Action'>Review Order</span>
+            <span class='ProcessIndicator'>
+              <span class='ProcessIcon'></span>
+              <span class='ProcessText'>Saving...</span>
+            </span>
+            </button>
+            <button type='button' class='Secondary'>Revert</button>
+          </div> 
+        </div>
+        <!-- Right Column -BASKET End -->
+        
+      </div>
+    </div>    
+  </div>
+  
+  
+  <!-- New JS -->
+  <!-- Required for SideNav slideOut Effect -->
+  <script type='text/javascript' src='js/jquery-ui.effects.js'></script>
+  
+  <!-- Required for Subscriptions Carousel -->
+  <script type='text/javascript' src='js/jquery.royalslider.min.js'></script>
+  
+  <!-- Fixes chain and flickering issues with side nav hover -->
+  <script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+  
+  <!-- Nano Scroller, current used in Recent Notes -->
+  <script type='text/javascript' src='js/jquery.nanoscroller.min.js'></script>
+  
+  <!-- Open Tip, currently used for Billing address and Security Question -->
+  <script type='text/javascript' src='js/opentip-jquery-excanvas.min.js'></script>
+  
+  <!-- Text Resize, used to resize some elements to fit space, example Client Name -->
+  <script src='js/jquery.textfill.js'></script>
+  
+  <!-- Triple Play Class and Methods -->
+  <script src='js/tripleplay.js'></script>
+  
+  <script type="text/javascript" src="js/tabination.js"></script>
+  <script>
+  
+    // Initialize page specific methods
+    // Royal Slider for Subscriptions Panels
+    triplePlay.royalSlider('#content-slider-1');
+
+    // Nano Scroller for Recent Notes
+    triplePlay.nanoScroll('.nano');
+    tabination.init();
+      $('.ToggleNewNumberContent').on('click', function() {
+        if($('#NewNumberRadio').is(':checked')) {
+          $('.NewNumberInputs').css('display','block');
+          return;
+        }
+        $('.NewNumberInputs').css('display','none');
+      });
+      $('.BroadbandHardware').on('click', function() {
+        if($('#NeedModem').is(':checked')) {
+          $('.ModemSelect').css('display','block');
+          return;
+        }
+        $('.ModemSelect').css('display','none');
+      });
+      $('.ToggleAlternateProviderNumberContent').on('click', function() {
+        if($('#HasAlternateProviderNumber').is(':checked')) {
+          $('.AlternateProviderNumberInputs').css('display','block');
+          return;
+        }
+        $('.AlternateProviderNumberInputs').css('display','none');
+      });
+      
+      // Nano Scroller for Recent Notes
+      
+      $('.SelectDropDown').select2({
+        minimumResultsForSearch: -1,
+        placeholder: 'Options'
+      });
+      $('#OptionSelection').on('change',
+        function(e){
+          console.log(e.currentTarget);
+          console.log('Option Selected');
+      });
+      
+      $('#ServiceSelection ').on('change',
+        function(e){
+          console.log('Service Selected');
+      });
+      
+      $('#ContractSelection').on('change',
+        function(e){
+          console.log('Contract Selected');
+      });
+    
+  </script>
+</body>
+</html>

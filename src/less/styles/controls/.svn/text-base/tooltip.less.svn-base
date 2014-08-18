@@ -1,0 +1,240 @@
+/* #region Create Tooltip  */
+
+.CreateTooltip() {
+
+  display: block;
+  position: absolute;
+  top: 0;
+  min-width: 150px;
+  max-width: 270px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3px;
+  z-index: 10001;
+  pointer-events: none;
+  background-clip: padding-box;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+ 
+  .Content {
+    display: block;
+    position: relative;
+    padding: 10px 12px;
+    font-weight: bold;
+    line-height: normal;
+    z-index: 3;
+  }
+
+  .Icon {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    bottom: 10px;
+    left: 10px;
+    width: 35px;
+    max-height: 35px;
+    z-index: 4;
+
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      margin-top: -11px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .Arrow, 
+  .Arrow span {
+    position: absolute;
+    border-style: solid;
+    border-width: 11px;
+    height: 0;
+    width: 0;
+    z-index: 1;
+  }
+
+  /* Top */
+  &.top {
+    margin-top: -32px;
+
+    .Arrow {
+      top: auto;
+      left: 50%;
+      margin-left: -10px;
+
+      span {
+        top: -14px;
+        left: 50%;
+        margin-left: -11px;
+      }
+    
+    }
+  }
+ 
+  /* Right */
+  &.right {
+    margin-left: 12px;
+
+    .Arrow {
+      top: 50%;
+      left: -22px;
+      margin-top: -10px;
+
+      span {
+        top: -11px;
+        left: -8px;
+      }
+    }
+  }
+ 
+  /* Bottom */
+  &.bottom {
+    margin-top: 12px;
+
+    .Arrow {
+      top: -22px;
+      left: 50%;
+      margin-left: -10px;
+
+      span {
+        top: -8px;
+        left: 50%;
+        margin-left: -11px;
+      }
+    }
+  }
+ 
+  /* Left */
+  &.left {
+    margin-left: -12px;
+
+    .Arrow {
+      top: 50%;
+      right: -22px;
+      margin-top: -10px;
+
+      span {
+        top: -11px;
+        left: -14px;
+      }
+    }
+  }
+
+}
+
+/* #endregion */
+
+/* #region Create Tooltip Style  */
+
+.CreateTooltipType(@tooltip-background-color-orig: #FFFFFF, @tooltip-border-color-orig: #FFFFFF, @tooltip-icon: '') {
+
+  @tooltip-background-color: lighten(saturate(@tooltip-background-color-orig, 15%), 15%);	
+  @tooltip-border-color: desaturate(@tooltip-border-color-orig, 25%);
+  @tooltip-arrow-top-background-color: @tooltip-background-color;
+  @tooltip-arrow-center-background-color: lighten(@tooltip-background-color, 10%);
+  @tooltip-arrow-bottom-background-color: lighten(@tooltip-background-color, 17%);
+
+  border-color: @tooltip-border-color;
+
+  .Content {
+    color: @tooltip-text-color;
+    background: @tooltip-background-color;
+  }
+
+  .Icon span {
+    background: @tooltip-icon no-repeat 0 0;
+  }
+
+  .Arrow span {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  &.top .Arrow {
+    border-color: @tooltip-border-color transparent transparent transparent;
+  }
+
+  &.top .Arrow span {
+    border-color: @tooltip-arrow-top-background-color transparent transparent transparent;
+  }
+
+  &.right .Arrow {
+    border-color: transparent @tooltip-border-color transparent transparent;
+  }
+
+  &.right .Arrow span {
+    border-color: transparent @tooltip-background-color transparent transparent;
+  }
+
+  &.bottom .Arrow {
+    border-color: transparent transparent @tooltip-border-color transparent;
+  }
+
+  &.bottom .Arrow span {
+    border-color: transparent transparent @tooltip-arrow-bottom-background-color transparent;
+  }
+
+  &.left .Arrow {
+    border-color: transparent transparent transparent @tooltip-border-color;
+  }
+
+  &.left .Arrow span {
+    border-color: transparent transparent transparent @tooltip-background-color;
+  }
+
+}
+
+/* #endregion */
+
+/* #region Tooltip Control */
+
+.TooltipControl() {
+
+  #Tooltip {
+    .CreateTooltip();
+  }
+
+  #Tooltip.TooltipInfo {
+    .CreateTooltipType(@tooltip-info-background-color, @tooltip-info-border-color, @icon-tooltip-information);
+
+    .Content {
+      padding-left: 40px;
+    }
+  }
+
+  #Tooltip.TooltipWarning {
+    .CreateTooltipType(@tooltip-warning-background-color, @tooltip-warning-border-color, @icon-tooltip-alert);
+
+    .Content {
+      padding-left: 45px;
+    }
+  }
+
+  #Tooltip.TooltipError {
+    .CreateTooltipType(@tooltip-error-background-color, @tooltip-error-border-color, @icon-tooltip-alert);
+
+    .Content {
+      padding-left: 45px;
+    }
+  }
+
+}
+
+/* #endregion */
+
+/* #region Tooltip Control IE */
+
+.TooltipControlIE() {
+
+  #Tooltip .Arrow {
+    top: 50%;
+  }
+
+}
+
+/* #endregion */

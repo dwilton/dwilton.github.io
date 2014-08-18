@@ -1,0 +1,429 @@
+.pln {
+  color: #000;
+}
+@media screen {
+  .str {
+    color: #080;
+  }
+  .kwd {
+    color: #008;
+  }
+  .com {
+    color: #800;
+  }
+  .typ {
+    color: #606;
+  }
+  .lit {
+    color: #066;
+  }
+  .pun,
+  .opn,
+  .clo {
+    color: #660;
+  }
+  .tag {
+    color: #008;
+  }
+  .atn {
+    color: #606;
+  }
+  .atv {
+    color: #080;
+  }
+  .dec,
+  .var {
+    color: #606;
+  }
+  .fun {
+    color: red;
+  }
+}
+@media print, projection {
+  .str {
+    color: #060;
+  }
+  .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+  .typ {
+    color: #404;
+    font-weight: bold;
+  }
+  .lit {
+    color: #044;
+  }
+  .pun,
+  .opn,
+  .clo {
+    color: #440;
+  }
+  .tag {
+    color: #006;
+    font-weight: bold;
+  }
+  .atn {
+    color: #404;
+  }
+  .atv {
+    color: #060;
+  }
+}
+pre.prettyprint {
+  padding: 2px;
+  border: 1px solid #888;
+}
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 {
+  list-style-type: none;
+}
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+  background: #eee;
+}
+/**
+ * Basic Color Palette
+ */
+/* Shading */
+/* Foxtel Specific */
+/**
+ * TV Classifications
+ */
+/**
+ * Gradients
+ */
+/**
+ * Issues
+ */
+/* Issue Types e.g. Info, Warning, Error, Success */
+/**
+ * Tooltips
+ */
+/* Tooltip Types e.g. Info, Warning, Error */
+/**
+ * Controls Collection
+ */
+/* #region App Control  */
+/* #endregion */
+/* #region App Style  */
+/* #endregion *//* #region Action Button Control */
+/* #endregion */
+/* #region Action Button Control IE */
+/* #endregion */
+/* #region Button Control Hacks */
+/* #endregion *//* #region Alert Style */
+/* #endregion *//* #region Autocomplete Control */
+/* #endregion *//* #region Button Control */
+/* #endregion */
+/* #region Button Style */
+/* #endregion */
+/* #region Button Control IE */
+/* #endregion */
+/* #region Button Control Hacks */
+/* #endregion *//* #region Central Know How Control */
+/* #endregion */
+/* #region Condition Style */
+/* #endregion *//* #region Character Counter Control */
+/* #endregion */
+/* #region Character Counter Style */
+/* #endregion *//* #region Checkbox Control */
+/* #endregion */
+/* #region Checkbox Style */
+/* #endregion */
+/* #region Checkbox Control IE */
+/* #endregion *//* #region Close Button Control */
+/* #endregion */
+/* #region Close Button Style */
+/* #endregion *//* #region Code Example Control */
+/* #endregion */
+/* #region Code Example Style */
+/* #endregion *//* #region Condition Control */
+/* #endregion */
+/* #region Condition Style */
+/* #endregion *//* #region Data Control */
+/* #endregion */
+/* #region Data Style */
+/* #endregion *//* #region DatePicker Control */
+/* #endregion */
+/* #region Date Picker Style */
+/* #endregion *//* #region Delete Button Style */
+/* #endregion */
+/* #region Delete Button IE */
+/* #endregion */
+/* #region Delete Button Control Hacks */
+/* #endregion *//* #region Desired Button Style */
+/* #endregion */
+/* #region Desired Button IE */
+/* #endregion */
+/* #region Desired Button Control Hacks */
+/* #endregion *//* #region Dialog Control */
+/* #endregion Dialog Control */
+/* #region Dialog Style */
+/* #endregion */
+/* #region Dialog Control IE */
+/* #endregion *//* #region Fieldset Control */
+/* #endregion */
+/* #region Fieldset Style */
+/* #endregion */
+/* #region Fieldset Control IE */
+/* #endregion *//* #region Search Control */
+/* #endregion */
+/* #region Filter Style */
+/* #endregion */
+/* #region Grid Control IE */
+/* #endregion *//* #region Form Control */
+/* #endregion *//* #region Grid Control */
+/* #endregion */
+/* #region Grid Style */
+/* #endregion *//* #region Heading Control */
+/* #endregion */
+/* #region Heading Style */
+/* #endregion */
+/* #region Heading Control IE */
+/* #endregion */
+/* #region Heading Control Hack */
+/* #endregion *//* #region Horizontal Rule Control */
+/* #endregion */
+/* #region Horizontal Rule Style */
+/* #endregion *//* #region Hyperlink Control */
+/* #endregion */
+/* #region Hyperlink Style */
+/* #endregion *//* #region Input Control */
+/* #endregion */
+/* #region Input Style */
+/* #endregion */
+/* #region Input Control Hacks */
+/* #endregion *//* #region Create Issue */
+/* #endregion */
+/* #region Create Issue Type */
+/* #endregion */
+/* #region Issue Control */
+/* #endregion */
+/* #region Issue Style */
+/* #endregion */
+/* #region Issue Control IE */
+/* #endregion *//*#region Label Control */
+/*#endregion*/
+/*#region Label Style */
+/*#endregion*/
+/*#region Label Control Hacks */
+/*#endregion*//* #region List Control */
+/* #endregion */
+/* #region List Style */
+/* #endregion */
+/* #region List Control IE */
+/* #endregion *//* #region Loading Control */
+/* #endregion */
+/* #region Loading Style */
+/* #endregion *//* #region Lozenge Control */
+/* #endregion */
+/* #region Lozenge Style */
+/* #endregion *//* #region Message Box Control */
+/* #endregion */
+/* #region Message Box Style */
+/* #endregion */
+/* #region Message Window Control */
+/* #endregion */
+/* #region Message Window Style */
+/* #endregion *//* #region Navigation Control */
+/* #endregion */
+/* #region Navigation Style */
+/* #endregion */
+/* #region Navigation Control IE */
+/* #endregion *//* #region Number Control */
+/* #endregion */
+/* #region Number Style */
+/* #endregion */
+/* #region Number Control IE */
+/* #endregion */
+/* #region Pagination Control */
+/* #endregion *//* #region Panel Control */
+/* #endregion */
+/* #region Panel Style */
+/* #endregion *//* #region Rating Control  */
+/* #endregion */
+/* #region Rating Style */
+/* #endregion *//* #region Radio Button Control */
+/* #endregion */
+/* #region Radio Button Style */
+/* #endregion */
+/* #region Radio Button Control IE */
+/* #endregion *//* #region Response Message Control */
+/* #endregion */
+/* #region Response Message Style */
+/* #endregion */
+/* #region Response Message Control Hack */
+/* #endregion *//* #region Secondary Button Control */
+/* #endregion */
+/* #region Secondary Button Style */
+/* #endregion */
+/* #region Secondary Button Control IE */
+/* #endregion *//* #region Segmented Button Control */
+/* #endregion */
+/* #region Segmented Button Style */
+/* #endregion */
+/* #region Segmented Button Control IE */
+/* #endregion */
+/* #region Segmented Button Control Hack */
+/* #endregion *//* #region Select Control */
+/*#endregion*/
+/* #region Select Style */
+/*#endregion*/
+/* #region Select Control IE */
+/* #endregion *//* #region Subscription Control */
+/* #endregion */
+/* #region Subscription Style */
+/* #endregion *//* #region Tabs Control */
+/* #endregion */
+/* #region Tabs Style */
+/* #endregion */
+/* #region Tabs IE */
+/* #endregion */
+/* #region Tabs Hacks */
+/* #endregion *//* #region Create Tooltip  */
+/* #endregion */
+/* #region Create Tooltip Style  */
+/* #endregion */
+/* #region Tooltip Control */
+/* #endregion */
+/* #region Tooltip Control IE */
+/* #endregion *//* #region Validation Control */
+/* #endregion */
+/* #region Validation Style */
+/* #endregion */
+/* #region Validation Control IE */
+/* #endregion */
+/* #region Validation Control Hack */
+/* #endregion *//**
+ * Fonts
+ */
+/* Standard Fonts Fonts */
+/* 'Proxima Nova Light' Web Font */
+/* 'Proxima Nova Regular' Web Font */
+/* 'Proxima Nova SemiBold' Web Font */
+/* 'Proxima Nova Bold' Web Font */
+/* New TV Package */
+/*
+@icon-tier-tv-entertainment: ;
+@icon-tier-tv-sports: ;
+@icon-tier-tv-movies: ;
+@icon-tier-tv-drama: ;
+@icon-tier-tv-entertainment-plus: ;
+@icon-tier-tv-docos: ;
+@icon-tier-tv-kids: ;
+@icon-tier-tv-hd: ;
+@icon-tier-tv-platinum: ;
+*/
+/* Old Tiers */
+/* Equipment */
+/* Search */
+/* Payment Methods */
+/* Indent */
+/* Indicators */
+/* CKH */
+/* Toggle Button */
+/* Options */
+/* Response Alert */
+/* Tooltip */
+/* Combobox */
+/* Checkbox */
+/* Radio button */
+/* Datagrid Details */
+/* Datagrid Sort */
+/* Steps */
+/* Directional Arrows */
+/* Loading */
+/* Numeric Spinner */
+/* Scrollbars */
+/* Select List */
+/* #region Steps */
+/* #region Tooltab */
+/* Tabs */
+/** 
+ * Mixins
+ *
+ * Should be used of very generic style functions (Not managing vendor prefixes)
+ * I think Photoshop style filters: Stroke, Embosss, InnerShadow, PillowEmboss, etc...
+ * 
+ */
+/* #region Stroke Emboss */
+/* #endregion */
+/* #region Stroke */
+/* #endregion */
+/* #region Emboss */
+/* #endregion */
+/* #region Inner-shadow */
+/* #endregion */
+/* #region Emboss Inner-shadow */
+/* #endregion */
+/* #region Pillow Emboss */
+/* #endregion */
+/* #region Pillow Inner-shadow */
+/* #endregion */
+/* #region Text Shadow *//* #endregion */
+/* #region Box-sizing */
+/* #endregion */
+/* #region User-select */
+/* #endregion */
+/* #region Color Gradient */
+/* #endregion */
+/* #region Striped Shading */
+/* #endregion */
+/* #region Striped Gloss Shading */
+/* #endregion */
+/* #region Ellipsis */
+/* #endregion */
+/* #region Grid */
+/* #endregion */
+/* #region Base64 */
+/* #endregion */body {
+  background: #ececec;
+}
+#Application {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 900px;
+  z-index: 1;
+}
+#Navigation {
+  float: left;
+  padding: 20px;
+  width: 220px;
+}
+#Content {
+  margin-left: 200px;
+  padding: 20px;
+  min-width: 900px;
+}
+.GridExample .Panel,
+.NavigationExample .TabContainer {
+  height: 400px;
+}
+.GridExample .Grid {
+  height: 400px;
+}
+.Lozenge {
+  display: block;
+  margin: 0 2px 6px;
+}

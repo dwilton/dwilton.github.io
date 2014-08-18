@@ -1,0 +1,128 @@
+/* #region Dialog Control */
+
+.DialogControl() {
+
+  #Dialogs {
+    position: absolute;
+    z-index: 1000;
+
+    .Mask {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      
+    }
+   }
+
+    #DialogLoading .Content {
+      min-height: 20px;
+      min-width: 20px;
+    }
+
+    .Dialog {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      outline: 0;
+      z-index: 1001;
+
+      &.Show {
+        display: block;
+      }
+
+      > .Content {
+        position: relative;
+        margin: 0 auto;
+        padding: 15px;
+        min-width: 50px;
+        min-height: 50px;
+        width: 600px;
+    }
+  }
+
+}
+
+/* #endregion Dialog Control */
+
+/* #region Dialog Style */
+
+.DialogStyle() {
+ 
+  #Dialogs .Mask.Show {
+    background: @dialog-mask-background-color;
+  }
+
+  .Dialog > .Content {
+    background: @dialog-background-color;
+    box-shadow: @window-shadow;
+  }
+
+}
+
+/* #endregion */
+
+/* #region Dialog Control IE */
+
+.DialogControlIE() {
+
+  #Dialogs {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    &.Show {
+      display: block;
+    }
+
+    .Mask {
+      background: @dark;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    }
+
+    .Dialog {
+
+      > .Content {
+      
+        /*
+        Centering the Dialogs
+         
+        Via Javascript, set the margin-left to be negative 
+        half the dialog width and margin-top to be negative 
+        half the dialog height.
+
+        E.g.
+
+        margin-left: -(half the element width)
+        margin-top: -(half the element height)
+
+        This in conjuntion with the followig css rules 
+        will center the dialog.
+
+        */
+
+        display: inline-block;
+        position: absolute;
+
+        &.Issue {
+          border: none;
+        }
+
+        h1 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+}
+
+/* #endregion */

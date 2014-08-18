@@ -1,0 +1,22 @@
+<div class="Panel">
+
+  <div>
+    <h2>Types</h2>
+    <a href="#" class="Tooltip" data-tooltip-content="Example Info Tooltip" data-codeblock="true">Info Tooltip</a>
+    <a href="#" class="Tooltip" data-tooltip-content="Example Warning Tooltip" data-tooltip-class="TooltipWarning" data-codeblock="true">Warning Tooltip</a>
+    <a href="#" class="Tooltip" data-tooltip-content="Example Error Tooltip" data-tooltip-class="TooltipError" data-codeblock="true">Error Tooltip</a>
+  </div>
+
+  <hr />
+
+  <div>
+    
+    <h2>Directions</h2>
+    <a href="#" class="Tooltip" data-tooltip-content="Example Info Tooltip" data-tooltip-direction="top" data-codeblock="true">Top</a>
+    <a href="#" class="Tooltip" data-tooltip-content="Example Info Tooltip" data-tooltip-direction="right" data-codeblock="true">Right</a>
+    <a href="#" class="Tooltip" data-tooltip-content="Example Info Tooltip" data-tooltip-direction="bottom" data-codeblock="true">Bottom</a>
+    <a href="#" class="Tooltip" data-tooltip-content="Example Info Tooltip" data-tooltip-direction="left" data-codeblock="true">Left</a>
+    
+  </div>
+
+</div>

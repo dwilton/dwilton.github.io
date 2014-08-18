@@ -1,0 +1,126 @@
+/* #region Validation Control */
+
+.ValidationControl() {
+
+  // FIXME: No Idea what this does;
+  .field-validation {
+    display: none;
+  }
+
+}
+
+/* #endregion */
+
+/* #region Validation Style */
+
+.ValidationStyle() {
+
+  .Invalid {
+    border-color: @negative  !important;
+  }
+
+  input[data-val-required],
+  select[data-val-required],
+  textarea[data-val-required] {
+
+    &.Invalid {
+      box-shadow: inset 1px 1px 3px fadeout(@dark, round(lightness(@input-background-color))), 0 1px fade(@light, round(lightness(@base-shade))), -3px 0 @negative;
+    }
+  }
+
+}
+
+/* #endregion */
+
+/* #region Validation Control IE */
+
+.ValidationControlIE() {
+
+  // FIXME: No Idea what this does;
+  .error-container {
+
+    input {
+
+      &:focus {
+        & + span.error {
+          display: none;
+        }
+      }
+    }
+  }
+
+  span.error {
+      
+    &.visible {
+      display:inline-block !important;
+    }
+  }
+
+}
+
+/* #endregion */
+
+/* #region Validation Control Hack */
+
+.ValidationControlHack() {
+
+  // FIXME: No Idea what this does;
+  .error-container {
+    position: relative;
+
+    &.focused span.error {
+      display: inline-block;
+    }
+
+    input,
+    select,
+    textarea {
+      float: none !important;
+      border-color: @negative !important;
+
+      &:focus {
+        & + span.error {
+          display:inline-block;
+        }
+      }
+    }
+
+    #cc-icon,
+    .cc-icon {
+      display:none;
+    }
+  }
+
+  // FIXME: No Idea what this does;
+  span.error {
+
+    .CreateTooltip();
+    .CreateTooltipType(@tooltip-error-background-color, @tooltip-error-border-color, @icon-tooltip-alert);
+
+    display: none;
+    top: auto;
+    left: auto;
+    float: none;
+    margin: -5px 0 0 0;
+    max-width: 800px; /* bleh */
+    white-space: nowrap;
+
+    &.left {
+      left: -100%;
+      min-width: 100%;
+      margin-left: -22px;
+    }
+
+    &.right {
+      margin-left: 12px;
+    }
+
+    .Content {
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }
+
+}
+
+/* #endregion */

@@ -1,0 +1,120 @@
+/* #region Heading Control */
+
+.HeadingControl() {
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: @font-family-heading;
+  }
+
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+
+  h1 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 5px;
+  }
+
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;  
+  }
+
+}
+
+/* #endregion */
+
+/* #region Heading Style */
+
+.HeadingStyle() {
+
+  h1 {
+    font-family: 'Proxima Nova Light', Arial, Helvetica;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: 'Proxima Nova SemiBold', Arial, Helvetica;
+  }
+
+  h1 {
+    color: @heading-h1-text-color;
+  }
+
+  h2 {
+    color: @heading-h2-text-color;
+  }
+
+  h3 {
+    color: @heading-h3-text-color;
+    font-style: italic;
+  }
+
+  h4 {
+    color: @heading-h4-text-color;
+  }
+
+  h5 {
+    color: @heading-h5-text-color;
+  }
+
+  h6 {
+    color: @heading-h6-text-color;
+  }
+
+}
+
+/* #endregion */
+
+/* #region Heading Control IE */
+
+.HeadingControlIE() { }
+
+/* #endregion */
+
+/* #region Heading Control Hack */
+
+.HeadingControlHack() {
+
+  .headingOne {
+    margin: 0 0 10px;
+    padding: 0;
+    font: bold 26px/32px @font-family-heading;
+    color: @heading-h1-text-color;
+  }
+
+  .headingTwo,
+  .headingThree,
+  .headingFour,
+  .headingFive,
+  .headingSix {
+    margin: 0 0 10px;
+    padding: 0;
+    font: bold 18px/24px @font-family-heading;
+    color: @heading-h2-text-color;
+  }
+
+  .headingFour,
+  .headingFive,
+  .headingSix {
+    font-weight: normal;
+  }
+
+}
+
+/* #endregion */

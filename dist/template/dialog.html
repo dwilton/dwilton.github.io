@@ -1,0 +1,34 @@
+<div class="Panel">
+
+  <button id="OpenAjaxDialogExample" type="button" data-codeblock="true" data-codeblock-js="OpenAjaxDialogExampleJS">Open Ajax Dialog</button>
+
+  <script id="OpenAjaxDialogExampleJS" type="text/x-javascript-template">
+    $('#OpenAjaxDialogExample').click(function () {
+      $.ajaxDialog({
+        url: 'partials/dialog.html'
+      });
+    });
+  </script>
+
+  <div data-codeblock="true" data-codeblock-js="OpenInlineDialogExampleJS"> 
+
+    <button id="OpenInlineDialogExample" type="button" >Open Inline Dialog</button>
+
+    <div id="Dialog" class="Dialog" data-auto-hide="true" data-auto-close="true">
+      <div class="Content">
+        <h1>Inline Dialog</h1>
+        <a href="#" class="CloseButton">Close</a>
+        <div id="#Test">This is an inline dialog.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script id="OpenInlineDialogExampleJS" type="text/x-javascript-template">
+    $('#OpenInlineDialogExample').click(function () {
+       // Show the dialog when the document is clicked.
+       $("#Dialog").dialog();
+    });
+  </script>
+
+</div>
