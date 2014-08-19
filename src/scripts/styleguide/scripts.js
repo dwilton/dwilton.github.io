@@ -29,18 +29,18 @@ $(function() {
       // Apply code example plugin
       $('.CodeExample').codeExample();
 
-      // Find all content scripts and eval
-      template.find('script').each(function () {
-        /*jslint evil: true */
-        eval($(this).html());
-      });
-
       // Change navigation selected state
       navigation.find('li').removeClass('Selected');
       link.parent().addClass('Selected');
 
       // Apply UI elements to the current scope
       window.FOXTEL.uiElements(template);
+
+      // Find all content scripts and eval
+      template.find('script').each(function () {
+        /*jslint evil: true */
+        eval($(this).html());
+      });
 
     });
 

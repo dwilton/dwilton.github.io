@@ -85,7 +85,7 @@ module.exports = function (grunt) {
             'src/scripts/scripts.js'
           ],
           'src/scripts/styleguide/styleguide.min.js': [
-            'src/scripts/styleguide/**/*.js',
+            'src/scripts/styleguide/vendor/**/*.js',
             'src/scripts/styleguide/scripts.js'
           ]
         }
