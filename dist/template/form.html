@@ -1,3 +1,20 @@
+<blockquote>
+  
+  <h2>Multiple form layout configurations and styling for form inputs</h2>
+
+  <h3>Usage</h3>
+  <ul class="Bulleted">
+    <li>All <code>&lt;label&gt;</code> elements will be automatically positon above form fields</li>
+    <li>All <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;textarea&gt;</code> elements will automatically inherit styles</li>
+    <li>Add the <code>required</code> attribute to form elements to indicate they are required</li>
+    <li>Add the <code>placeholder</code> attribute to <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code> elements to suggest input</li>
+    <li>Add the <code>.Data</code> class to display input the user cannot change</li>
+    <li>Wrap form elements with the <code>.FormSelection</code> class to nicely align inputs to the left, this is useful for radio buttons and checkboxes</li>
+    <li>Wrap form element with the <code>.FormInline</code> class to position labels to the left</li> 
+  </ul>
+
+</blockquote>
+
 <div class="TabContent Active">
 
   <fieldset class="Border HasLegend">
@@ -39,6 +56,15 @@
       <div>
         <label for="SelectList">Select List</label>
         <select id="SelectList" name="SelectList" data-val="true" data-val-msg="Item is required." data-codeblock="true">
+          <option value="1">Option 1</option>
+          <option value="1">Option 2</option>
+          <option value="1">Option 3</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="SelectGroupList">Select Groups List</label>
+        <select id="SelectGroupList" name="SelectGroupList" data-val="true" required="required" data-val-msg="Item is required." data-codeblock="true">
           <option value="1">Option 1</option>
           <optgroup class="Invalid" label="Invalid">
             <option value="2" disabled="disabled">2</option>

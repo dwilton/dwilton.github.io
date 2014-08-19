@@ -1,4 +1,25 @@
-<script>
+<blockquote>
+  
+  <h2>Easily apply form validation</h2>
+
+  <h3>Usage</h3>
+  <ul class="Bulleted">
+    <li>Use jQuery to listen for the form submit event <code>$("#my-form").on("submit", function (e) { });</code></li>
+    <li>Prevent the default behavior by excuting <code>e.preventDefault();</code></li>
+    <li>Check if the form is valid by excuting<code>validation.validateForm(e)</code>, passing the form event as a parameter</li>
+    <li><code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;textarea&gt;</code> fields with the:
+      <ul class="Bulleted">
+        <li><code>required</code> attribute will be validated</li>
+        <li><code>pattern</code> attribute will be validated against the pattern "regular expressions"</li>
+        <li><code>data-validation-message</code> attribute will display within a tooltip if invalid and focused</li>
+      </ul>
+  </ul>
+
+  <div class="Condition">You can also add custom validation logic to the submit event handler, the message box could be use to present any messaging</div>
+
+</blockquote>
+
+<script id="validationJS" type="text/x-javascript-template">
 
   $(function () {
 
@@ -26,7 +47,7 @@
 
   <h2>Basic Validation</h2>
 
-  <form id="my-form">
+  <form id="my-form" data-codeblock="true" data-codeblock-js="validationJS">
 
     <fieldset>
 
