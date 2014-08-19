@@ -2,6 +2,8 @@
 
 .AppControl();
 .GridControl();
+.BreadcrumbsControl();
+.BlockquoteControl();
 .ButtonControl();
 .ActionButtonControl();
 .AutocompleteControl();
@@ -9,6 +11,7 @@
 .CharacterCounterControl();
 .CheckboxControl();
 .CloseButtonControl();
+.CodeControl();
 .CodeExampleControl();
 .ConditionControl();
 .DataControl();

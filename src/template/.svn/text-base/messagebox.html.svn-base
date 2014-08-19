@@ -1,3 +1,24 @@
+<blockquote>
+  
+  <h2>Defines styles for info, success, warning and error pop-up messages.</h2>
+
+  <h3>Usage</h3>
+
+  <ul class="Bulleted">
+    <li>To use message box excute the <code>$.messageBox()</code> jQuery plugin.</li>
+    <li>The plugin accepts the following paramaters:
+      <ul class="Bulleted">
+        <li><code>type</code> determines the style of the message box <code>info</code>, <code>success</code>, <code>warning</code> or <code>error</code></li>
+        <li><code>title</code> title bar value</li>
+        <li><code>content</code> content value</li>
+        <li><code>isCloseButton</code> display close button <code>true</code> or <code>false</code></li>
+        <li><code>buttons</code> array, each value contains a name and optional callback <code>{ name: 'button name', callback: function () { // operation here }}</code>
+      </ul>
+    </li>
+  </ul>
+
+</blockquote>
+
 <div class="Panel">
 
   <button id="OpenInfoMessageBoxExample" type="button" data-codeblock="true" data-codeblock-js="OpenInfoMessageBoxExampleJS">Open Info Message Box</button>

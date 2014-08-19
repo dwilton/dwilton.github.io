@@ -44,10 +44,10 @@
 
 /* #region Text */
 
-@text-color: @charcoal;
+@text-color: @grey;
 @text-color-disabled: @secondary-shade-lighten-3;
 @text-color-placeholder: @secondary-shade-lighten-4;
-@text-color-condition: @secondary-shade-lighten-4;
+@text-color-condition: @light-grey;
 
 @text-link-color: @secondary-shade;
 @text-link-color-hover: lighten(@text-link-color, 10%);
@@ -78,6 +78,20 @@
 /* #region Alert */
 
 @alert-text-color: @red;
+
+/* #endregion */
+
+/* #region Core */
+
+@code-text-color: @highlight-color;
+@code-background-color: @base-shade-lighten-3;
+@code-border-color: @base-shade-lighten-1;
+
+/* #endregion */
+
+/* #region Breadcrumbs */
+
+@breadcrumbs-text-color: @light-grey;
 
 /* #endregion */
 
@@ -130,7 +144,7 @@
 /* #region Code Example */
 
 @code-example-heading-text-color: @light;
-@code-example-heading-background-color: @secondary-shade-lighten-2;
+@code-example-heading-background-color: @selected-color;
 @code-example-background-color: @white;
 
 /* #endregion */
@@ -139,7 +153,7 @@
 
 @data-text-color: @text-color;
 @data-background-color: lighten(@dark, 90%);
-@data-locked-text-color: lighten(@text-color, 50%);
+@data-locked-text-color: lighten(@text-color, 30%);
 
 /* #endregion */
 
@@ -269,8 +283,9 @@
 
 /* #region Navigation */
 
-@navigation-background-color: @base-shade-darken-1;
+@navigation-border-color: @base-shade;
 @navigation-text-color: @secondary-shade-lighten-3;
+@navigation-text-color-disabled: lighten(@navigation-text-color, 30%);
 
 /* #endregion */
 
@@ -293,6 +308,9 @@
 @response-message-noresults-image: @icon-response-alert-small-light no-repeat;
 @response-message-infonote-text-color: @secondary-shade-lighten-2;
 @response-message-infonote-image: @icon-response-information-small-light;
+@response-message-warning-text-color: @text-color;
+@response-message-warning-link-text-color: @text-link-color;
+@response-message-warning-image: @icon-response-alert-small-red;
 @response-message-error-text-color: @text-color;
 @response-message-error-link-text-color: @text-link-color;
 @response-message-error-image: @icon-response-alert-small-red;

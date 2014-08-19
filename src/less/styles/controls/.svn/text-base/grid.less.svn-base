@@ -81,7 +81,7 @@
       top: 25px;
       bottom: 0;
       overflow: hidden;
-      overflow-y: scroll;
+      overflow-y: auto;
     }
 
     /**
@@ -162,6 +162,7 @@
      */
     
     .GridHeader {
+      background-color: @grid-header-background-color;
 
       th {
         color: @grid-header-text-color;
@@ -260,6 +261,8 @@
 
   .Overlay {
     background: @grid-overlay-background-color;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   }
 
   .MessageWindow {

@@ -3,14 +3,22 @@
 .SelectControl() {
 
   select {
-    -webkit-appearance: none;
-    padding: 4px 5px;
+    text-overflow: ellipsis;
     border-radius: 0;
 
     option {
       padding: 10px;
     }
 
+  }
+
+  /* Only target webkit */
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select {
+      padding-right: 28px;
+      -webkit-appearance: none;
+      appearance: none;
+    }
   }
 
 }
@@ -20,6 +28,10 @@
 /* #region Select Style */
 
 .SelectStyle() {
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    background: @ui-select-list-toggle-dark no-repeat right;
+  }
 
   select {
     &.HasPlaceholder.placeholderActive {

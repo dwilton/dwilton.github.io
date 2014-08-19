@@ -1,3 +1,22 @@
+<blockquote>
+
+  <h2>Easily create nice looking buttons, that come in different styles.</h2>
+
+  <h3>Usage</h3>
+
+  <ul class="Bulleted">
+    <li><code>&lt;button&gt;</code> elements will automatically inherit the button style.</li> 
+    <li>Add the <code>.Button</code> class to an <code>&lt;a&gt;</code> element.</li> 
+    <li>Add the disabled attribute to a <code>&lt;button&gt;</code> element to disable the button.</li>
+    <li>Add the <code>.Secondary</code> class deemphasizes to look.</li>
+    <li>Add the <code>.PositiveButton</code> or <code>.NegativeButton</code> class to indicate behaviour.</li>
+    <li>Add the <code>.Processing</code> class to indicate the user should wait (requires additional mark-up).</li>
+    <li>Wrap with the <code>.ActionButtons</code> class to increase the buttons size and align to the right.</li>
+    <li>Use the <code>.SegmentedButtons</code> class to create toggle buttons</li>
+  </ul>
+
+</blockquote>
+
 <div class="Panel">
 
   <h2>Button</h2>
@@ -41,10 +60,10 @@
 
   <hr />
 
-  <h2>Desired Action Button</h2>
+  <h2>Positive Action Button</h2>
   <div class="ActionButtons" data-codeblock="true">
-    <button type="submit" class="DesiredAction">
-      <span class="Action">Desired Primary</span>
+    <button type="submit" class="PositiveButton">
+      <span class="Action">Positive Button</span>
       <span class="ProcessIndicator">
         <span class="ProcessIcon"></span>
         <span class="ProcessText">Saving...</span>
@@ -57,7 +76,7 @@
 
   <h2>Negative Action Button</h2>
   <div class="ActionButtons" data-codeblock="true">
-    <button type="submit" class="Delete">Delete</button>
+    <button type="submit" class="NegativeButton">Negative Button</button>
     <button type="submit" class="Secondary">Secondary</button>
   </div>
 
@@ -75,13 +94,6 @@
   <div class="ButtonRow" data-codeblock="true">
     <button type="submit" disabled="disabled">Primary Disabled</button>
     <button type="submit" disabled="disabled" class="Secondary">Secondary Disabled</button>
-  </div>
-
-  <hr />
-
-  <h2>Nav Options Button</h2>
-  <div class="nav-options" data-codeblock="true">
-    <button type="submit">Primary</button>
   </div>
 
   <hr />

@@ -1,4 +1,25 @@
+<blockquote>
+
+  <h2>Easily create stylish grids</h2>
+
+  <h3>Usage</h3>
+  <ul class="Bulleted">
+    <li>Use the <code>$('#myGrid').Grid()</code> jQuery plugin to extend functionality and offset scrollbars</li>
+    <li>The plugin accepts the following paramaters
+      <ul class="Bulleted">
+        <li><code>onload</code> callback function to excute once the plugin has loaded</li>
+        <li><code>infiniteScroll</code> callback function to excute once user has scrolled to the buttom of the grid</li>
+      </ul>
+    </li>
+  </ul>
+
+</blockquote>
+
 <div class="Panel GridExample">
+
+  <h2>Paging Grids</h2>
+
+  <h3>Loading</h3>
 
   <div data-codeblock="true">
 
@@ -21,8 +42,122 @@
           </thead>
         </table>
       </div>
+      <div class="Content"></div>
+    </div>
+
+    <div class="Pagination">
+      <a href="" class="Button Active">first</a>
+      <a href="" class="Button">2</a>
+      <a href="" class="Button">2</a>
+      <a href="" class="Button">3</a>
+      <a href="" class="Button">4</a>
+      <a href="" class="Button">5</a>
+      <a href="" class="Button">6</a>
+      <a href="" class="Button">7</a>
+      <a href="" class="Button">8</a>
+      <a href="" class="Button">9</a>
+      <a href="" class="Button">last</a>
+    </div>
+
+  </div>
+
+  <hr />
+
+  <h3>Results</h3>
+
+  <div data-codeblock="true">
+
+    <div id="ExampleLoadingGrid01" class="Grid">
+      <div class="GridHeader">
+        <table>
+          <colgroup>
+            <col style="width: 300px;">
+            <col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="Sortable Asc" data-sort-by="Column1"><a>Column 1</a></th>
+              <th class="Sortable" data-sort-by="Column2"><a>Column 2</a></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
       <div class="Content">
-        <div class="Loading"><span class="Spinner"></span>Loading</div>
+        <table>
+          <colgroup>
+            <col style="width: 300px;">
+            <col>
+          </colgroup>
+          <tbody>
+            <tr class="odd" data-id="1">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr data-id="2">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr class="odd" data-id="3">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr data-id="4">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr class="odd" data-id="5">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr data-id="6">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr class="odd" data-id="7">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr data-id="8">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr class="odd" data-id="9">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr data-id="10">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr class="odd" data-id="11">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr data-id="12">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr class="odd" data-id="13">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr data-id="14">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr class="odd" data-id="15">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr data-id="16">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+            <tr class="odd" data-id="17">
+              <td>Column 1 Data</td>
+              <td>Column 2 Data</td>
+            </tr>
+          </table>
       </div>
     </div>
 
@@ -43,6 +178,8 @@
   </div>
 
   <hr />
+
+  <h3>No Results</h3>
 
   <div data-codeblock="true">
 
@@ -88,6 +225,8 @@
 
   <hr />
 
+  <h3>Error</h3>
+
   <div data-codeblock="true">
 
     <div id="ExampleErrorGrid02" class="Grid">
@@ -114,23 +253,13 @@
       </div>
     </div>
 
-    <div class="Pagination">
-      <a href="" class="Button Active">first</a>
-      <a href="" class="Button">2</a>
-      <a href="" class="Button">2</a>
-      <a href="" class="Button">3</a>
-      <a href="" class="Button">4</a>
-      <a href="" class="Button">5</a>
-      <a href="" class="Button">6</a>
-      <a href="" class="Button">7</a>
-      <a href="" class="Button">8</a>
-      <a href="" class="Button">9</a>
-      <a href="" class="Button">last</a>
-    </div>
-
   </div>
 
   <hr />
+
+  <h2>Infinite Scroll</h2>
+
+  <h3>Results</h3>
 
   <div id="ExampleDataGrid03" class="Grid" data-codeblock="true">
     <div class="GridHeader">
@@ -252,49 +381,6 @@
           </tr>
         </tbody>
       </table>
-    </div>
-  </div>
-
-  <div id="ExamplePagingGrid05" class="Grid" data-codeblock="true">
-    <div class="GridHeader">
-      <table>
-        <colgroup>
-          <col style="">
-          <col style="width: 140px;">
-          <col style="width: 140px;">
-          <col style="width: 140px;">
-        </colgroup>
-        <thead>
-          <tr>
-            <th class="Sortable Asc" data-sort-by="Column1"><a>Column 1</a></th>
-            <th class="Sortable" data-sort-by="Column2"><a>Column 2</a></th>
-            <th class="Sortable" data-sort-by="Column3"><a>Column 3</a></th>
-            <th class="Sortable" data-sort-by="Column4"><a>Column 4</a></th>
-          </tr>
-        </thead>
-      </table>
-    </div>
-    <div class="Content">
-      <table>
-        <colgroup>
-          <col style="">
-          <col style="width: 140px;">
-          <col style="width: 140px;">
-          <col style="width: 140px;">
-        </colgroup>
-        <tbody>
-          <tr class="odd" data-id="1">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="Status">
-        <div class="LoadIcon"></div>
-        <div class="LoadText">Loading</div>
-      </div>
     </div>
   </div>
 

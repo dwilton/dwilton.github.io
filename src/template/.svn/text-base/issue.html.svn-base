@@ -1,3 +1,17 @@
+<blockquote>
+  
+  <h2>Defines styles for info, success, warning and error inline messages.</h2>
+
+  <h3>Usage</h3>
+
+  <ul class="Bulleted">
+    <li>Add the <code>.Issue</code> class with a style modifier <code>.Info</code>, <code>.Success</code>, <code>.Warning</code> or <code>.Error</code></li>
+    <li>Optionally add the close button using <code>&lt;a href="#" class="CloseButton"&gt;Close&lt;/a&gt;</code></li>
+    <li>Optionally add content using the <code>&lt;div class="Container"&gt;&lt;div class="Content"&gt;&lt;/div&gt;&lt;/div&gt;</code></li>
+  </ul>
+
+</blockquote>
+
 <div class="Panel">
 
   <h2>Issue Info Bar</h2>

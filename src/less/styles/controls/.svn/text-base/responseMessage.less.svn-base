@@ -3,7 +3,8 @@
 .ResponseMessageControl() {
 
   .NoResults, 
-  .InfoNote, 
+  .DataInfo,
+  .DataWarning, 
   .DataError {
     display: inline-block;
     font: 14px @font-family-heading;
@@ -17,70 +18,31 @@
       height: 20px;
       vertical-align: text-bottom;
     }
-  }
-
-  .DataError {
 
     ul {
       display: inline-block;
     }
-
-    .ErrorText {
-      display: inline-block;
-
-      .ErrorLink {
-        display: inline-block;
-        text-decoration: none;
-        cursor: pointer;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
   }
 
-  .DataErrorBox,
-  .InfoNoteBox {
+  .DataInfoBox,
+  .DataWarningBox,
+  .DataErrorBox {
     display: inline-block;
     padding: 8px 10px 10px 8px;
     border-width: 1px;
     border-style: solid;
 
-    &.IconBackground {
-      display: block;
-      padding-left: 38px;
-      background-repeat: no-repeat;
-      background-position: 10px 10px;
-
-      h4,
-      strong {
-
-        &:before {
-          display: none;
-        }
-      }
-
-      ul {
-        list-style:disc inside;
-      }
-    }
-
-    h4,
-    strong {
-      display: block;
-
-      &:before {
-        content: "";
-        display: inline-block;
-        position: relative;
-        padding-right: 4px;
-        width: 20px;
-        height: 20px;
-        vertical-align: text-bottom;
-      }
+    &:before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      padding-right: 4px;
+      width: 20px;
+      height: 20px;
+      vertical-align: text-bottom;
     }
   }
+
 }
 
 /* #endregion */
@@ -92,17 +54,25 @@
   .NoResults {
     color: @response-message-noresults-text-color;
 
-      &:before {
-        background: @response-message-noresults-image;
-      }
+    &:before {
+      background: @response-message-noresults-image;
     }
+  }
 
-    .InfoNote {
-      color: @response-message-infonote-text-color;
+  .DataInfo {
+    color: @response-message-infonote-text-color;
 
-      &:before {
-        background: transparent @response-message-infonote-image no-repeat 0 3px;
-      }
+    &:before {
+      background: transparent @response-message-infonote-image no-repeat 0 3px;
+    }
+  }
+
+  .DataWarning {
+    color: @response-message-warning-text-color;
+
+    &:before {
+      background: @response-message-warning-image no-repeat 0 5px;
+    }
   }
 
   .DataError {
@@ -111,46 +81,38 @@
     &:before {
       background: @response-message-error-image no-repeat 0 5px;
     }
+  }
 
-    .ErrorText {
+  .DataInfoBox {
+    display: block;
+    border-color: @tooltip-info-border-color;
+    background-color: @tooltip-info-background-color;
 
-      .ErrorLink {
-        color: @response-message-error-link-text-color;
+    &:before {
+      background: transparent @response-message-infonote-image no-repeat 0 3px;
+    }
+  }
 
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+  .DataWarningBox {
+    display: block;
+    border-color: @tooltip-warning-border-color;
+    background-color: @tooltip-warning-background-color;
+
+    &:before {
+      background: @response-message-warning-image no-repeat 0 5px;
     }
   }
 
   .DataErrorBox {
-    border-color: desaturate(lighten(@issue-error, 4%), 48%);
-    background-color: lighten(saturate(@issue-error, 32%), 50%);
+    display: block;
+    border-color: @tooltip-error-border-color;
+    background-color: @tooltip-error-background-color;
 
-    &.IconBackground {
-      background-image: @response-message-error-image;
-    }
-
-    h4:before,
-    strong:before {
+    &:before {
       background: @response-message-error-image no-repeat 0 5px;
     }
   }
 
-  .InfoNoteBox {
-    border-color: desaturate(lighten(@issue, 4%), 48%);
-    background-color: lighten(desaturate(@issue, 32%), 50%);
-
-    &.IconBackground {
-      background-image: @response-message-infonote-image;
-    }
-
-    h4:before,
-    strong:before {
-      background: transparent @response-message-infonote-image no-repeat 0 3px;
-    }
-  }
 }
 
 /* #endregion */
@@ -159,7 +121,7 @@
 
 .ResponseMessageControlHack() {
 
-  .DataErrorBox {
+  .InfoNoteBox, .DataWarningBox, .DataErrorBox {
     font-size: 12px;
     text-align: left;
   }

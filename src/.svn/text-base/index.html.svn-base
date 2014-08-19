@@ -21,6 +21,7 @@
   <script type="text/javascript" src="scripts/vendor/jqueryui/plugins/jquery.ui.accordion.js"></script>
   <script type="text/javascript" src="scripts/vendor/jqueryui/plugins/jquery.ui.autocomplete.min.js"></script>
   <script type="text/javascript" src="scripts/vendor/jqueryui/plugins/jquery.ui.datepicker.js"></script>
+  <script type="text/javascript" src="scripts/vendor/plugins/jquery.nanoscroller.min.js"></script>
   <script type="text/javascript" src="scripts/vendor/plugins/dialog.js"></script>
   <script type="text/javascript" src="scripts/vendor/plugins/grid.js"></script>
   <script type="text/javascript" src="scripts/vendor/plugins/jquery-extensions.js"></script>
@@ -31,11 +32,11 @@
   <script type="text/javascript" src="scripts/scripts.js"></script>
   <!-- endbuild -->
 
-  <!-- build:js css/foxtelHacks.min.css --><!--[if lt IE 9]>
+  <!-- build:css css/foxtelHacks.min.css --><!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/hacks.css" /><![endif]-->
   <!-- endbuild -->
   
-  <!-- build:js css/foxtelIE.min.css --><!--[if lt IE 9]>
+  <!-- build:css css/foxtelIE.min.css --><!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
   <!-- endbuild -->
 
@@ -54,10 +55,12 @@
   <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
   <!-- endbuild -->
 
+  <script type="text/javascript" src="scripts/styleguide/codemirror.min.js"></script>
+  <script type="text/javascript" src="scripts/styleguide/codemirror-formatting.min.js"></script>
+
   <!-- build:js scripts/styleguide/styleguide.min.js -->
   <script type="text/javascript" src="scripts/styleguide/vendor/plugins/code-example.js"></script>
   <script type="text/javascript" src="scripts/styleguide/vendor/plugins/data-codeblock.js"></script>
-  <script type="text/javascript" src="scripts/styleguide/vendor/prettify.js"></script>
   <script type="text/javascript" src="scripts/styleguide/scripts.js"></script>
   <!-- endbuild -->
 
@@ -81,7 +84,7 @@
           <li><a href="" data-template="miscellaneous">Miscellaneous</a></li>
           <li><a href="" data-template="tooltips">Tooltips</a></li>
           <li><a href="" data-template="subscription">Subscription</a></li>
-          <li><a href="" data-template="productselector">Product Selector</a></li>
+          <li><a href="" data-template="nanoscroller">Nano Scroller</a></li>
           <li><a href="" data-template="validation">Validation</a></li>
         </ul>
       </nav>

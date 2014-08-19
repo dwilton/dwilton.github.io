@@ -25,7 +25,8 @@
     a:link, 
     a:visited, 
     a:hover, 
-    a:active {
+    a:active,
+    span.Disabled {
       display: block;
       padding: 10px 0 10px 20px;
       font-size: 14px;
@@ -50,13 +51,14 @@
       a:visited, 
       a:hover, 
       a:focus, 
-      a:active {
+      a:active,
+      span {
         font-size: 14px;
         font-family: 'Proxima Nova SemiBold';
         text-transform: uppercase;
         color: @navigation-text-color;
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDhCQTM5MEVEMEY5MTFFM0E1RjI4NjE5RDg0QUUwMEEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDhCQTM5MEZEMEY5MTFFM0E1RjI4NjE5RDg0QUUwMEEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowOEJBMzkwQ0QwRjkxMUUzQTVGMjg2MTlEODRBRTAwQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowOEJBMzkwREQwRjkxMUUzQTVGMjg2MTlEODRBRTAwQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjYY77sAAAC2SURBVHjaYnziLrCWgYHBAoh9pXe8P8eABJiA2A6IpYB4x1MPQV10yVgg/gXEokC8G6hAHS4JNGoHkA6DKhAH4j1ABcogScb///+DVQEFQoHUciBmBuKHQGwLl4QqAFkxH6rgMhMDKvgCxP+gbA4mJF3eQGoFELMC8Wsg9gcbC5RwB3I2ATEbEL8BYiegQy8zAgPBGSrBBcQfoRLnYP6ciyThjhxKLEB8GGQ5EIcAJU4iuw4gwACYaTn6mQNjbwAAAABJRU5ErkJggg==) no-repeat left 13px;
-        border-bottom: solid 1px #ddd;
+        background: @icon-arrow-right-orange no-repeat left 13px;
+        border-bottom: solid 1px @navigation-border-color;
       }
 
       a:hover, 
@@ -64,14 +66,20 @@
         text-decoration: underline;
       }
 
-      .Current a,
-      .Current a:link,
-      .Current a:visited,
-      .Current a:hover,
-      .Current a:active,
-      .Current a:focus {
+      .Selected a,
+      .Selected a:link,
+      .Selected a:visited,
+      .Selected a:hover,
+      .Selected a:active,
+      .Selected a:focus {
         color: @selected-text-color;
         background: @selected-color;
+      }
+
+      span.Disabled {
+        color: @navigation-text-color-disabled;
+        background: @icon-arrow-right-grey no-repeat left 13px;
+        cursor: default;
       }
     }
   }

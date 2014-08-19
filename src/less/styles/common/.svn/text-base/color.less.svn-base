@@ -63,11 +63,14 @@
 @issue-button-text-shadow: 0px 1px 1px fadeout(@light, 50%);
 
 /* Issue Types e.g. Info, Warning, Error, Success */
-@issue: @blue;
-@issue-warning: @orange;
-@issue-error: @red;
-@issue-success: @green;
-
+@issue: desaturate(@blue, 20%);
+@issue-warning: desaturate(@orange, 20%);
+@issue-error: desaturate(@red, 20%);
+@issue-success: desaturate(@green, 20%);
+@issue-background: lighten(desaturate(@blue, 20%), 50%);
+@issue-background-warning: lighten(desaturate(@orange, 20%), 40%);
+@issue-background-error: lighten(desaturate(@red, 20%), 55%);
+@issue-background-success: lighten(desaturate(@green, 20%), 50%);
 
 /**
  * Tooltips
@@ -77,9 +80,9 @@
 @tooltip-background-gradient: linear-gradient(bottom, fadeout(@light, 100%) 0, fadeout(@light, 50%) 20px);
 
 /* Tooltip Types e.g. Info, Warning, Error */
-@tooltip-info-background-color: lighten(desaturate(@blue, 20%), 40%);
+@tooltip-info-background-color: lighten(desaturate(@blue, 20%), 50%);
 @tooltip-info-border-color: darken(desaturate(@blue, 5%), 4%);
-@tooltip-warning-background-color: lighten(desaturate(@issue-warning, 20%), 27%);
-@tooltip-warning-border-color: lighten(saturate(@issue-warning, 29%), 13%);
-@tooltip-error-background-color: lighten(desaturate(@issue-error, 20%), 40%);
-@tooltip-error-border-color: lighten(saturate(@issue-error, 29%), 13%);
+@tooltip-warning-background-color: lighten(desaturate(@orange, 20%), 40%);
+@tooltip-warning-border-color: lighten(saturate(@orange, 29%), 13%);
+@tooltip-error-background-color: lighten(desaturate(@red, 20%), 55%);
+@tooltip-error-border-color: lighten(saturate(@red, 29%), 13%);

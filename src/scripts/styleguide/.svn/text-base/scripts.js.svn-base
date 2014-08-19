@@ -23,24 +23,21 @@ $(function() {
       // Update content
       template.html(data);
       
-      // Find all content scripts and eval
-      template.find('script').each(function () {
-        /*jslint evil: true */
-        eval($(this).html());
-      });
-
       // Create data code blocks
       $.fn.dataCodeBlock();
 
       // Apply code example plugin
       $('.CodeExample').codeExample();
 
-      // Apply pretty print
-      window.prettyPrint();
+      // Find all content scripts and eval
+      template.find('script').each(function () {
+        /*jslint evil: true */
+        eval($(this).html());
+      });
 
       // Change navigation selected state
-      navigation.find('li').removeClass('Current');
-      link.parent().addClass('Current');
+      navigation.find('li').removeClass('Selected');
+      link.parent().addClass('Selected');
 
       // Apply UI elements to the current scope
       window.FOXTEL.uiElements(template);

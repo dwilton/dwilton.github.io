@@ -1,7 +1,7 @@
 9
 
 dir
-9001
+9013
 https://wiltond@separatereality.unfuddle.com/svn/separatereality_foxtel/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/fonts
 https://wiltond@separatereality.unfuddle.com/svn/separatereality_foxtel
 
@@ -230,14 +230,14 @@ wiltond
 
 450665
 
-ProximaNova-Light.ttf
+ProximaNova-Sbold.woff
 file
 
 
 
 
 2014-07-29T07:37:07.000000Z
-b68511e0b5e0d714b3a7f455d99d0b99
+21e654cca572ed57e41e5daeb2cc7273
 2014-07-29T07:30:19.568920Z
 8636
 wiltond
@@ -262,7 +262,7 @@ has-props
 
 
 
-243524
+117692
 
 ProximaNova-Reg.eot
 file
@@ -298,14 +298,14 @@ has-props
 
 242372
 
-ProximaNova-Sbold.woff
+ProximaNova-Light.ttf
 file
 
 
 
 
 2014-07-29T07:37:07.000000Z
-21e654cca572ed57e41e5daeb2cc7273
+b68511e0b5e0d714b3a7f455d99d0b99
 2014-07-29T07:30:19.568920Z
 8636
 wiltond
@@ -330,7 +330,7 @@ has-props
 
 
 
-117692
+243524
 
 ProximaNova-Light.svg
 file

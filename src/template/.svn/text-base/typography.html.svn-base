@@ -1,3 +1,15 @@
+<blockquote>
+
+  <h2>Default style for typographic elements</h2>
+
+  <h3>Usage</h3>
+  <ul class="Bulleted">
+    <li>Baseline typography defaults including headings, text elements and all types of lists</li>
+    <li>We use Proxima Nova for all of headings.</li>
+  </ul>
+
+</blockquote>
+
 <div class="Panel">
 
   <h2>Headings</h2>

@@ -7,21 +7,23 @@
   }
 
   h1, h2, h3 {
-    margin: 0 0 10px;
     font-weight: bold;
   }
 
   h1 {
+    margin: 0 0 10px;
     font-size: 24px;
     line-height: 32px;
   }
 
   h2 {
+    margin: 0 0 10px;
     font-size: 18px;
     line-height: 24px;
   }
 
   h3 {
+    margin: 0 0 5px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -60,7 +62,6 @@
 
   h3 {
     color: @heading-h3-text-color;
-    font-style: italic;
   }
 
   h4 {

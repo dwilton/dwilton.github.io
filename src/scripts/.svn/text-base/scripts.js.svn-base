@@ -35,14 +35,23 @@
       console.log('scrollme');
     }
 
+    function sortTest (object) {
+      console.log(object);
+    }
+
     // Grids
-    $('.Grid').Grid({ onload: loadTest, infiniteScroll: scrollTest});
+    $('.Grid').Grid({ onload: loadTest, infiniteScroll: scrollTest, sort: sortTest });
 
     // Tabs
     $('.TabGroup').tabs();
 
     // Tooltips
     $(document).tooltip();
+
+    // Nano Scroller
+    $('.nano').nanoScroller({
+      alwaysVisible: true
+    });
 
   };
 

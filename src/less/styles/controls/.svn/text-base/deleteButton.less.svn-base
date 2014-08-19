@@ -4,8 +4,9 @@
 
   button {
 
+    &.NegativeButton,
     &.Delete,
-    &.alert {
+    &.alert, {
       color: @deletebutton-text-color;
       background: @deletebutton-background-color;
       border-color: darken(@deletebutton-background-color, 20%);
@@ -28,7 +29,7 @@
 
 .DeleteButtonControlIE() {
 
-  button.Delete.Hover {
+  button.Delete.Hover, button.NegativeButton.Hover {
     color: @deletebutton-text-color-hover;
     background-color: @deletebutton-background-color-hover;
     border-color: darken(@deletebutton-background-color-hover, 20%);
@@ -42,7 +43,7 @@
 
 .DeleteButtonControlHack() {
 
-  button.Delete {
+  button.Delete, button.NegativeButton {
 
     span {
       color: @deletebutton-text-color;

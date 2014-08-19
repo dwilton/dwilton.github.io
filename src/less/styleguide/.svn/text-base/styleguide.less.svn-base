@@ -1,4 +1,4 @@
-@import "prettify.less";
+@import "codemirror.less";
 @import "../styles/Common.less";
 
 body {
@@ -30,6 +30,10 @@ body {
 .GridExample .Panel, 
 .NavigationExample .TabContainer {
   height: 400px;
+}
+
+.NanoExample {
+  height: 300px
 }
 
 .GridExample .Grid {

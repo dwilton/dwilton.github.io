@@ -2,7 +2,7 @@
 
 .DesiredButtonStyle() {
 
-  button.DesiredAction {
+  button.DesiredAction, button.PositiveButton {
     color: @desiredbutton-text-color;
     background-color: @desiredbutton-background-color;
     border-color: darken(@desiredbutton-background-color, 20%);
@@ -25,7 +25,7 @@
 
 .DesiredButtonControlIE() {
 
-  button.DesiredAction.Hover {
+  button.DesiredAction.Hover, button.PositiveButton.Hover {
     color: @desiredbutton-text-color-hover;
     background-color: @desiredbutton-background-color-hover;
     border-color: darken(@desiredbutton-background-color-hover, 20%);
@@ -39,7 +39,7 @@
 
 .DesiredButtonControlHack() {
 
-  button.DesiredAction {
+  button.DesiredAction, button.PositiveButton {
     span {
       color: @desiredbutton-text-color;
     }

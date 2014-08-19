@@ -50,26 +50,23 @@
             javascript = $('#' + javascriptTemplate).html();
           }
 
-          var strCodeblock = '<div class="CodeExample"><a href="#">Show Code Snippet</a><div class="Details">';
+          var codeBlock = $('<div class="CodeExample"><a href="#">Show Code Snippet</a><div class="Details"></div></div>');
+          var htmlBlock = $('<div class="code html"><h3>HTML</h3><textarea>' + html + '</textarea></div>');
+          var javascriptBlock = $('<div class="code javascript"><h3>JavaScript</h3><textarea>' + javascript + '</textarea></div>');
+          var details = codeBlock.children('.Details');
 
-          if (html.length) {
-            strCodeblock = strCodeblock + '<h3>HTML</h3><pre class="prettyprint"><code class="language-markup">' + escapeHTML(html) + '</code></pre>';
+          details.append(htmlBlock);
+
+          if (javascript.length > 0) {
+            details.append(javascriptBlock);
           }
 
-          if (javascript.length) {
-            strCodeblock = strCodeblock + '<h3>JavaScript</h3><pre class="prettyprint"><code class="language-markup">' + escapeHTML(javascript) + '</code></pre>';
-          }
-
-          strCodeblock = strCodeblock + '</div></div>';
-
-          var codeblock = $(strCodeblock);
-      
           if (target) {
-            $(target).append(codeblock);
+            $(target).append(codeBlock);
           } else {
-            $(this).after(codeblock);
+            $(this).after(codeBlock);
           }
-          
+
       });
     
     };

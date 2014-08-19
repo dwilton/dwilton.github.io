@@ -1,4 +1,4 @@
-﻿(function ($) {
+(function ($) {
     'use strict';
     var methods = {
         init: function () {
@@ -17,8 +17,15 @@
 
                     targetEls.each(function () {
 
-                        // Tab container element
                         var containerEl = $(this);
+                        var html = containerEl.find('.html textarea').get(0);
+                        var javascript = containerEl.find('.javascript textarea').get(0);
+                        var htmlEditor = window.CodeMirror.fromTextArea(html, { value: html, lineNumbers: true, readOnly: true });
+                        
+                        if (javascript) {
+                          var javaScriptEditor = window.CodeMirror.fromTextArea(javascript, { value: javascript, mode: 'javascript', lineNumbers: true, readOnly: true });
+                          
+                        }
 
                         containerEl.children('a').click(function (e) {
 
@@ -34,6 +41,12 @@
                             else {
                                 aEl.text('Hide Code Snippet');
                                 containerEl.children('.Details').show();
+                            }
+
+                            htmlEditor.refresh();
+
+                            if (javascript) {
+                              javaScriptEditor.refresh();
                             }
 
                         });

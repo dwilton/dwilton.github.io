@@ -170,8 +170,8 @@
 
 /* #endregion */
 
-.ColorBorderGradient(@background-color: #fff) {
-  background: linear-gradient(to right,  @background-color 0%, overlay(@background-color, #fff501) 100%);
+.ColorBorderGradient(@background-color: #fff, @direction: right) {
+  background: linear-gradient(to @direction,  @background-color 0%, overlay(@background-color, #fff501) 100%);
   background-color: @background-color;
 }
 

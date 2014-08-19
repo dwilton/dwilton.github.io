@@ -1,3 +1,16 @@
+<blockquote>
+  
+  <h2><span class="Alert">Under Development</span> - Defines styles for Foxtel services and equipment.</h2>
+
+  <h3>Usage</h3>
+
+  <ul class="Bulleted">
+    <li>Add <code>.Iq</code>, <code>.Iqhd</code>, <code>.Iq3</code> etc... classes to style equipment</li>
+    <li>Add <code>.TvEntertainment</code>, <code>.TvSports</code>, <code>.TvMovies</code> etc... classes to style components, using the <code>.has</code> modifier if the component is already on the customers subscription</li>
+  </ul>
+
+</blockquote>
+
 <div class="Panel">
 
   <h2>Equipment</h2>
@@ -250,9 +263,5 @@
     </div>
 
   </div>
-
-  <hr />
-
-  <h2>Bundles</h2>
 
 </div>

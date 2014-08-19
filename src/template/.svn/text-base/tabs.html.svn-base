@@ -1,4 +1,17 @@
-<h2>Default Tabs</h2>  
+<blockquote>
+
+  <h2>Create a tabbed navigation with different styles.</h2>
+
+  <h3>Usage</h3>
+  <ul class="Bulleted">
+    <li>The tab component is control by the tabs plugin and is automatically applied</li>
+    <li>Tabs should for the most part by use on darker backgrounds</li>
+    <li>Tabs can be displayed vertically using the <code>.TabsVertical</code> modifier class</li>
+  </ul>
+
+</blockquote>
+
+<h2>Tabs</h2>  
 
 <div class="TabContainer" data-codeblock="true">
   <div class="TabGroup">

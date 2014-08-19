@@ -34,6 +34,12 @@
 /* #region Button Control Hacks */
 /* #endregion *//* #region Alert Style */
 /* #endregion *//* #region Autocomplete Control */
+/* #endregion *//* #region Blockquote Control */
+/* #endregion */
+/* #region Blockquote Style  */
+/* #endregion *//* #region Breadcrumbs Control */
+/* #endregion */
+/* #region Breadcrumbs Style  */
 /* #endregion *//* #region Button Control */
 /* #endregion */
 /* #region Button Style */
@@ -42,25 +48,9 @@
 /* #endregion */
 /* #region Button Control Hacks */
 /* #endregion *//* #region Breadcrumbs Control */
-.Breadcrumbs li {
-  display: inline-block;
-  padding: 0 8px 0 18px;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUY3QTU0OUIyNjlEMTFFNEFFRjlCRkJEMkYwMkNCRTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUY3QTU0OUMyNjlEMTFFNEFFRjlCRkJEMkYwMkNCRTkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBRjdBNTQ5OTI2OUQxMUU0QUVGOUJGQkQyRjAyQ0JFOSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBRjdBNTQ5QTI2OUQxMUU0QUVGOUJGQkQyRjAyQ0JFOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pvi0Qx4AAACjSURBVHjaXNAhCwJBEIbhdTlF7IcgisFgspuuGAwiFjFp8IfZhUPBIAjepUvCYjH4I7QIJkHxXZiVwYEHBr5ZZtiSc25jjOljjLNRZZGggQN6/+ECL8Q4oqtD/2ImA3Vk6ITQ1w5zvNFEjpZVK1IsZaCNvQ59PfGRvqrDEdYo44ZJCIfYooI7BrhaaULwkMFLuHaFmgp+vxSh8MsxxUlf9xVgAEgWH6hDEPmVAAAAAElFTkSuQmCC) no-repeat left center;
-  font: normal 14px/18px "Proxima Nova Regular", Arial, Helvetica, Sans-Serif;
-  vertical-align: middle;
-}
-.Breadcrumbs a {
-  color: #555;
-}
-.Breadcrumbs li:first-child {
-  padding: 0 12px 0 0;
-  background: none;
-}
-.Breadcrumbs li:first-child a {
-  font-size: 20px;
-  color: #555;
-}
-/* #region Central Know How Control */
+/* #endregion */
+/* #region Breadcrumbs Style  */
+/* #endregion *//* #region Central Know How Control */
 /* #endregion */
 /* #region Condition Style */
 /* #endregion *//* #region Character Counter Control */
@@ -74,6 +64,9 @@
 /* #endregion *//* #region Close Button Control */
 /* #endregion */
 /* #region Close Button Style */
+/* #endregion *//* #region Code Control */
+/* #endregion */
+/* #region Code Style */
 /* #endregion *//* #region Code Example Control */
 /* #endregion */
 /* #region Code Example Style */
@@ -254,6 +247,7 @@
 @icon-tier-tv-hd: ;
 @icon-tier-tv-platinum: ;
 */
+/* Arrow Right */
 /* Old Tiers */
 /* Equipment */
 /* Search */
@@ -265,7 +259,6 @@
 /* Options */
 /* Response Alert */
 /* Tooltip */
-/* Breadcrumbs */
 /* Combobox */
 /* Checkbox */
 /* Radio button */
@@ -275,7 +268,6 @@
 /* Directional Arrows */
 /* Loading */
 /* Numeric Spinner */
-/* Scrollbars */
 /* Select List */
 /* #region Steps */
 /* #region Tooltab */
@@ -332,6 +324,10 @@
 /*               Controls               */
 /****************************************/
 /* #region Alert */
+/* #endregion */
+/* #region Core */
+/* #endregion */
+/* #region Breadcrumbs */
 /* #endregion */
 /* #region Button */
 /* #endregion */
@@ -442,10 +438,12 @@ button:hover span,
 button:focus span {
   color: #ffffff;
 }
-button.DesiredAction span {
+button.DesiredAction span,
+button.PositiveButton span {
   color: #ffffff;
 }
-button.Delete span {
+button.Delete span,
+button.NegativeButton span {
   color: #ffffff;
 }
 .headingOne {
@@ -472,6 +470,8 @@ button.Delete span {
 .accountSearch label {
   color: #383838;
 }
+.InfoNoteBox,
+.DataWarningBox,
 .DataErrorBox {
   font-size: 12px;
   text-align: left;
@@ -654,7 +654,7 @@ span.error.left .Arrow span {
 }
 span.error .Content {
   color: #000000;
-  background: #fff5f5;
+  background: #ffffff;
 }
 span.error .Icon span {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAMAAACknt2MAAAA3lBMVEUAAADdRkXSQkHVQ0LZRUPaRUTcRkTcRkXdRkXdRkXOQT/VQ0LXREPaRUTbRUTcRkXdRkXdRkXFPTvdRkXKPz7OQT/SQkHXREPZRUPdRkXcRkXbRUTdRkXFPTvSQkHVQ0LZRUPdRkXdRkX////cRkXPQUDZRUTbRUTuo6LYREPTQkHTQ0LVQ0KsTEu0Tk7ZcG+6Ojm/PDzccXHFPTvfZ2bgcnHjaWjjqqnkoJ/owcHplpWjMzLura3v2dnyxMT10ND58vLQQkHFPjzXkI/KPz7MQD/MS0r68vL98/PaRUQUyI+ZAAAAInRSTlMAECAgICAwMEBQcHBwgICAgI+fn7+/v7+/z8/P3+/v7+/vD5s+CQAAALhJREFUeF51zOUSwjAQhdEt7u7ObqHF3d3h/V8IEhpahnD+ZDPfzAWLOKIXpLyIWFBkRaniS1SWosh5fouHBemkUkDU6T5lk5I5ItLZpGTuRrRExOx3yrK0IBqyN2ItYZWZEx344TaLS+V6tFG5nJnyGlejmfYWEiX4MHQH4nIC56jUDa26kAEu3TCMd+uGEGDF3xa2RBNxl+0AtlJTONH++vmkAJK1j35ndTF/PjhbHK2fBBRHf8SekDs0gmidnrMAAAAASUVORK5CYII=") no-repeat 0 0;
@@ -669,13 +669,13 @@ span.error.top .Arrow {
   border-color: #e33a3a transparent transparent transparent;
 }
 span.error.top .Arrow span {
-  border-color: #fff5f5 transparent transparent transparent;
+  border-color: #ffffff transparent transparent transparent;
 }
 span.error.right .Arrow {
   border-color: transparent #e33a3a transparent transparent;
 }
 span.error.right .Arrow span {
-  border-color: transparent #fff5f5 transparent transparent;
+  border-color: transparent #ffffff transparent transparent;
 }
 span.error.bottom .Arrow {
   border-color: transparent transparent #e33a3a transparent;
@@ -687,7 +687,7 @@ span.error.left .Arrow {
   border-color: transparent transparent transparent #e33a3a;
 }
 span.error.left .Arrow span {
-  border-color: transparent transparent transparent #fff5f5;
+  border-color: transparent transparent transparent #ffffff;
 }
 span.error.left {
   left: -100%;

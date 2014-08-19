@@ -2,12 +2,15 @@
 
 .AppStyle();
 .GridStyle();
+.BlockquoteStyle();
+.BreadcrumbsStyle();
 .ButtonStyle();
 .AlertStyle();
 .CheckboxStyle();
 .CentralKnowHowStyle();
 .CharacterCounterStyle();
 .CloseButtonStyle();
+.CodeStyle();
 .CodeExampleStyle();
 .ConditionStyle();
 .DataStyle();

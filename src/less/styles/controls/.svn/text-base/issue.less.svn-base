@@ -107,10 +107,10 @@
 
 /* #region Create Issue Type */
 
-.CreateIssueType(@issue-shade: #FFFFFF) {
+.CreateIssueType(@issue-shade: #FFF, @issue-background: #FFF) {
 
-  @issue-border-color: desaturate(@issue-shade, 10%);
-  @issue-background-color: lighten(desaturate(@issue-shade, 32%), 50%);
+  @issue-border-color: @issue-shade;
+  @issue-background-color: @issue-background;
 
   @issue-titlebar-background-color: @issue-border-color;
   @issue-titlebar-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -202,22 +202,22 @@
   .Dialog .Issue,
   .Issue,
   .Issue.Info {
-    .CreateIssueType(@issue);
+    .CreateIssueType(@issue, @issue-background);
   }
 
   .Dialog .Issue.Warning,
   .Issue.Warning {
-    .CreateIssueType(@issue-warning);
+    .CreateIssueType(@issue-warning, @issue-background-warning);
   }
 
   .Dialog .Issue.Error,
   .Issue.Error {
-    .CreateIssueType(@issue-error);
+    .CreateIssueType(@issue-error, @issue-background-error);
   }
 
   .Dialog .Issue.Success,
   .Issue.Success {
-    .CreateIssueType(@issue-success);
+    .CreateIssueType(@issue-success,  @issue-background-success);
   }
 
 }
