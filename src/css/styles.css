@@ -678,7 +678,7 @@ code {
   user-select: text;
 }
 .Condition {
-  color: #787878;
+  color: #999999;
 }
 .Data {
   color: #555555;
@@ -804,7 +804,6 @@ h2 {
 }
 h3 {
   color: #999999;
-  font-style: italic;
 }
 h4 {
   color: #555555;
@@ -1540,11 +1539,11 @@ button.Secondary:disabled {
   background-image: -webkit-linear-gradient(bottom, #666888 0, #3a3c4e 100%);
   background-image: linear-gradient(bottom, #666888 0, #3a3c4e 100%);
 }
-select {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAoCAMAAAAmLUHXAAAANlBMVEUAAAD////////i4uIAAACCg4mCg4mCg4mCg4mCg4mCg4mCg4mCg4mCg4mCg4mCg4mCg4mCg4nvbov8AAAAEXRSTlMAAA04GkDvEGC/34AgrzCfj+E2rZ0AAABTSURBVHhe7dBJDoAgEETRcqCbUe37X1YMamjYGZf85UutCusyQzXlPutQ88aVernzavuorRWuoIPSrajRiv3ChEYjZY2tIogc6JSJuFfY8Ps7Q0/JGQV/qkGNkQAAAABJRU5ErkJggg==") no-repeat right;
 }
 select.HasPlaceholder.placeholderActive {
-  color: #787878;
+  color: #999999;
 }
 /**
    * Tiers

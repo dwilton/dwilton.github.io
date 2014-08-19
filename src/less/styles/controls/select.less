@@ -29,9 +29,11 @@
 
 .SelectStyle() {
 
-  select {
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
     background: @ui-select-list-toggle-dark no-repeat right;
+  }
 
+  select {
     &.HasPlaceholder.placeholderActive {
       color: @text-color-condition;
     }

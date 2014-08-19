@@ -43,16 +43,16 @@
 
           var target = $(this).data('codeblock-target');
           var javascriptTemplate = $(this).data('codeblock-js');
-          var html = $(this).clone().removeAttr('data-codeblock data-codeblock-target data-codeblock-js')[0].outerHTML.trim();
+          var html = $(this).clone().removeAttr('data-codeblock data-codeblock-target data-codeblock-js')[0].outerHTML;
           var javascript = '';
 
           if (javascriptTemplate) {
-            javascript = $('#' + javascriptTemplate).html().trim();
+            javascript = $('#' + javascriptTemplate).html();
           }
 
-          var codeBlock = $('<div class="CodeExample"><a href="#">Show Code Snippet</a><div class="Details"></div>');
+          var codeBlock = $('<div class="CodeExample"><a href="#">Show Code Snippet</a><div class="Details"></div></div>');
           var htmlBlock = $('<div class="code html"><h3>HTML</h3><textarea>' + html + '</textarea></div>');
-          var javascriptBlock = $('<div class="code javascript"><h3>JavaScript</h3><textarea>' + javascript + '</textarea></div></div>');
+          var javascriptBlock = $('<div class="code javascript"><h3>JavaScript</h3><textarea>' + javascript + '</textarea></div>');
           var details = codeBlock.children('.Details');
 
           details.append(htmlBlock);

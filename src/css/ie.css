@@ -618,7 +618,7 @@ fieldset.Border > legend span {
   background: #50526b;
 }
 select.HasPlaceholder.placeholderActive option:first-child {
-  color: #787878;
+  color: #999999;
 }
 button.Secondary {
   padding-bottom: 4px;

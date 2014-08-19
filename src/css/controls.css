@@ -708,7 +708,7 @@ code {
 }
 .Condition {
   display: inline-block;
-  font-size: 13px;
+  font-size: 12px;
   line-height: normal;
 }
 .Data {
@@ -1068,9 +1068,9 @@ h2 {
   line-height: 24px;
 }
 h3 {
+  margin: 0 0 5px;
   font-size: 16px;
   line-height: 24px;
-  margin: 0 0 5px;
 }
 h4,
 h5,
