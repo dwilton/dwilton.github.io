@@ -44,9 +44,9 @@
               <li><a href="#options">Options &amp; Preferences</a></li>
               <li><a href="#other">Other</a></li>
             </ul>
-            <div class="TabContent" id="profile">
+            <!-- <div class="TabContent" id="profile">
               Profile
-            </div> 
+            </div> -->
             <div class="TabContent" id="options">
               <div class="eight columns">
                 <div class="separatorLine">
@@ -58,7 +58,7 @@
                         <span class="icon add"></span> 
                         <label>Opt in to all Foxtel &amp; Partners' Marketing</label>
                         <div class="selection">
-                          <a href="#" onclick="selectAll(this);">Select All</a> | <a href="#" onclick="deselectAll(this);">Deselect All</a>
+                          <a href="#" onclick="selectAll(this);">Yes</a> | <a href="#" onclick="deselectAll(this);">No</a>
                         </div>
                       </div>
                       <!-- Second Level Opt -->
@@ -68,7 +68,7 @@
                             <span class="icon add"></span> 
                             <label>Opt in to all Foxtel Marketing</label>
                             <div class="selection">
-                              <a href="#" onclick="selectAll(this);">Select All</a> | <a href="#" onclick="deselectAll(this);">Deselect All</a>
+                              <a href="#" onclick="selectAll(this);">Yes</a> | <a href="#" onclick="deselectAll(this);">No</a>
                             </div>
                           </div>
                           <!-- Third Level Opt-->
@@ -175,13 +175,37 @@
   </div>
   <script type="text/javascript">
   // Check / Un-check item on click
-  $('ul.options li li li .icon').click(function(el) {
+  //If any sibling is removed, update parent icon to add
+  $('ul.options li .icon').click(function(el) {
     el = $(this);
+    n = el.parents('li').length - 1; //Number of parent list elements
     if (el.attr("has")) {
       el.removeClass('active added').addClass('removed').removeAttr('has');
+      if (el.closest('li').find('li').length != 0) {
+        el.closest('li').find('.icon').removeClass('active added').addClass('removed').removeAttr('has');
+      }
+      // Check if no siblings are checked and set parent to unchecked
+      if (el.closest('li').siblings('li').find('[has]').length == 0){
+        el.parents('li').find('.icon').slice(0,n).removeClass('active added').addClass('removed').removeAttr('has');
+      }
+      checkParent(el);
     }
     else {
       el.removeClass('add removed').addClass('added').attr('has', 'true');
+      if (el.closest('li').find('li').length != 0) {
+        el.closest('li').find('.icon').removeClass('add removed').addClass('added').attr('has', 'true');
+      }
+      // Check if all siblings are checked and set parent to checked
+      if (el.closest('li').siblings('li').find('.icon:not([has])').length == 0)  {
+        el.parents('li').find('.icon').slice(0,n).removeClass('add removed').addClass('added').attr('has', 'true');
+      }
+      checkParent(el);
+    }
+    function checkParent(el) {
+      if ((el.closest('ul').children('li').find('.icon:not([has])').length > 0) && (el.closest('ul').children('li').find('[has]').length > 0))
+      {
+        el.parents('li').find('.icon').slice(0,n).addClass('add').removeClass('active added removed').removeAttr('has');
+      }
     }
   });
 
@@ -191,6 +215,10 @@
     $(el).closest('li').each(function(el) {
       el = $(this).find('span.icon');
       el.removeClass('add removed').addClass('added').attr('has', 'true');
+      // Check parent's siblings and set parents' status accordingly
+      if (el.closest('li').siblings('li').find('.icon:not([has])').length == 0)  {
+        el.parents('li').find('.icon').removeClass('add removed').addClass('added').attr('has', 'true');
+      }
     });
   }
 
@@ -201,6 +229,17 @@
       el = $(this).find('span.icon');
       el.removeClass('active added').addClass('removed').removeAttr('has');
     });
+    // Check parent's siblings and set parents' status accordingly
+      if (( $(el).closest('ul').children('li').find('.icon:not([has])').length > 0) && ( $(el).closest('ul').children('li').find('[has]').length > 0))
+      {
+        //$(el).closest('ul .icon').hide().removeClass('active added').addClass('add').removeAttr('has');
+      }
+      else if (( $(el).closest('ul').children('li').find('.icon:not([has])').length > 0) && ( $(el).closest('ul').children('li').find('[has]').length <= 0))
+      {
+        el.parents('ul').find('.icon').removeClass('active added').addClass('removed').removeAttr('has');
+      }
+   
+    //alert($(el).closest('ul').children('li').addClass('tete'));
   }
   </script>
 </body>

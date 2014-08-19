@@ -10,6 +10,35 @@
 
 .BreadcrumbsStyle() {
 
+  .Breadcrumbs {
+
+    li {
+      display: inline-block;
+      padding: 0 8px 0 18px;
+      background: @icon-arrow-right-grey no-repeat left center;
+      font: normal 14px/18px "Proxima Nova Regular", Arial, Helvetica, Sans-Serif;
+      vertical-align: middle;
+    }
+
+    a:link,
+    a:visited,
+    a:focus,
+    a:active {
+      color: @breadcrumbs-text-color;
+    }
+
+    a:hover {
+      color: @ft-orange;
+      text-decoration: none;
+    }
+
+    li:first-child {
+      padding: 0 12px 0 0;
+      background: none;
+    }
+
+  }
+
 }
 
 /* #endregion */

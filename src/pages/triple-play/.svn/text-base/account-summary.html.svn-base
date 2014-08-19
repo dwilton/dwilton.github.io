@@ -363,31 +363,31 @@
                               <h3>Platinum HD <span class="right">$120.00</span></h3>
                               <ul>
                                 <li>
-                                  <em class="tier tierOrange"></em>
+                                  <span class="tier Essentials has"></span>
                                   <label>Essentials</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierGreen"></em>
+                                  <span class="tier Sport has"></span>
                                   <label>Sports</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierCyan"></em>
+                                  <span class="tier MoviesDrama has"></span>
                                   <label>Premium Movies &amp;  Drama</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier DramaLifestyle has"></span>
                                   <label>Drama &amp; Lifestyle</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier KidsMusic has"></span>
                                   <label>Kids &amp; Music</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier Documentary has"></span>
                                   <label>Documentary &amp; Adventure</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierOther"></em>
+                                  <span class="tier HD has"></span>
                                   <label>HD</label> 
                                 </li>
                                 <li>
@@ -489,37 +489,37 @@
                               <h3>Platinum HD <span class="right">$120.00</span></h3>
                               <ul>
                                 <li>
-                                  <em class="tier tierOrange"></em>
+                                  <span class="tier Essentials has"></span>
                                   <label>Essentials</label> 
                                   <span class="right">$47.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierGreen"></em>
+                                  <span class="tier Sport has"></span>
                                   <label>Sports</label> 
                                   <span class="right">$25.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierCyan"></em>
+                                  <span class="tier MoviesDrama has"></span>
                                   <label>Premium Movies &amp;  Drama</label> 
                                   <span class="right">$25.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier DramaLifestyle has"></span>
                                   <label>Drama &amp; Lifestyle</label> 
                                   <span class="right">$15.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier KidsMusic has"></span>
                                   <label>Kids &amp; Music</label> 
                                   <span class="includedTierPrice"></span>
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier Documentary has"></span>
                                   <label>Documentary &amp; Adventure</label> 
                                   <span class="includedTierPrice" style=""></span>
                                 </li>
                                 <li>
-                                  <em class="tier tierOther"></em>
+                                  <span class="tier HD has"></span>
                                   <label>HD</label> 
                                   <span class="right">$10.00</span>
                                 </li>
@@ -701,31 +701,31 @@
                               <h3>Platinum HD <span class="right">$120.00</span></h3>
                               <ul>
                                 <li>
-                                  <em class="tier tierOrange"></em>
+                                  <span class="tier Essentials has"></span>
                                   <label>Essentials</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierGreen"></em>
+                                  <span class="tier Sport has"></span>
                                   <label>Sports</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierCyan"></em>
+                                  <span class="tier MoviesDrama has"></span>
                                   <label>Premium Movies &amp;  Drama</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier DramaLifestyle has"></span>
                                   <label>Drama &amp; Lifestyle</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier KidsMusic has"></span>
                                   <label>Kids &amp; Music</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier Documentary has"></span>
                                   <label>Documentary &amp; Adventure</label> 
                                 </li>
                                 <li>
-                                  <em class="tier tierOther"></em>
+                                  <span class="tier HD has"></span>
                                   <label>HD</label> 
                                 </li>
                                 <li>
@@ -832,32 +832,32 @@
                               <h3>Foxtel Play <span class="right">$120.00</span></h3>
                               <ul>
                                 <li>
-                                  <em class="tier tierGreen"></em>
+                                  <span class="tier Sport has"></span>
                                   <label>Sports</label> 
                                   <span class="right">$25.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierCyan"></em>
+                                  <span class="tier MoviesDrama has"></span>
                                   <label>Premium Movies &amp;  Drama</label> 
                                   <span class="right">$25.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier DramaLifestyle has"></span>
                                   <label>Entertainment</label> 
                                   <span class="right">$100.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier DramaLifestyle has"></span>
                                   <label>Drama</label> 
                                   <span class="includedTierPrice"></span>
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier Documentary has"></span>
                                   <label>Documentaries</label> 
                                   <span class="includedTierPrice"></span>
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier KidsMusic has"></span>
                                   <label>Kids</label> 
                                   <span class="includedTierPrice"></span>
                                 </li>
@@ -922,14 +922,37 @@
                             <div class="pane">
                               <h3>Platinum HD</h3>
                               <ul>
-                                <li><span class="tier tierOrange"></span>Essentials </li>
-                                <li><span class="tier tierGreen"></span>Sports </li>
-                                <li><span class="tier tierCyan"></span>Premium Movies &amp;  Drama</li>
-                                <li><span class="tier tierPink"></span>Drama &amp; Lifestyle</li>
-                                <li><span class="tier tierPink"></span>Kids &amp; Music</li>
-                                <li><span class="tier tierPink"></span>Documentary &amp; Adventure</li>
-                                <li><span class="tier tierOther"></span>HD </li>
-                                <li><span class="iqhdIcon"></span></li>
+                                <li>
+                                  <span class="tier Essentials has"></span>
+                                  <label>Essentials</label> 
+                                </li>
+                                <li>
+                                  <span class="tier Sport has"></span>
+                                  <label>Sports</label> 
+                                </li>
+                                <li>
+                                  <span class="tier MoviesDrama has"></span>
+                                  <label>Premium Movies &amp;  Drama</label> 
+                                </li>
+                                <li>
+                                  <span class="tier DramaLifestyle has"></span>
+                                  <label>Drama &amp; Lifestyle</label> 
+                                </li>
+                                <li>
+                                  <span class="tier KidsMusic has"></span>
+                                  <label>Kids &amp; Music</label> 
+                                </li>
+                                <li>
+                                  <span class="tier Documentary has"></span>
+                                  <label>Documentary &amp; Adventure</label> 
+                                </li>
+                                <li>
+                                  <span class="tier HD has"></span>
+                                  <label>HD</label> 
+                                </li>
+                                <li>
+                                  <label class="iqhdIcon"></label>
+                                </li>
                               </ul>
                             </div>
                           </li>
@@ -1024,39 +1047,32 @@
                               <h3>Platinum HD <span class="right">$120.00</span></h3>
                               <ul>
                                 <li>
-                                  <em class="tier tierOrange"></em>
+                                  <span class="tier Essentials has"></span>
                                   <label>Essentials</label> 
-                                  <span class="right">$47.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierGreen"></em>
+                                  <span class="tier Sport has"></span>
                                   <label>Sports</label> 
-                                  <span class="right">$25.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierCyan"></em>
+                                  <span class="tier MoviesDrama has"></span>
                                   <label>Premium Movies &amp;  Drama</label> 
-                                  <span class="right">$25.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier DramaLifestyle has"></span>
                                   <label>Drama &amp; Lifestyle</label> 
-                                  <span class="right">$15.00</span>
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier KidsMusic has"></span>
                                   <label>Kids &amp; Music</label> 
-                                  <span class="includedTierPrice"></span>
                                 </li>
                                 <li>
-                                  <em class="tier tierPink"></em>
+                                  <span class="tier Documentary has"></span>
                                   <label>Documentary &amp; Adventure</label> 
-                                  <span class="includedTierPrice" style=""></span>
                                 </li>
                                 <li>
-                                  <em class="tier tierOther"></em>
+                                  <span class="tier HD has"></span>
                                   <label>HD</label> 
-                                  <span class="right">$10.00</span>
                                 </li>
                                 <li>
                                   <label class="iqhdIcon"></label>
@@ -1137,7 +1153,7 @@
                           <div class="pane">
                             <h3>Build Your Own</h3>
                             <ul>
-                              <li><span class="tier tierOrange"></span>Essentials </li>
+                              <li><span class="tier Essentials has"></span>Essentials </li>
                               <li><span class="iqhdIcon"></span></li>
                             </ul>
                           </div>
@@ -1178,12 +1194,30 @@
                           <li>
                             <div class="pane">
                               <ul>
-                                <li><span class="tier tierGreen"></span>Sports </li>
-                                <li><span class="tier tierCyan"></span>Premium Movies &amp;  Drama</li>
-                                <li><span class="tier tierPink"></span>Drama &amp; Lifestyle</li>
-                                <li><span class="tier tierPink"></span>Kids &amp; Music</li>
-                                <li><span class="tier tierPink"></span>Documentary &amp; Adventure</li>
-                                <li><span class="tier tierOther"></span>HD </li>
+                                <li>
+                                  <span class="tier Sport has"></span>
+                                  <label>Sports</label> 
+                                </li>
+                                <li>
+                                  <span class="tier MoviesDrama has"></span>
+                                  <label>Premium Movies &amp;  Drama</label> 
+                                </li>
+                                <li>
+                                  <span class="tier DramaLifestyle has"></span>
+                                  <label>Drama &amp; Lifestyle</label> 
+                                </li>
+                                <li>
+                                  <span class="tier KidsMusic has"></span>
+                                  <label>Kids &amp; Music</label> 
+                                </li>
+                                <li>
+                                  <span class="tier Documentary has"></span>
+                                  <label>Documentary &amp; Adventure</label> 
+                                </li>
+                                <li>
+                                  <span class="tier HD has"></span>
+                                  <label>HD</label> 
+                                </li>
                               </ul>
                             </div>
                           </li>
@@ -1247,14 +1281,39 @@
                           <div class="pane">
                             <h3>Platinum HD</h3>
                             <ul>
-                              <li><span class="tier tierOrange"></span>Essentials </li>
-                              <li><span class="tier tierGreen"></span>Sports </li>
-                              <li><span class="tier tierCyan"></span>Premium Movies &amp;  Drama</li>
-                              <li><span class="tier tierPink"></span>Drama &amp; Lifestyle</li>
-                              <li><span class="tier tierPink"></span>Kids &amp; Music</li>
-                              <li><span class="tier tierPink"></span>Documentary &amp; Adventure</li>
-                              <li><span class="tier tierOther"></span>HD </li>
-                              <li><span class="iqhdIcon"></span></li>
+                              <ul>
+                                <li>
+                                  <span class="tier Essentials has"></span>
+                                  <label>Essentials</label> 
+                                </li>
+                                <li>
+                                  <span class="tier Sport has"></span>
+                                  <label>Sports</label> 
+                                </li>
+                                <li>
+                                  <span class="tier MoviesDrama has"></span>
+                                  <label>Premium Movies &amp;  Drama</label> 
+                                </li>
+                                <li>
+                                  <span class="tier DramaLifestyle has"></span>
+                                  <label>Drama &amp; Lifestyle</label> 
+                                </li>
+                                <li>
+                                  <span class="tier KidsMusic has"></span>
+                                  <label>Kids &amp; Music</label> 
+                                </li>
+                                <li>
+                                  <span class="tier Documentary has"></span>
+                                  <label>Documentary &amp; Adventure</label> 
+                                </li>
+                                <li>
+                                  <span class="tier HD has"></span>
+                                  <label>HD</label> 
+                                </li>
+                                <li>
+                                  <label class="iqhdIcon"></label>
+                                </li>
+                              </ul>
                             </ul>
                           </div>
                         </li>
@@ -1338,15 +1397,38 @@
                           <div class="pane">
                             <h3>Platinum HD</h3>
                             <ul>
-                              <li><span class="tier tierOrange"></span>Essentials </li>
-                              <li><span class="tier tierGreen"></span>Sports </li>
-                              <li><span class="tier tierCyan"></span>Premium Movies &amp;  Drama</li>
-                              <li><span class="tier tierPink"></span>Drama &amp; Lifestyle</li>
-                              <li><span class="tier tierPink"></span>Kids &amp; Music</li>
-                              <li><span class="tier tierPink"></span>Documentary &amp; Adventure</li>
-                              <li><span class="tier tierOther"></span>HD </li>
-                              <li><span class="iqhdIcon"></span></li>
-                            </ul>
+                                <li>
+                                  <span class="tier Essentials has"></span>
+                                  <label>Essentials</label> 
+                                </li>
+                                <li>
+                                  <span class="tier Sport has"></span>
+                                  <label>Sports</label> 
+                                </li>
+                                <li>
+                                  <span class="tier MoviesDrama has"></span>
+                                  <label>Premium Movies &amp;  Drama</label> 
+                                </li>
+                                <li>
+                                  <span class="tier DramaLifestyle has"></span>
+                                  <label>Drama &amp; Lifestyle</label> 
+                                </li>
+                                <li>
+                                  <span class="tier KidsMusic has"></span>
+                                  <label>Kids &amp; Music</label> 
+                                </li>
+                                <li>
+                                  <span class="tier Documentary has"></span>
+                                  <label>Documentary &amp; Adventure</label> 
+                                </li>
+                                <li>
+                                  <span class="tier HD has"></span>
+                                  <label>HD</label> 
+                                </li>
+                                <li>
+                                  <label class="iqhdIcon"></label>
+                                </li>
+                              </ul>
                           </div>
                         </li>
                         <li>

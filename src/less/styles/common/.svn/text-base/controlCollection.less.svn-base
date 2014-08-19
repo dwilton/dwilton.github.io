@@ -7,6 +7,7 @@
 @import "../controls/alert.less";
 @import "../controls/autocomplete.less";
 @import "../controls/button.less";
+@import "../controls/breadcrumbs.less";
 @import "../controls/centralKnowHow.less";
 @import "../controls/characterCounter.less";
 @import "../controls/checkbox.less";

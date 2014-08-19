@@ -39,20 +39,22 @@ module.exports = function (grunt) {
 
     // Minify CSS
     cssmin: {
-      files: {
-        'src/css/styleguide.min.css': [
-          'src/css/styleguide.css'
-        ],
-        'src/css/foxtel.min.css': [
-          'src/css/reset.css',
-          'src/css/controls.css',
-          'src/css/styles.css'],
-        'src/css/foxtelIE.min.css': [
-          'src/css/ie.css'
-        ],
-        'src/css/foxtelHacks.min.css': [
-          'src/css/hacks.css'
-        ]
+      all: {
+        files: {
+          'src/css/styleguide.min.css': [
+            'src/css/styleguide.css'
+          ],
+          'src/css/foxtel.min.css': [
+            'src/css/reset.css',
+            'src/css/controls.css',
+            'src/css/styles.css'],
+          'src/css/foxtelIE.min.css': [
+            'src/css/ie.css'
+          ],
+          'src/css/foxtelHacks.min.css': [
+            'src/css/hacks.css'
+          ]
+        }
       }
     },
 

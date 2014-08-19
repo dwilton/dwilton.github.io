@@ -160,15 +160,15 @@
           <span class="right">$0.00</span>
         </li>
         <li>
-          <span class="tier">Documentary &amp; Adventure</span>
+          <span class="tier Documentary">Documentary &amp; Adventure</span>
           <span class="right">$0.00</span>
         </li>
         <li>
-          <span class="tier">Drama &amp; Lifestyle</span>
+          <span class="tier DramaLifestyle">Drama &amp; Lifestyle</span>
           <span class="right">$0.00</span>
         </li>
         <li>
-          <span class="tier">Kids &amp; Music</span>
+          <span class="tier KidsMusic">Kids &amp; Music</span>
           <span class="right">$0.00</span>
         </li>
         <li>
@@ -195,15 +195,15 @@
           <span class="right">$0.00</span>
         </li>
         <li>
-          <span class="tier">Documentary &amp; Adventure</span>
+          <span class="tier Documentary has">Documentary &amp; Adventure</span>
           <span class="right">$0.00</span>
         </li>
         <li>
-          <span class="tier">Drama &amp; Lifestyle</span>
+          <span class="tier DramaLifestyle has">Drama &amp; Lifestyle</span>
           <span class="right">$0.00</span>
         </li>
         <li>
-          <span class="tier">Kids &amp; Music</span>
+          <span class="tier KidsMusic has">Kids &amp; Music</span>
           <span class="right">$0.00</span>
         </li>
         <li>
@@ -230,15 +230,15 @@
           <span class="right">$0.00</span>
         </li>
         <li>
-          <span class="tier">Documentary &amp; Adventure</span>
+          <span class="tier Documentary has">Documentary &amp; Adventure</span>
           <span class="right">$0.00</span>
         </li>
         <li>
-          <span class="tier">Drama &amp; Lifestyle</span>
+          <span class="tier DramaLifestyle has">Drama &amp; Lifestyle</span>
           <span class="right">$0.00</span>
         </li>
         <li>
-          <span class="tier">Kids &amp; Music</span>
+          <span class="tier KidsMusic has">Kids &amp; Music</span>
           <span class="right">$0.00</span>
         </li>
         <li>
