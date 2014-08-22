@@ -165,11 +165,23 @@ module.exports = function (grunt) {
       html: ['dist/index.html']
     },
 
+    // Compress dist build
+    compress: {
+      main: {
+        options: {
+          archive: 'dist/styleguide.zip'
+        },
+        expand: true,
+        cwd: 'dist/',
+        src: ['**/*']
+      }
+    }
+
   });
 
   // Default Task
   grunt.registerTask('default', ['jshint', 'less', 'cssmin', 'uglify']);
   grunt.registerTask('server', ['jshint', 'less', 'cssmin', 'uglify', 'connect:server', 'watch']);
-  grunt.registerTask('dist', ['jshint', 'less', 'cssmin', 'uglify', 'clean', 'copy', 'usemin', 'connect:dist']);
+  grunt.registerTask('dist', ['jshint', 'less', 'cssmin', 'uglify', 'clean', 'copy', 'usemin', 'compress', 'connect:dist']);
 
 };

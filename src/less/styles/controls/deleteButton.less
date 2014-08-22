@@ -11,14 +11,18 @@
       background: @deletebutton-background-color;
       border-color: darken(@deletebutton-background-color, 20%);
       .TextShadow(@deletebutton-background-color);
-
-      &:enabled:focus,
-      &:enabled:active,
-      &:enabled:hover {
-        color: @deletebutton-text-color-hover;
-        background: @deletebutton-background-color-hover;
-      }
     }
+  }
+
+  button.NegativeButton:focus:enabled,
+  button.NegativeButton:active:enabled,
+  button.NegativeButton:hover:enabled,
+  button.Delete:focus:enabled,
+  button.Delete:active:enabled,
+  button.Delete:hover:enabled,
+  a.NegativeButton:hover {
+    color: @deletebutton-text-color-hover;
+    background: @deletebutton-background-color-hover;
   }
   
 }

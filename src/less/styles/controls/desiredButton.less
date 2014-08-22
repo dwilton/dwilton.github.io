@@ -2,19 +2,22 @@
 
 .DesiredButtonStyle() {
 
-  button.DesiredAction, button.PositiveButton {
+  button.DesiredAction, button.PositiveButton, a.PositiveButton  {
     color: @desiredbutton-text-color;
     background-color: @desiredbutton-background-color;
     border-color: darken(@desiredbutton-background-color, 20%);
-    .TextShadow(@desiredbutton-background-color);
+  }
 
-    &:enabled:focus,
-    &:enabled:active,
-    &:enabled:hover {
-      color: @desiredbutton-text-color-hover;
-      background-color: @desiredbutton-background-color-hover;
-      border-color: darken(@desiredbutton-background-color-hover, 20%);
-    }
+  button.DesiredAction:focus:enabled,
+  button.DesiredAction:active:enabled,
+  button.DesiredAction:hover:enabled,
+  button.PositiveButton:focus:enabled,
+  button.PositiveButton:active:enabled,
+  button.PositiveButton:hover:enabled,
+  a.PositiveButton:hover {
+    color: @desiredbutton-text-color-hover;
+    background-color: @desiredbutton-background-color-hover;
+    border-color: darken(@desiredbutton-background-color-hover, 20%);
   }
 
 }
@@ -25,7 +28,7 @@
 
 .DesiredButtonControlIE() {
 
-  button.DesiredAction.Hover, button.PositiveButton.Hover {
+  button.DesiredAction.Hover, button.PositiveButton.Hover  {
     color: @desiredbutton-text-color-hover;
     background-color: @desiredbutton-background-color-hover;
     border-color: darken(@desiredbutton-background-color-hover, 20%);

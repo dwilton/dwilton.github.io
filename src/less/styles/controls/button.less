@@ -97,30 +97,20 @@
   }
 
   a.Button {
-    &:link,
-    &:visited,
-    &:focus,
-    &:active {
-      color: @button-text-color;
-    }  
-  }
+    color: @button-text-color;
 
-  a.Button.Active {
-    &:link,
-    &:visited,
-    &:focus,
-    &:active {
+    &:hover {
+      color: @white;
+      background: @button-highlight-color;
+      border-color: darken(@button-highlight-color, 20%);
+      text-decoration: none;
+    }
+
+    &.Active {
       color: @button-text-color-active;
       background-color: @button-background-color-active;
       border-color: darken(@button-background-color-active, 20%);
-    }   
-  }
-
-  a.Button:hover {
-    color: @white;
-    background: @button-highlight-color;
-    border-color: darken(@button-highlight-color, 20%);
-    text-decoration: none;
+    }
   }
 
 }

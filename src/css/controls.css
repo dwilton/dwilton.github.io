@@ -1095,12 +1095,7 @@ hr {
   height: 1px;
   border: 0;
 }
-a,
-a:link,
-a:visited,
-a:focus,
-a:hover,
-a:active {
+a {
   text-decoration: none;
   cursor: pointer;
 }

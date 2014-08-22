@@ -630,25 +630,19 @@ button.Processing .ProcessIndicator .ProcessIcon {
   background-position: center center;
   opacity: 0.5;
 }
-a.Button:link,
-a.Button:visited,
-a.Button:focus,
-a.Button:active {
+a.Button {
   color: #555555;
-}
-a.Button.Active:link,
-a.Button.Active:visited,
-a.Button.Active:focus,
-a.Button.Active:active {
-  color: #ffffff;
-  background-color: #50526b;
-  border-color: #242531;
 }
 a.Button:hover {
   color: #ffffff;
   background: #ff4526;
   border-color: #bf1b00;
   text-decoration: none;
+}
+a.Button.Active {
+  color: #ffffff;
+  background-color: #50526b;
+  border-color: #242531;
 }
 .Alert,
 .alert {
@@ -750,31 +744,30 @@ button.alert {
   border-color: #750000;
   text-shadow: 0 -1px #750000;
 }
-button.NegativeButton:enabled:focus,
-button.Delete:enabled:focus,
-button.alert:enabled:focus,
-button.NegativeButton:enabled:active,
-button.Delete:enabled:active,
-button.alert:enabled:active,
-button.NegativeButton:enabled:hover,
-button.Delete:enabled:hover,
-button.alert:enabled:hover {
+button.NegativeButton:focus:enabled,
+button.NegativeButton:active:enabled,
+button.NegativeButton:hover:enabled,
+button.Delete:focus:enabled,
+button.Delete:active:enabled,
+button.Delete:hover:enabled,
+a.NegativeButton:hover {
   color: #ffffff;
   background: #ff0f0f;
 }
 button.DesiredAction,
-button.PositiveButton {
+button.PositiveButton,
+a.PositiveButton {
   color: #ffffff;
   background-color: #53a848;
   border-color: #306129;
-  text-shadow: 0 -1px #306129;
 }
-button.DesiredAction:enabled:focus,
-button.PositiveButton:enabled:focus,
-button.DesiredAction:enabled:active,
-button.PositiveButton:enabled:active,
-button.DesiredAction:enabled:hover,
-button.PositiveButton:enabled:hover {
+button.DesiredAction:focus:enabled,
+button.DesiredAction:active:enabled,
+button.DesiredAction:hover:enabled,
+button.PositiveButton:focus:enabled,
+button.PositiveButton:active:enabled,
+button.PositiveButton:hover:enabled,
+a.PositiveButton:hover {
   color: #ffffff;
   background-color: #70bd66;
   border-color: #418439;
@@ -865,23 +858,14 @@ h6 {
 hr {
   background-color: #ebebeb;
 }
-a,
-a:link,
-a:visited,
-a:focus,
-a:hover,
-a:active {
+a {
   color: #ff4526;
 }
 a:focus,
 a:hover {
   text-decoration: underline;
 }
-.Secondary a:link,
-.Secondary a:visited,
-.Secondary a:focus,
-.Secondary a:hover,
-.Secondary a:active {
+.Secondary a {
   color: #404040;
 }
 input::-webkit-input-placeholder,
