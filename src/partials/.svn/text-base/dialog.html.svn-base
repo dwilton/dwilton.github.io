@@ -1,7 +1,0 @@
-<div id="Dialog" class="Dialog" data-auto-hide="true" data-auto-close="true">
-  <div class="Content">
-    <h1>Ajax Dialog</h1>
-    <a href="#" class="CloseButton">Close</a>
-    <div id="#Test">This is an ajax dialog.</div>
-  </div>
-</div>
