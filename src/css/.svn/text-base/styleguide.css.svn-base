@@ -718,6 +718,9 @@ div.CodeMirror-cursors {
 .NanoExample {
   height: 300px;
 }
+#DemoGridControls button {
+  margin-right: 5px;
+}
 .GridExample .Grid {
   height: 400px;
 }

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 155
-/svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img
+/svn/separatereality_foxtel/!svn/ver/9022/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img
 END
 icon_iqhd.png
 K 25
@@ -9,17 +9,17 @@ svn:wc:ra_dav:version-url
 V 169
 /svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/icon_iqhd.png
 END
-select2-spinner.gif
-K 25
-svn:wc:ra_dav:version-url
-V 175
-/svn/separatereality_foxtel/!svn/ver/7917/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/select2-spinner.gif
-END
 xrs-default.png
 K 25
 svn:wc:ra_dav:version-url
 V 171
 /svn/separatereality_foxtel/!svn/ver/7917/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/xrs-default.png
+END
+select2-spinner.gif
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/separatereality_foxtel/!svn/ver/7917/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/select2-spinner.gif
 END
 select2.png
 K 25
@@ -27,11 +27,11 @@ svn:wc:ra_dav:version-url
 V 167
 /svn/separatereality_foxtel/!svn/ver/8190/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/select2.png
 END
-tick_icon.png
+icon_tick.png
 K 25
 svn:wc:ra_dav:version-url
 V 169
-/svn/separatereality_foxtel/!svn/ver/7917/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/tick_icon.png
+/svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/icon_tick.png
 END
 icon_suspended.png
 K 25
@@ -39,17 +39,11 @@ svn:wc:ra_dav:version-url
 V 174
 /svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/icon_suspended.png
 END
-icon_tick.png
+tick_icon.png
 K 25
 svn:wc:ra_dav:version-url
 V 169
-/svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/icon_tick.png
-END
-icon_info.png
-K 25
-svn:wc:ra_dav:version-url
-V 169
-/svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/icon_info.png
+/svn/separatereality_foxtel/!svn/ver/7917/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/tick_icon.png
 END
 ui_account_profile_top_bg.png
 K 25
@@ -57,17 +51,17 @@ svn:wc:ra_dav:version-url
 V 185
 /svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/ui_account_profile_top_bg.png
 END
+icon_info.png
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/icon_info.png
+END
 ui_input_bg.png
 K 25
 svn:wc:ra_dav:version-url
 V 171
 /svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/ui_input_bg.png
-END
-rs-default.png
-K 25
-svn:wc:ra_dav:version-url
-V 170
-/svn/separatereality_foxtel/!svn/ver/7917/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/rs-default.png
 END
 icon_telstra_logo.png
 K 25
@@ -75,11 +69,17 @@ svn:wc:ra_dav:version-url
 V 177
 /svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/icon_telstra_logo.png
 END
+rs-default.png
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/separatereality_foxtel/!svn/ver/7917/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/rs-default.png
+END
 sprite_marketing.png
 K 25
 svn:wc:ra_dav:version-url
 V 176
-/svn/separatereality_foxtel/!svn/ver/8941/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/sprite_marketing.png
+/svn/separatereality_foxtel/!svn/ver/9022/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/img/sprite_marketing.png
 END
 calendar.png
 K 25

@@ -4,26 +4,42 @@
 
   <h3>Usage</h3>
   <ul class="Bulleted">
-    <li>Use the <code>$('#myGrid').Grid()</code> jQuery plugin to extend functionality and offset scrollbars</li>
-    <li>The plugin accepts the following paramaters
+    <li>Use the <code>$('#myGrid').Grid()</code> jQuery plugin</li>
+    <li>The plugin accepts the following optional paramaters
       <ul class="Bulleted">
-        <li><code>onload</code> callback function to excute once the plugin has loaded</li>
-        <li><code>infiniteScroll</code> callback function to excute once user has scrolled to the buttom of the grid</li>
+        <li><code>load</code> callback function, excuted once the plugin has loaded</li>
+        <li><code>scrollend</code> callback function, excuted when user scrolls to the buttom of the grid (used for infinite scroll)</li>
+        <li><code>sortby</code> callback function, excuted when user clicks grid header (require the <code>.Sortable</code> class)</li>
+        <li><code>click</code> callback function, excuted when user clicks on a row</li>
+      </ul>
+    </li>
+    <li>The following methods can also by called by <code>var grid = $('#Grid').data('plugin_grid');</code>
+      <ul class="Bulleted">
+        <li><code>grid.contentUpdateHTML(value);</code> replaces the current <code>&lt;tbody&gt;</code> content</li>
+        <li><code>grid.contentAppendHTML(value);</code> appends to the current <code>&lt;tbody&gt;</code> content</li>
+        <li><code>grid.displayLoader();</code> displays the loader</li>
+        <li><code>grid.displayProgressLoader();</code> displays the progress loader (used for infinite scroll)</li>
+        <li><code>grid.displayNoResults();</code> display the 'no results' message</li>
+        <li><code>grid.displayError();</code> display an 'error' message</li>
       </ul>
     </li>
   </ul>
+
+
 
 </blockquote>
 
 <div class="Panel GridExample">
 
-  <h2>Paging Grids</h2>
+  <h2>Paging</h2>
 
-  <h3>Loading</h3>
+  <div id="DemoGridControls"></div>
+
+  <br />
 
   <div data-codeblock="true">
 
-    <div id="ExampleLoadingGrid01" class="Grid">
+    <div id="PagingGrid" class="Grid">
       <div class="GridHeader">
         <table>
           <colgroup>
@@ -61,207 +77,91 @@
 
   </div>
 
-  <hr />
+  <script type="text/x-javascript">
 
-  <h3>Results</h3>
+    function getDataHTML (callback) {
+      setTimeout(function () {
+        $.ajax('partials/grid.html')
+          .done(function (data) {
+            callback(data);
+          });
+      }, 300);
+    }
 
-  <div data-codeblock="true">
+    /**
+     * Example Paging Grid
+     */
 
-    <div id="ExampleLoadingGrid01" class="Grid">
-      <div class="GridHeader">
-        <table>
-          <colgroup>
-            <col style="width: 300px;">
-            <col>
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="Sortable Asc" data-sort-by="Column1"><a>Column 1</a></th>
-              <th class="Sortable" data-sort-by="Column2"><a>Column 2</a></th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-      <div class="Content">
-        <table>
-          <colgroup>
-            <col style="width: 300px;">
-            <col>
-          </colgroup>
-          <tbody>
-            <tr class="odd" data-id="1">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr data-id="2">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr class="odd" data-id="3">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr data-id="4">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr class="odd" data-id="5">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr data-id="6">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr class="odd" data-id="7">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr data-id="8">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr class="odd" data-id="9">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr data-id="10">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr class="odd" data-id="11">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr data-id="12">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr class="odd" data-id="13">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr data-id="14">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr class="odd" data-id="15">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr data-id="16">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-            <tr class="odd" data-id="17">
-              <td>Column 1 Data</td>
-              <td>Column 2 Data</td>
-            </tr>
-          </table>
-      </div>
-    </div>
+    // Find a grid instance
+    var pagingGrid = $('#PagingGrid').data('plugin_Grid');
 
-    <div class="Pagination">
-      <a href="" class="Button Active">first</a>
-      <a href="" class="Button">2</a>
-      <a href="" class="Button">2</a>
-      <a href="" class="Button">3</a>
-      <a href="" class="Button">4</a>
-      <a href="" class="Button">5</a>
-      <a href="" class="Button">6</a>
-      <a href="" class="Button">7</a>
-      <a href="" class="Button">8</a>
-      <a href="" class="Button">9</a>
-      <a href="" class="Button">last</a>
-    </div>
+    // Init Grid
+    pagingGrid.init({ 
+      load: function () { 
+        getDataHTML(function (data) { 
+          pagingGrid.updateContentHTML(data);
+        }); 
+      },
+      sortBy: function (data) {
+        console.log(data);
+      },
+      click: function (data) {
+        console.log(data);
+      }
+    });
 
-  </div>
+    /**
+     * Demo Controls
+     */
 
-  <hr />
+    function createButton(name, callback) {
 
-  <h3>No Results</h3>
+      var button = $('<button/>');
+      var demoGridControls = $('#DemoGridControls');
 
-  <div data-codeblock="true">
+      button.html(name);
+      button.on('click', callback);
+      demoGridControls.append(button);
 
-    <div id="ExampleEmptyGrid" class="Grid">
-      <div class="GridHeader">
-        <table>
-          <colgroup>
-            <col style="">
-            <col style="width: 140px;">
-            <col style="width: 140px;">
-            <col style="width: 140px;">
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="Sortable Asc" data-sort-by="Column1"><a>Column 1</a></th>
-              <th class="Sortable" data-sort-by="Column2"><a>Column 2</a></th>
-              <th class="Sortable" data-sort-by="Column3"><a>Column 3</a></th>
-              <th class="Sortable" data-sort-by="Column4"><a>Column 4</a></th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-      <div class="Content">
-        <div class="NoResults">No Results.</div>
-      </div>
-    </div>
+    }
 
-    <div class="Pagination">
-      <a href="" class="Button Active">first</a>
-      <a href="" class="Button">2</a>
-      <a href="" class="Button">2</a>
-      <a href="" class="Button">3</a>
-      <a href="" class="Button">4</a>
-      <a href="" class="Button">5</a>
-      <a href="" class="Button">6</a>
-      <a href="" class="Button">7</a>
-      <a href="" class="Button">8</a>
-      <a href="" class="Button">9</a>
-      <a href="" class="Button">last</a>
-    </div>
+    createButton('Update HTML Content', function () {
+      pagingGrid.displayLoader();
+      getDataHTML(function (data) { 
+        pagingGrid.updateContentHTML(data);
+      });
+    });
 
-  </div>
+    createButton('Append HTML Content', function () { 
+      pagingGrid.displayProgressLoader();
+      getDataHTML(function (data) { 
+        pagingGrid.appendContentHTML(data);
+      });
+    });
 
-  <hr />
+    createButton('Loading', function () { 
+      pagingGrid.displayLoader();
+    });
 
-  <h3>Error</h3>
+    createButton('Progress Loader', function () { 
+      pagingGrid.displayProgressLoader();
+    });
 
-  <div data-codeblock="true">
+    createButton('Error', function () {
+      pagingGrid.displayError();
+    });
 
-    <div id="ExampleErrorGrid02" class="Grid">
-      <div class="GridHeader">
-        <table>
-          <colgroup>
-            <col style="">
-            <col style="width: 140px;">
-            <col style="width: 140px;">
-            <col style="width: 140px;">
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="Sortable Asc" data-sort-by="Column1"><a>Column 1</a></th>
-              <th class="Sortable" data-sort-by="Column2"><a>Column 2</a></th>
-              <th class="Sortable" data-sort-by="Column3"><a>Column 3</a></th>
-              <th class="Sortable" data-sort-by="Column4"><a>Column 4</a></th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-      <div class="Content">
-        <div class="DataError">Error returning results.</div>
-      </div>
-    </div>
+    createButton('No Results', function () { 
+       pagingGrid.displayNoResults();
+    });
 
-  </div>
+  </script>
 
   <hr />
 
   <h2>Infinite Scroll</h2>
 
-  <h3>Results</h3>
-
-  <div id="ExampleDataGrid03" class="Grid" data-codeblock="true">
+  <div id="InfiniteGrid" class="Grid" data-codeblock="true">
     <div class="GridHeader">
       <table>
         <colgroup>
@@ -272,116 +172,52 @@
         </colgroup>
         <thead>
           <tr>
-            <th class="Sortable Asc" data-sort-by="Column1"><a>Column 1</a></th>
-            <th class="Sortable" data-sort-by="Column2"><a>Column 2</a></th>
-            <th class="Sortable" data-sort-by="Column3"><a>Column 3</a></th>
-            <th class="Sortable" data-sort-by="Column4"><a>Column 4</a></th>
+            <th class="Asc" data-sort-by="Column1"><a>Column 1</a></th>
+            <th data-sort-by="Column2"><a>Column 2</a></th>
+            <th data-sort-by="Column3"><a>Column 3</a></th>
+            <th data-sort-by="Column4"><a>Column 4</a></th>
           </tr>
         </thead>
       </table>
     </div>
-    <div class="Content">
-      <table>
-        <colgroup>
-          <col style="">
-          <col style="width: 140px;">
-          <col style="width: 140px;">
-          <col style="width: 140px;">
-        </colgroup>
-        <tbody>
-          <tr class="odd" data-id="1">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr data-id="2">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr class="odd" data-id="3">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr data-id="4">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr class="odd" data-id="5">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr data-id="6">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr class="odd" data-id="7">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr data-id="8">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr class="odd" data-id="9">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr data-id="10">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr class="odd" data-id="11">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr data-id="12">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr class="odd" data-id="13">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr data-id="14">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-          <tr class="odd" data-id="15">
-            <td>Column 1 Data</td>
-            <td>Column 2 Data</td>
-            <td>Column 3 Data</td>
-            <td>Column 4 Data</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <div class="Content"></div>
   </div>
+
+  <script type="text/x-javascript">
+
+    function getDataHTML (callback) {
+      setTimeout(function () {
+        $.ajax('partials/grid.html')
+          .done(function (data) {
+            callback(data);
+          });
+      }, 300);
+    }
+
+    /**
+     * Example Paging Grid
+     */
+
+    // Find a grid instance
+    var infiniteScrollGrid = $('#InfiniteGrid').data('plugin_Grid');
+
+    // Init Grid
+    infiniteScrollGrid.init({ 
+      load: function () { 
+        getDataHTML(function (data) { 
+          infiniteScrollGrid.updateContentHTML(data);
+        });
+      },
+      scrollEnd: function () {
+        getDataHTML(function (data) { 
+          infiniteScrollGrid.appendContentHTML(data);
+        }); 
+      },
+      click: function (data) {
+        console.log(data);
+      }
+    });
+
+  </script>
 
 </div>

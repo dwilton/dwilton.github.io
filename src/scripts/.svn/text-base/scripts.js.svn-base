@@ -26,24 +26,12 @@
       }
 
     }
-
-    function loadTest () {
-      console.log('loadme');
-    }
-
-    function scrollTest () {
-      console.log('scrollme');
-    }
-
-    function sortTest (object) {
-      console.log(object);
-    }
-
-    // Grids
-    $('.Grid').Grid({ onload: loadTest, infiniteScroll: scrollTest, sort: sortTest });
-
+  
     // Tabs
     $('.TabGroup').tabs();
+
+    // Grids
+    $('.Grid').Grid();
 
     // Tooltips
     $(document).tooltip();

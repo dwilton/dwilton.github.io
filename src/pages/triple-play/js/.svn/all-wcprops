@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 154
-/svn/separatereality_foxtel/!svn/ver/9007/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/js
+/svn/separatereality_foxtel/!svn/ver/9022/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/js
 END
 tripleplay.js
 K 25
@@ -62,6 +62,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 165
 /svn/separatereality_foxtel/!svn/ver/7917/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/js/select2.js
+END
+marketing-update.js
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/separatereality_foxtel/!svn/ver/9022/09%20-%20SubProjects/triple_play/03%20-%20Construction/codebase/branches/triple_play_ui/src/pages/triple-play/js/marketing-update.js
 END
 opentip-jquery-excanvas.min.js
 K 25

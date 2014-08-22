@@ -56,7 +56,7 @@
                     <li>
                       <div>
                         <span class="icon add"></span> 
-                        <label>Opt in to all Foxtel &amp; Partners' Marketing</label>
+                        <label>Receive all Foxtel &amp; Partners' Marketing</label>
                         <div class="selection">
                           <a href="#" onclick="selectAll(this);">Yes</a> | <a href="#" onclick="deselectAll(this);">No</a>
                         </div>
@@ -66,7 +66,7 @@
                         <li>
                           <div>
                             <span class="icon add"></span> 
-                            <label>Opt in to all Foxtel Marketing</label>
+                            <label>Receive all Foxtel Marketing</label>
                             <div class="selection">
                               <a href="#" onclick="selectAll(this);">Yes</a> | <a href="#" onclick="deselectAll(this);">No</a>
                             </div>
@@ -75,7 +75,7 @@
                           <ul>
                             <li>
                               <div>
-                                <span class="icon active" has="true"></span> 
+                                <span class="icon added" has="true"></span> 
                                 <label>What’s On Foxtel? 
                                 <span>Our fortnightly email newsletter</span>
                                 </label>
@@ -83,9 +83,9 @@
                             </li>
                             <li>
                               <div>
-                                <span class="icon add"></span> 
+                                <span class="icon added" has="true"></span> 
                                 <label>Access rewards 
-                                <span>Money-can’t-buy premium experiences, partner offers and services</span>
+                                  <span>Money-can’t-buy premium experiences, partner offers and services</span>
                                 </label>
                               </div>
                             </li>
@@ -93,23 +93,23 @@
                               <div>
                                 <span class="icon removed"></span> 
                                 <label>Tips, tricks &amp; community updates
-                                <span>Get special treatment, with offers and exclusive deals just for you</span>
+                                  <span>Get special treatment, with offers and exclusive deals just for you</span>
                                 </label>
                               </div>
                             </li>
                             <li>
                               <div>
-                                <span class="icon active" has="true"></span> 
+                                <span class="icon removed"></span> 
                                 <label>Special offers for you from Foxtel
-                                <span>Get special treatment, with offers and exclusive deals just for you</span>
+                                  <span>Get special treatment, with offers and exclusive deals just for you</span>
                                 </label>
                               </div>
                             </li>
                             <li>
                               <div>
-                                <span class="icon active" has="true"></span> 
+                                <span class="icon added" has="true"></span> 
                                 <label>Product and channel launches
-                                <span>We’re always innovating our product offering. Be the first to know</span>
+                                  <span>We’re always innovating our product offering. Be the first to know</span>
                                 </label>
                               </div>
                             </li>
@@ -117,7 +117,7 @@
                               <div>
                                 <span class="icon added" has="true"></span> 
                                 <label>Main Event
-                                <span>Ordering made easy via SMS</span>
+                                  <span>Ordering made easy via SMS</span>
                                 </label>
                               </div>
                             </li>
@@ -127,7 +127,7 @@
                         <li>
                           <div>
                             <span class="icon added" has="true"></span> 
-                            <label>Opt in to Foxtel Partners’ Marketing</label>
+                            <label>Receive Foxtel Partners’ Marketing</label>
                           </div>
                         </li>
                       </ul>
@@ -173,75 +173,7 @@
       </form>
     </div>
   </div>
-  <script type="text/javascript">
-  // Check / Un-check item on click
-  //If any sibling is removed, update parent icon to add
-  $('ul.options li .icon').click(function(el) {
-    el = $(this);
-    n = el.parents('li').length - 1; //Number of parent list elements
-    if (el.attr("has")) {
-      el.removeClass('active added').addClass('removed').removeAttr('has');
-      if (el.closest('li').find('li').length != 0) {
-        el.closest('li').find('.icon').removeClass('active added').addClass('removed').removeAttr('has');
-      }
-      // Check if no siblings are checked and set parent to unchecked
-      if (el.closest('li').siblings('li').find('[has]').length == 0){
-        el.parents('li').find('.icon').slice(0,n).removeClass('active added').addClass('removed').removeAttr('has');
-      }
-      checkParent(el);
-    }
-    else {
-      el.removeClass('add removed').addClass('added').attr('has', 'true');
-      if (el.closest('li').find('li').length != 0) {
-        el.closest('li').find('.icon').removeClass('add removed').addClass('added').attr('has', 'true');
-      }
-      // Check if all siblings are checked and set parent to checked
-      if (el.closest('li').siblings('li').find('.icon:not([has])').length == 0)  {
-        el.parents('li').find('.icon').slice(0,n).removeClass('add removed').addClass('added').attr('has', 'true');
-      }
-      checkParent(el);
-    }
-    function checkParent(el) {
-      if ((el.closest('ul').children('li').find('.icon:not([has])').length > 0) && (el.closest('ul').children('li').find('[has]').length > 0))
-      {
-        el.parents('li').find('.icon').slice(0,n).addClass('add').removeClass('active added removed').removeAttr('has');
-      }
-    }
-  });
-
-  // Select All 
-  function selectAll(el) {
-    event.preventDefault ? event.preventDefault() : event.returnValue = false;
-    $(el).closest('li').each(function(el) {
-      el = $(this).find('span.icon');
-      el.removeClass('add removed').addClass('added').attr('has', 'true');
-      // Check parent's siblings and set parents' status accordingly
-      if (el.closest('li').siblings('li').find('.icon:not([has])').length == 0)  {
-        el.parents('li').find('.icon').removeClass('add removed').addClass('added').attr('has', 'true');
-      }
-    });
-  }
-
-  // Deselect All 
-  function deselectAll(el) {
-    event.preventDefault ? event.preventDefault() : event.returnValue = false;
-    $(el).closest('li').each(function(el) {
-      el = $(this).find('span.icon');
-      el.removeClass('active added').addClass('removed').removeAttr('has');
-    });
-    // Check parent's siblings and set parents' status accordingly
-      if (( $(el).closest('ul').children('li').find('.icon:not([has])').length > 0) && ( $(el).closest('ul').children('li').find('[has]').length > 0))
-      {
-        //$(el).closest('ul .icon').hide().removeClass('active added').addClass('add').removeAttr('has');
-      }
-      else if (( $(el).closest('ul').children('li').find('.icon:not([has])').length > 0) && ( $(el).closest('ul').children('li').find('[has]').length <= 0))
-      {
-        el.parents('ul').find('.icon').removeClass('active added').addClass('removed').removeAttr('has');
-      }
-   
-    //alert($(el).closest('ul').children('li').addClass('tete'));
-  }
-  </script>
+  <script type="text/javascript" src="js/marketing-update.js"></script>
 </body>
 </html>
 

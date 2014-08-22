@@ -106,17 +106,12 @@ ul.options .icon  {
 ul.options .add {
   background-position: left top;
 }
-
-ul.options .active {
-  background-position: left -33px;
-}
-
 ul.options .removed {
   background-position: left -65px;
 }
 
 ul.options .added {
-  background-position: left -97px;
+  background-position: left -32px;
 }
 
 ul.notifications li {

@@ -1,168 +1,263 @@
-(function($) {
+(function ($, window, document, undefined) {
 
   'use strict';
 
-  $.fn.Grid = function(options) {
+  var pluginName = 'Grid',
+      defaults = {};
 
-    var grids = this;
+  // Plugin constructor
+  function Plugin (element, options) {
 
-    grids.each(function () {
+    this.element = element;
+    this.options = $.extend({}, defaults, options) ;
+    this._defaults = defaults;
+    this._name = pluginName;
 
-      var grid = $(this);
-      var content = grid.children('.Content');
-      var header = grid.children('.GridHeader');
+    this.gridEl = $(this.element);
+    this.contentEl = this.gridEl.children('.Content');
+    this.headerEl = this.gridEl.children('.GridHeader');
+    
+    this.init(this.options);
+
+  }
+
+  Plugin.prototype = {
+
+    /**
+     * Init
+     * @param  {Object} options { load: callback, scrollEnd: callback, sortBy: callback, click: callback }
+     */
+    init: function (options) {
+
       var resize;
 
-      function init () {
+      // Render loader if no content is present
+      if (!this.contentEl.html().length) {
+      
+        this.displayLoader();
+      
+        var colgroupEl = this.headerEl.find('table colgroup').clone();
+        var tableEl = $('<table/>');
+        var tbodyEl = $('<tbody/>');
 
-        // Append overlay and loading indicator
-        grid.append('<div class="Overlay" style="display: none"></div><div class="Status" style="display: none"><div class="LoadIcon"></div><div class="LoadText">Loading</div></div>');
+        this.contentEl.append(tableEl.append(colgroupEl).append(tbodyEl));
+      
+      }
 
-        // Render loader if no content is present
-        if (!content.html().length) {
-          loader();
+      // On load callback
+      if (options.load !== undefined) {
+        this.load(options.load);
+      }
+
+      // Scoll end callback
+      if (options.scrollEnd !== undefined) {
+        this.scrollEnd(options.scrollEnd);
+      }
+
+      // Sort By callback
+      if (options.sortBy !== undefined) {
+        this.sortBy(options.sortBy);
+      }
+
+      // Click By callback
+      if (options.click !== undefined) {
+        this.click(options.click);
+      }
+
+      // Offset scrollbars
+      $(window).on('resize', function () {
+        clearTimeout(resize);
+        resize = setTimeout(this.offsetScrollbars, 100);
+      });
+
+      this.offsetScrollbars();
+
+    },
+
+    /**
+     * Load
+     * @param  {Function} callback
+     */
+    load: function (callback) {
+      callback();
+    },
+
+    /**
+     * scrollEnd
+     * @param  {Function} callback
+     */
+    scrollEnd: function (callback) {
+
+      var self = this;
+
+      this.contentEl.on('scroll', function () {
+
+        var el = $(this);
+      
+        if(el.scrollTop() + el.innerHeight() >= this.scrollHeight) {
+          self.displayProgressLoader();
+          callback();
         }
+      
+      });
 
-        // Load callback
-        if (options.onload !== undefined) {
-          options.onload();
-        }
+    },
 
-        // Scoll end callback
-        if (options.infiniteScroll !== undefined) {
-          content.on('scroll', function () {
-            if($(this).scrollTop() + $(this).innerHeight() >= this.scrollHeight) {
-              progresLoader(true);
-              options.infiniteScroll();
+    sortBy: function (callback) {
+        
+      if (this.headerEl.length > 0) {
+      
+        var sortables = this.headerEl.find('.Sortable');
+
+        sortables.each(function () {
+
+          $(this).on('click', function () {
+
+            var sortable = $(this);
+            var column = sortable.data('sort-by');
+            var direction;
+
+            if (sortable.hasClass('Asc')) {
+              direction = 'desc';
+            } else {
+              direction = 'asc';
             }
+
+            sortables.removeClass('Asc Desc');
+            sortable.addClass(direction.charAt(0).toUpperCase() + direction.slice(1).toLowerCase());
+
+            callback({ column: column, direction: direction });
+
           });
-        }
 
-        // Sort event handlers
-        sorting();
-
-        // Offset scrollbars
-        $(window).on('resize', function () {
-          clearTimeout(resize);
-          resize = setTimeout(offsetScrollbars, 100);
         });
 
-        offsetScrollbars();
-
       }
 
-      // Offset Scrollbars
-      function offsetScrollbars () {
+    },
 
-        if (header.length > 0) {
+    click: function (callback) {
+      this.contentEl.on('click', 'tr', function () {
+        callback($(this).data());
+      });
+    },
 
-          var scrollbarWidth = content.width() - content.children(0).width();
+    /**
+     * Offset Scrollbars
+     */
+    offsetScrollbars: function () {
 
-          if(scrollbarWidth > 0) {
-            header.css('padding-right', scrollbarWidth + 'px');
-          }
+      if (this.headerEl.length > 0) {
 
+        var scrollbarWidth = this.contentEl.width() - this.contentEl.children(0).width();
+
+        if(scrollbarWidth > 0) {
+          this.headerEl.css('padding-right', scrollbarWidth + 'px');
         }
 
       }
 
-      // Sorting
-      function sorting () {
+    },
+
+    displayLoader: function (content) {
+      this.messageShow('loader', 'Loading', content);
+    },
+
+    displayProgressLoader: function (content) {
+      this.messageShow('progressLoader', 'Loading', content);
+    },
+
+    displayError: function (content) {
+      this.updateContentHTML('');
+      this.messageShow('error', 'Error returning results', content);
+    },
+
+    displayNoResults: function (content) {
+      this.updateContentHTML('');
+      this.messageShow('noResults', 'No Results', content);
+    },
+
+    /**
+     * Append grid content html (used in infinite scroll)
+     * @param  {string} html
+     */
+    appendContentHTML: function (html) {
+      this.contentEl.find('tbody').append(html);
+      this.messageHide();
+      this.offsetScrollbars();
+    },
+
+    /**
+     * Update grid content html (used when paging)
+     * @param  {[type]} html [description]
+     * @return {[type]}      [description]
+     */
+    updateContentHTML: function (html) {
+      this.contentEl.find('tbody').html(html);
+      this.messageHide();
+      this.offsetScrollbars();
+    },
+
+    /**
+     * Message Inferface
+     * @param  {string} Message type
+     * @param  {string} Default message content
+     * @param  {string} Custom message content
+     */
+    messageShow: function (type, defaultContent, content) {
+
+      if (this.gridEl.children('.Message').length === 0) {
+        this.gridEl.append('<div class="Message" style="display: none"><div class="Overlay"></div><div class="Template"></div></div>');
+      }
+
+      var messageEl = this.gridEl.children('.Message');
+      var contentEl = messageEl.children('.Template');
+
+      if (content === undefined) {
+        content = defaultContent;
+      }
+
+      switch (type) {
+        case 'loader':
+          contentEl.html('<div class="Loading"><span class="Spinner"></span>' + content + '</div>');
+          break;
+
+        case 'progressLoader':
+          contentEl.html('<div class="Status"><div class="LoadIcon"></div><div class="LoadText">' + content + '</div></div>');
+          break;
+
+        case 'noResults':
+          contentEl.html('<div class="NoResults">' + content + '</div>');
+          break;
         
-        if (header.length > 0 && options.sort !== undefined) {
-        
-          var sortables = header.find('.Sortable');
+        case 'error':
+          contentEl.html('<div class="DataError">' + content + '</div>');
+          break;
 
-          sortables.each(function () {
-
-            $(this).on('click', function () {
-
-              var sortable = $(this);
-              var sortBy = sortable.data('sort-by');
-              var direction;
-
-              if (sortable.hasClass('Asc')) {
-                direction = 'desc';
-              } else {
-                direction = 'asc';
-              }
-
-              sortables.removeClass('Asc Desc');
-              sortable.addClass(direction.charAt(0).toUpperCase() + direction.slice(1).toLowerCase());
-
-              options.sort({ sortBy: sortBy, direction: direction });
-
-            });
-
-          });
-
-        }
-
+        case 'clear':
+          contentEl.html('');
+          break;
       }
 
-      // Initial loader display
-      function loader () {
-        content.html('<div class="Loading"><span class="Spinner"></span>Loading</div>');
-      }
+      messageEl.show();
 
-      // Error
-      function error (msg) {
+    },
 
-        if (msg === undefined) {
-          msg = 'Error returning results';
-        }
-
-        content.html('<div class="DataError">' + msg + '</div>');
-      }
-
-      function noResults (msg) {
-
-        if (msg === undefined) {
-          msg = 'No Results';
-        }
-
-        content.html('<div class="NoResults">' + msg + '</div>');
-      }
-
-
-      // progress loader display
-      function progresLoader (show) {
-
-        var status = grid.children('.Status');
-        var overlay = grid.children('.Overlay');
-
-        if(show) {
-          status.show();
-          overlay.show();
-        }
-        else {
-          status.hide();
-          overlay.hide();
-        }
-
-      }
-
-      // Append content
-      function append (html) {
-        content.find('tbody').append(html);
-        progresLoader(false);
-        offsetScrollbars();
-      }
-
-      // Replace content
-      function replace (html) {
-        content.html(html);
-      }
-
-      // Clear content
-      function clear () {
-        replace('');
-      }
-
-      init();
-
-    });
+    messageHide: function () {
+      this.gridEl.children('.Message').hide();
+    }
 
   };
 
-})(jQuery);
+  // A really lightweight plugin wrapper around the constructor,
+  // preventing against multiple instantiations
+  $.fn[pluginName] = function (options) {
+    return this.each(function () {
+      if (!$.data(this, 'plugin_' + pluginName)) {
+        $.data(this, 'plugin_' + pluginName,
+        new Plugin(this, options));
+      }
+    });
+  };
+
+})(jQuery, window, document);

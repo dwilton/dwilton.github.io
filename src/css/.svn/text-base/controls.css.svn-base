@@ -447,6 +447,13 @@ body {
 .Grid .Loading {
   z-index: 100;
 }
+.Grid .Message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .Grid .Overlay {
   position: absolute;
   height: 100%;
